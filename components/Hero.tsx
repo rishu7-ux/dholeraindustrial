@@ -52,7 +52,7 @@ export default function Hero() {
     <section className="relative w-full overflow-hidden">
       {/* Background image */}
       <div
-        className="min-h-[620px] w-full bg-cover bg-center transition-all duration-700 lg:min-h-[720px]"
+        className="min-h-155 w-full bg-cover bg-center transition-all duration-700 lg:min-h-180"
         style={{
           backgroundImage: `url("${slide.image}")`,
         }}
@@ -81,8 +81,8 @@ export default function Hero() {
         </button>
 
         {/* Hero content */}
-        <div className="relative z-10 mx-auto flex min-h-[620px] max-w-7xl items-center px-4 py-16 sm:px-6 lg:min-h-[720px] lg:px-8">
-          <div className="mx-auto w-full max-w-[560px] lg:mx-0 lg:ml-12">
+        <div className="relative z-10 mx-auto flex min-h-155 max-w-7xl items-center px-4 py-16 sm:px-6 lg:min-h-180 lg:px-8">
+          <div className="mx-auto w-full max-w-140 lg:mx-0 lg:ml-12">
             <div className="overflow-hidden rounded-sm bg-[#12568d]/90 text-white shadow-2xl backdrop-blur-sm">
               {/* Heading */}
               <div className="border-b border-white/20 px-5 py-6 sm:px-7 sm:py-8">

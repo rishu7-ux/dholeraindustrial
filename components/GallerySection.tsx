@@ -24,7 +24,7 @@ const galleryItems: GalleryItem[] = [
     title: "Dholera International Airport",
     category: "Connectivity",
   },
-  
+
   {
     id: 2,
     image: "/gallery/gallery2.webp",
@@ -104,13 +104,16 @@ export default function GallerySection() {
   const selectedItem =
     selectedIndex !== null ? galleryItems[selectedIndex] : null;
 
+
   const openImage = (index: number) => {
     setSelectedIndex(index);
   };
 
+  
   const closeImage = () => {
     setSelectedIndex(null);
   };
+
 
   const showPrevious = () => {
     if (selectedIndex === null) return;
@@ -127,6 +130,7 @@ export default function GallerySection() {
       selectedIndex === galleryItems.length - 1 ? 0 : selectedIndex + 1
     );
   };
+
 
   return (
     <>

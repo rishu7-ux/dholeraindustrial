@@ -235,7 +235,7 @@ export default function Footer() {
                   href={link.href}
                   className="group inline-flex items-center gap-3 text-sm font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:text-base"
                 >
-                  <span className="h-[2px] w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
+                  <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
                   {link.label}
                 </Link>
               </li>
@@ -267,7 +267,7 @@ export default function Footer() {
                   href={link.href}
                   className="group inline-flex items-center gap-3 text-sm font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:text-base"
                 >
-                  <span className="h-[2px] w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
+                  <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
                   {link.label}
                 </Link>
               </li>
@@ -280,7 +280,7 @@ export default function Footer() {
           >
             View All Properties
 
-            <span className="h-[2px] w-8 bg-[#fdb713] transition-all duration-300 group-hover:w-14" />
+            <span className="h-0.5 w-8 bg-[#fdb713] transition-all duration-300 group-hover:w-14" />
           </Link>
         </motion.div>
       </div>
@@ -307,8 +307,8 @@ function FooterHeading({ title }: { title: string }) {
       </h2>
 
       <div className="mt-3 flex items-center gap-1.5">
-        <span className="h-[3px] w-10 bg-[#fdb713]" />
-        <span className="h-[3px] w-4 bg-white/50" />
+        <span className="h-0.75 w-10 bg-[#fdb713]" />
+        <span className="h-0.75 w-4 bg-white/50" />
       </div>
     </div>
   );

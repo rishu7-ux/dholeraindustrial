@@ -34,7 +34,7 @@ export default function Home() {
        <GallerySection />
        <BlogSlider />
        <ContactPartners />
-       <Footer />
+       <Footer/>
         
 
 
