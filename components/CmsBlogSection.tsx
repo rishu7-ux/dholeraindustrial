@@ -1,0 +1,63 @@
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRight, FaCalendarAlt, FaUserAlt } from "react-icons/fa";
+import { getPayload } from "payload";
+import config from "@/payload.config";
+
+type Media = { url?: string | null; alt?: string | null };
+type Blog = { id: string | number; title: string; slug: string; excerpt?: string | null; publishedAt?: string | null; createdAt?: string | null; featuredImage?: Media | string | number | null };
+
+export default async function CmsBlogSection() {
+  let blogs: Blog[] = [];
+  try {
+    if (process.env.MONGODB_URI && process.env.PAYLOAD_SECRET) {
+      const payload = await getPayload({ config });
+      const result = await payload.find({ collection: "industrial-blogs", where: { status: { equals: "published" } }, sort: "-publishedAt", limit: 10, depth: 1 });
+      blogs = result.docs as Blog[];
+    }
+  } catch (error) {
+    console.error("Industrial blog section could not load", error);
+  }
+
+  const formatDate = (date?: string | null) => date ? new Date(date).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "";
+  const runningBlogs = blogs.length > 1 ? [...blogs, ...blogs] : blogs;
+
+  return (
+    <section id="blog" className="overflow-hidden bg-[#f7fbff] py-16 sm:py-20">
+      <style>{`@keyframes industrialBlogScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.industrial-blog-track{animation:industrialBlogScroll 35s linear infinite;will-change:transform}.industrial-blog-slider:hover .industrial-blog-track{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.industrial-blog-track{animation:none}}`}</style>
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="mb-10">
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-[#fdb713]">Latest Insights</p>
+          <h2 className="mt-2 text-3xl font-black text-[#12568d] sm:text-4xl lg:text-5xl">Industrial <span className="text-[#fdb713]">Blog</span></h2>
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">Explore Dholera infrastructure news, industrial development and investment insights.</p>
+        </div>
+
+        {blogs.length ? (
+          <div className="industrial-blog-slider relative overflow-hidden py-5">
+            <div className={`industrial-blog-track flex w-max gap-5 ${blogs.length === 1 ? "!animate-none" : ""}`}>
+              {runningBlogs.map((blog, index) => {
+                const media = typeof blog.featuredImage === "object" && blog.featuredImage !== null ? blog.featuredImage as Media : null;
+                const date = blog.publishedAt || blog.createdAt;
+                return (
+                  <article key={`${blog.id}-${index}`} className="group flex w-72 shrink-0 flex-col overflow-hidden rounded-2xl border border-[#12568d]/15 bg-white shadow-[0_8px_25px_rgba(18,86,141,0.08)] transition hover:-translate-y-2 hover:border-[#fdb713] hover:shadow-[0_18px_40px_rgba(18,86,141,0.16)] sm:w-80">
+                    <Link href={`/blog/${blog.slug}`} className="relative block h-48 overflow-hidden bg-[#eaf4fb]">
+                      {media?.url ? <Image src={media.url} alt={media.alt || blog.title} fill sizes="320px" className="object-cover transition-transform duration-700 group-hover:scale-110" /> : <div className="absolute inset-0 bg-linear-to-br from-[#12568d] to-[#4385b4]" />}
+                      <div className="absolute inset-0 bg-linear-to-t from-[#12568d]/60 via-transparent to-transparent" />
+                      <span className="absolute left-4 top-4 rounded-full bg-[#fdb713] px-3 py-1.5 text-[10px] font-black uppercase text-[#12568d]">Industrial</span>
+                    </Link>
+                    <div className="flex flex-1 flex-col p-5">
+                      <div className="flex items-center gap-4 text-[11px] text-slate-500"><span className="flex items-center gap-1.5"><FaUserAlt className="text-[#fdb713]" />Admin</span>{date && <span className="flex items-center gap-1.5"><FaCalendarAlt className="text-[#fdb713]" />{formatDate(date)}</span>}</div>
+                      <Link href={`/blog/${blog.slug}`}><h3 className="mt-4 line-clamp-2 text-lg font-black leading-7 text-[#12568d] transition group-hover:text-[#fdb713]">{blog.title}</h3></Link>
+                      {blog.excerpt && <p className="mt-3 line-clamp-2 text-sm leading-6 text-slate-500">{blog.excerpt}</p>}
+                      <Link href={`/blog/${blog.slug}`} className="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-black text-[#12568d] transition hover:gap-3 hover:text-[#fdb713]">Read More <FaArrowRight /></Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        ) : <div className="rounded-2xl border border-dashed border-[#12568d]/20 bg-white px-6 py-12 text-center text-sm text-slate-500">Industrial blog posts published in the CMS will appear here.</div>}
+      </div>
+    </section>
+  );
+}

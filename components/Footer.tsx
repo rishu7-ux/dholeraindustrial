@@ -6,99 +6,135 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
+  FaLinkedinIn,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
 
+/* =====================================================
+   QUICK LINKS
+===================================================== */
+
 const quickLinks = [
   {
     label: "Home",
     href: "/",
   },
+
   {
     label: "About Us",
-    href: "#about-industrial",
+    href: "/about-us",
   },
+
   {
     label: "Properties",
-    href: "#properties",
+    href: "/properties",
   },
+
   {
     label: "Blog",
-    href: "#blog",
+    href: "/#blog",
   },
+
   {
     label: "Contact Us",
-    href: "#contact",
+    href: "/#contact",
   },
-  {
-    label: "Privacy Policy",
-    href: "/privacy-policy",
-  },
+
+
 ];
+
+/* =====================================================
+   PROPERTY LINKS
+===================================================== */
 
 const propertyLinks = [
   {
-    label: "Samridhi 621 Ranchi",
-    href: "/properties/1",
+    label: "Samridhi 621 Panchi",
+    href: "/samridhi-621-panchi-industrial-plots",
   },
+
   {
     label: "Samridhi 365",
-    href: "/properties/2",
+    href: "/samridhi-365-industrial-plot",
   },
+
   {
     label: "Samridhi 872/2",
-    href: "/properties/3",
+    href: "/samridhi-872-2-industrial-plots",
   },
+
   {
     label: "Sandhida 191 Logistic Plot",
-    href: "/properties/4",
+    href: "/sandhida-191-logistic-plot",
   },
 ];
+
+/* =====================================================
+   SOCIAL LINKS
+===================================================== */
 
 const socialLinks = [
   {
     label: "Facebook",
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/14nw1ZfSqB3/?mibextid=wwXIfr",
     icon: FaFacebookF,
   },
+
   {
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/omana_projects",
     icon: FaInstagram,
   },
+
   {
     label: "WhatsApp",
     href: "https://wa.me/919217104219",
     icon: FaWhatsapp,
   },
+
   {
     label: "YouTube",
-    href: "https://youtube.com",
+    href: "https://www.youtube.com/@OmanaProjects",
     icon: FaYoutube,
   },
+
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/omana-projectss/",
+    icon: FaLinkedinIn,
+  },
 ];
+
+/* =====================================================
+   ANIMATION
+===================================================== */
 
 const fadeUp = {
   hidden: {
     opacity: 0,
     y: 35,
   },
+
   visible: {
     opacity: 1,
     y: 0,
   },
 };
 
+/* =====================================================
+   FOOTER
+===================================================== */
+
 export default function Footer() {
   return (
-    <footer
-      id="contact"
-      className="relative overflow-hidden bg-[#12568d] text-white"
-    >
-      {/* Decorative background */}
+    <footer className="relative overflow-hidden bg-[#12568d] text-white">
+      {/* =====================================================
+          DECORATIVE BACKGROUND
+      ===================================================== */}
+
       <motion.div
         aria-hidden="true"
         animate={{
@@ -127,9 +163,15 @@ export default function Footer() {
         className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-white/5 blur-3xl"
       />
 
-      {/* Main footer */}
-      <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_1fr] lg:px-8 lg:py-20">
-        {/* Contact column */}
+      {/* =====================================================
+          MAIN FOOTER
+      ===================================================== */}
+
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-12 px-4 py-16 sm:gap-x-10 sm:px-6 lg:grid-cols-[1.5fr_0.8fr_1fr] lg:gap-12 lg:px-8 lg:py-20">
+        {/* =====================================================
+            CONTACT COLUMN
+        ===================================================== */}
+
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -142,10 +184,13 @@ export default function Footer() {
             duration: 0.7,
             ease: [0.22, 1, 0.36, 1],
           }}
+          className="col-span-2 lg:col-span-1"
         >
           <FooterHeading title="Contact Us" />
 
           <div className="mt-8 space-y-5">
+            {/* PHONE */}
+
             <Link
               href="tel:+919217104219"
               className="group flex items-start gap-4 text-sm text-white/80 transition hover:text-[#fdb713] sm:text-base"
@@ -154,8 +199,12 @@ export default function Footer() {
                 <FaPhoneAlt size={14} />
               </span>
 
-              <span className="pt-2 font-semibold">+91 9217104219</span>
+              <span className="pt-2 font-semibold">
+                +91 9217104219
+              </span>
             </Link>
+
+            {/* EMAIL */}
 
             <Link
               href="mailto:customercare@omanaprojects.com"
@@ -170,21 +219,27 @@ export default function Footer() {
               </span>
             </Link>
 
+            {/* ADDRESS */}
+
             <div className="flex items-start gap-4 text-sm text-white/80 sm:text-base">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713]">
                 <FaMapMarkerAlt size={15} />
               </span>
 
               <p className="max-w-xl pt-1 leading-7">
-                7th floor, Plot No. 56A/16, C Block, Phase 2, Industrial Area,
-                Sector 62, Noida, Uttar Pradesh 201309
+                7th floor, Plot No. 56A/16, C Block, Phase 2,
+                Industrial Area, Sector 62, Noida,
+                Uttar Pradesh 201309
               </p>
             </div>
           </div>
 
           <div className="mt-8 h-px bg-white/10" />
 
-          {/* Social links */}
+          {/* =====================================================
+              SOCIAL LINKS
+          ===================================================== */}
+
           <div className="mt-6 flex flex-wrap gap-3">
             {socialLinks.map(({ label, href, icon: Icon }) => (
               <motion.div
@@ -211,7 +266,10 @@ export default function Footer() {
           </div>
         </motion.div>
 
-        {/* Quick links */}
+        {/* =====================================================
+            QUICK LINKS
+        ===================================================== */}
+
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -233,9 +291,10 @@ export default function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group inline-flex items-center gap-3 text-sm font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:text-base"
+                  className="group inline-flex items-center gap-2 text-sm font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base"
                 >
                   <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
+
                   {link.label}
                 </Link>
               </li>
@@ -243,7 +302,10 @@ export default function Footer() {
           </ul>
         </motion.div>
 
-        {/* Property links */}
+        {/* =====================================================
+            PROPERTY LINKS
+        ===================================================== */}
+
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -265,17 +327,20 @@ export default function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group inline-flex items-center gap-3 text-sm font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:text-base"
+                  className="group inline-flex items-start gap-2 text-sm font-medium leading-6 text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base"
                 >
                   <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
+
                   {link.label}
                 </Link>
               </li>
             ))}
           </ul>
 
+          {/* VIEW ALL */}
+
           <Link
-            href="#properties"
+            href="/properties"
             className="group mt-7 inline-flex items-center gap-3 text-xs font-black uppercase tracking-[0.14em] text-[#fdb713]"
           >
             View All Properties
@@ -285,29 +350,40 @@ export default function Footer() {
         </motion.div>
       </div>
 
-      {/* Bottom copyright */}
-      <div className="relative z-10 border-t border-white/10 bg-[#0d456f]">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-center text-xs text-white/65 sm:px-6 md:flex-row md:text-left lg:px-8 sm:text-sm">
-          <p>
-            Copyright © 2026 Dholera Industrial Plots. All rights reserved.
-          </p>
+      {/* =====================================================
+          COPYRIGHT
+      ===================================================== */}
 
-         
+      <div className="relative z-10 border-t border-white/10 bg-[#0d456f]">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-center text-xs text-white/65 sm:px-6 sm:text-sm md:flex-row md:text-left lg:px-8">
+          <p>
+            Copyright © 2026 Dholera Industrial Plots.
+            All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
   );
 }
 
-function FooterHeading({ title }: { title: string }) {
+/* =====================================================
+   FOOTER HEADING
+===================================================== */
+
+function FooterHeading({
+  title,
+}: {
+  title: string;
+}) {
   return (
     <div>
-      <h2 className="font-serif text-xl font-black uppercase text-white">
+      <h3 className="text-lg font-black uppercase tracking-wide text-white">
         {title}
-      </h2>
+      </h3>
 
       <div className="mt-3 flex items-center gap-1.5">
         <span className="h-0.75 w-10 bg-[#fdb713]" />
+
         <span className="h-0.75 w-4 bg-white/50" />
       </div>
     </div>

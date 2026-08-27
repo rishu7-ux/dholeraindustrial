@@ -12,12 +12,12 @@ import {
 const socialLinks = [
   {
     name: "Facebook",
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/14nw1ZfSqB3/?mibextid=wwXIfr",
     icon: FaFacebookF,
   },
   {
     name: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/omana_projects",
     icon: FaInstagram,
   },
   {
@@ -27,7 +27,7 @@ const socialLinks = [
   },
   {
     name: "YouTube",
-    href: "https://youtube.com",
+    href: "https://www.youtube.com/@OmanaProjects",
     icon: FaYoutube,
   },
 ];

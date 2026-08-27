@@ -50,7 +50,7 @@ export default function ContactPartners() {
   return (
     <section className="w-full overflow-hidden">
       {/* Contact CTA */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-[#12568d] via-[#4b7895] to-[#fdb713] py-16 text-white sm:py-20 lg:py-24">
+      <div className="relative overflow-hidden bg-linear-to-r from-[#12568d] via-[#4b7895] to-[#fdb713] py-16 text-white sm:py-20 lg:py-24">
         {/* Animated floating glow */}
         <motion.div
           aria-hidden="true"
@@ -239,10 +239,10 @@ export default function ContactPartners() {
       {/* Continuous partners slider */}
       <div className="relative overflow-hidden bg-[#eef5fb] py-8 sm:py-10">
         {/* Left fade */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-12 bg-gradient-to-r from-[#eef5fb] to-transparent sm:w-28" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-12 bg-linear-to-r from-[#eef5fb] to-transparent sm:w-28" />
 
         {/* Right fade */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-12 bg-gradient-to-l from-[#eef5fb] to-transparent sm:w-28" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-12 bg-linear-to-l from-[#eef5fb] to-transparent sm:w-28" />
 
         <motion.div
           animate={{
@@ -265,20 +265,20 @@ export default function ContactPartners() {
               transition={{
                 duration: 0.3,
               }}
-              className="group relative flex h-[110px] w-[200px] shrink-0 items-center justify-center overflow-hidden border border-[#12568d]/10 bg-white px-7 shadow-sm transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_18px_45px_rgba(18,86,141,0.15)] sm:h-[125px] sm:w-[230px]"
+              className="group relative flex h-27.5 w-50 shrink-0 items-center justify-center overflow-hidden border border-[#12568d]/10 bg-white px-7 shadow-sm transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_18px_45px_rgba(18,86,141,0.15)] sm:h-[125px] sm:w-[230px]"
             >
               {/* Hover yellow line */}
               <span className="absolute bottom-0 left-0 h-1 w-0 bg-[#fdb713] transition-all duration-500 group-hover:w-full" />
 
               {/* Shine effect */}
-              <div className="pointer-events-none absolute inset-y-0 -left-28 z-10 w-20 -skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent transition-all duration-700 group-hover:left-[120%]" />
+              <div className="pointer-events-none absolute inset-y-0 -left-28 z-10 w-20 -skew-x-12 bg-linear-to-r from-transparent via-white/60 to-transparent transition-all duration-700 group-hover:left-[120%]" />
 
               <Image
                 src={partner.logo}
                 alt={partner.name}
                 width={170}
                 height={75}
-                className="max-h-[70px] w-auto object-contain opacity-70 grayscale transition-all duration-500 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0"
+                className="max-h-17.5 w-auto object-contain opacity-70 grayscale transition-all duration-500 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0"
               />
             </motion.div>
           ))}

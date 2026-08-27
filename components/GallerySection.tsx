@@ -51,7 +51,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 6,
-    image: "/gallery/gallery-6.jpg",
+    image: "/gallery/n1.webp",
     title: "Smart Industrial Entrance",
     category: "Development",
   },

@@ -2,35 +2,49 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import type { IconType } from "react-icons";
+import {
+  FaBuilding,
+  FaHandshake,
+  FaMapMarkedAlt,
+  FaMedal,
+  FaUsers,
+} from "react-icons/fa";
 
 type Stat = {
   value: number;
   label: string;
   suffix?: string;
   format?: "normal" | "indian";
+  icon: IconType;
 };
 
 const stats: Stat[] = [
   {
     value: 10,
     label: "Dholera Projects",
+    icon: FaBuilding,
   },
   {
-    value: 105,
+    value: 8,
     label: "Dholera Sold Projects",
+    icon: FaHandshake,
   },
   {
     value: 20,
     label: "Years Experience",
+    icon: FaMedal,
   },
   {
     value: 124246,
     label: "Acquired Area",
     format: "indian",
+    icon: FaMapMarkedAlt,
   },
   {
     value: 2000,
     label: "Served Members",
+    icon: FaUsers,
   },
 ];
 
@@ -148,6 +162,15 @@ export default function StatsCounter() {
               {index !== 0 && (
                 <span className="absolute left-0 top-1/2 hidden h-14 w-px -translate-y-1/2 bg-slate-200 lg:block" />
               )}
+
+              {/* Icon */}
+              <motion.span
+                whileHover={{ rotate: 6, scale: 1.1 }}
+                className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#12568d]/10 text-[#12568d] transition-colors duration-300 group-hover:bg-[#12568d] group-hover:text-white"
+                aria-hidden="true"
+              >
+                <stat.icon className="text-xl" />
+              </motion.span>
 
               {/* Number */}
               <motion.p

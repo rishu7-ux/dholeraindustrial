@@ -71,13 +71,14 @@ function BlogCard({ post }: { post: BlogPost }) {
       transition={{
         duration: 0.3,
       }}
-      className="group relative w-[310px] shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_30px_70px_rgba(18,86,141,0.18)] sm:w-[360px] lg:w-[390px]"
+      className="group relative w-77.5 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_30px_70px_rgba(18,86,141,0.18)] sm:w-90 lg:w-97.5"
     >
       {/* Top yellow line */}
+
       <span className="absolute left-0 top-0 z-20 h-1 w-full bg-[#fdb713]" />
 
       {/* Blog image */}
-      <div className="relative h-[230px] overflow-hidden sm:h-[250px]">
+      <div className="relative h-57.5 overflow-hidden sm:h-62.5">
         <Image
           src={post.image}
           alt={post.title}
@@ -96,15 +97,15 @@ function BlogCard({ post }: { post: BlogPost }) {
       </div>
 
       {/* Shine effect */}
-      <div className="pointer-events-none absolute inset-y-0 -left-40 z-20 w-28 -skew-x-12 bg-gradient-to-r from-transparent via-white/35 to-transparent transition-all duration-1000 group-hover:left-[120%]" />
+      <div className="pointer-events-none absolute inset-y-0 -left-40 z-20 w-28 -skew-x-12 bg-linear-to-r from-transparent via-white/35 to-transparent transition-all duration-1000 group-hover:left-[120%]" />
 
       {/* Blog content */}
-      <div className="relative z-10 flex min-h-[245px] flex-col bg-white p-6 sm:p-7">
+      <div className="relative z-10 flex min-h-61.25 flex-col bg-white p-6 sm:p-7">
         <h3 className="font-serif text-xl font-black leading-tight text-slate-800 transition-all duration-500 group-hover:translate-x-1 group-hover:text-[#12568d]">
           {post.title}
         </h3>
 
-        <span className="mt-4 block h-[3px] w-12 bg-[#fdb713] transition-all duration-500 group-hover:w-24" />
+        <span className="mt-4 block h-0.75 w-12 bg-[#fdb713] transition-all duration-500 group-hover:w-24" />
 
         <div className="mt-5 flex items-center gap-3 text-sm text-slate-500 transition-colors duration-500 group-hover:text-slate-700">
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#12568d]/10 text-[#12568d] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713]">
@@ -206,9 +207,9 @@ export default function BlogSlider() {
           </p>
 
           <div className="mx-auto mt-6 flex w-28 flex-col items-center gap-1.5">
-            <span className="h-[2px] w-20 bg-[#fdb713]" />
-            <span className="h-[2px] w-12 bg-[#12568d]" />
-            <span className="h-[2px] w-20 bg-[#fdb713]" />
+            <span className="h-0.5 w-20 bg-[#fdb713]" />
+            <span className="h-0.5 w-12 bg-[#12568d]" />
+            <span className="h-0.5 w-20 bg-[#fdb713]" />
           </div>
         </motion.div>
       </div>
@@ -216,10 +217,10 @@ export default function BlogSlider() {
       {/* Automatic continuous slider */}
       <div className="relative mt-12 overflow-hidden">
         {/* Left fade matching background */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-10 bg-gradient-to-r from-[#eef5fb] to-transparent sm:w-24" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-10 bg-linear-to-r from-[#eef5fb] to-transparent sm:w-24" />
 
         {/* Right fade matching background */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-30 w-10 bg-gradient-to-l from-[#eef5fb] to-transparent sm:w-24" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-30 w-10 bg-linear-to-l from-[#eef5fb] to-transparent sm:w-24" />
 
         <motion.div
           animate={{

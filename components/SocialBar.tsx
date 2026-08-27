@@ -4,15 +4,15 @@ import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagram,
+  FaLinkedinIn,
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 const socialLinks = [
   {
     icon: FaFacebookF,
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/14nw1ZfSqB3/?mibextid=wwXIfr",
     label: "Facebook",
     background:
       "linear-gradient(145deg,#5fa0ff 0%,#1877f2 58%,#0c55bd 100%)",
@@ -30,7 +30,7 @@ const socialLinks = [
 
   {
     icon: FaInstagram,
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/omana_projects",
     label: "Instagram",
     background:
       "linear-gradient(145deg,#feda75 0%,#fa7e1e 25%,#d62976 55%,#962fbf 78%,#4f5bd5 100%)",
@@ -38,16 +38,16 @@ const socialLinks = [
   },
 
   {
-    icon: FaXTwitter,
-    href: "https://twitter.com",
-    label: "Twitter",
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/company/omana-projectss/",
+    label: "LinkedIn",
     background:
-      "linear-gradient(145deg,#4b4b4d 0%,#171719 58%,#000000 100%)",
-    glow: "rgba(0,0,0,.45)",
+      "linear-gradient(145deg,#55a7dd 0%,#0a66c2 58%,#004182 100%)",
+    glow: "rgba(10,102,194,.50)",
   },
   {
     icon: FaYoutube,
-    href: "https://youtube.com",
+    href: "https://www.youtube.com/@OmanaProjects",
     label: "YouTube",
     background:
       "linear-gradient(145deg,#ff6a6a 0%,#ff0000 58%,#bd0000 100%)",
