@@ -16,7 +16,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 type Props = { open: boolean; onClose: () => void; propertyName?: string };
 
-const inputClass = "w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-[13px] text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#fdb713] focus:ring-4 focus:ring-[#fdb713]/15 sm:px-4 sm:py-3 sm:text-sm";
+const inputClass = "w-full rounded-xl border border-slate-200 bg-white py-2.5 text-[13px] text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#fdb713] focus:ring-4 focus:ring-[#fdb713]/15 sm:py-3 sm:text-sm";
 const labelClass = "mb-2 block text-xs font-black uppercase tracking-wide text-[#12568d]";
 
 export default function EnquiryModal({ open, onClose, propertyName = "Dholera Industrial Property" }: Props) {
@@ -109,14 +109,14 @@ export default function EnquiryModal({ open, onClose, propertyName = "Dholera In
                 <form onSubmit={handleSubmit(submit)} noValidate className="space-y-3.5 sm:space-y-5">
                   <div>
                     <label htmlFor="enquiry-name" className={labelClass}>Full Name</label>
-                    <div className="relative"><FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fdb713]" size={13} /><input id="enquiry-name" autoComplete="name" placeholder="Enter your full name" {...register("name")} className={`${inputClass} pl-11`} /></div>
+                    <div className="relative"><FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fdb713]" size={13} /><input id="enquiry-name" autoComplete="name" placeholder="Enter your full name" {...register("name")} className={`${inputClass} pl-11 pr-4`} /></div>
                     {error(errors.name?.message)}
                   </div>
 
                   <div className="space-y-3.5 sm:space-y-5">
                     <div>
                       <label htmlFor="enquiry-email" className={labelClass}>Email</label>
-                      <div className="relative"><FaEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fdb713]" size={13} /><input id="enquiry-email" type="email" autoComplete="email" placeholder="Email address" {...register("email")} className={`${inputClass} pl-11`} /></div>
+                      <div className="relative"><FaEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fdb713]" size={13} /><input id="enquiry-email" type="email" autoComplete="email" placeholder="Email address" {...register("email")} className={`${inputClass} pl-11 pr-4`} /></div>
                       {error(errors.email?.message)}
                     </div>
                     <div>
@@ -124,7 +124,7 @@ export default function EnquiryModal({ open, onClose, propertyName = "Dholera In
                       <div className="relative">
                         <FaPhoneAlt className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fdb713]" size={13} />
                         <span className="absolute left-10 top-1/2 -translate-y-1/2 border-r border-slate-200 pr-2 text-xs font-bold text-slate-500">+91</span>
-                        <input id="enquiry-phone" type="tel" inputMode="numeric" autoComplete="tel" maxLength={10} placeholder="9876543210" {...register("phone", { onChange: (event) => { event.target.value = event.target.value.replace(/\D/g, "").slice(0, 10); } })} className={`${inputClass} pl-20`} />
+                        <input id="enquiry-phone" type="tel" inputMode="numeric" autoComplete="tel" maxLength={10} placeholder="9876543210" {...register("phone", { onChange: (event) => { event.target.value = event.target.value.replace(/\D/g, "").slice(0, 10); } })} className={`${inputClass} pl-20 pr-4`} />
                       </div>
                       {error(errors.phone?.message)}
                     </div>
