@@ -1,23 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaCalendarAlt, FaUserAlt } from "react-icons/fa";
-import { getPayload } from "payload";
-import config from "@/payload.config";
-
-type Media = { url?: string | null; alt?: string | null };
-type Blog = { id: string | number; title: string; slug: string; excerpt?: string | null; publishedAt?: string | null; createdAt?: string | null; featuredImage?: Media | string | number | null };
+import {
+  getIndustrialBlogImage,
+  getIndustrialBlogs,
+} from "@/lib/blogs";
 
 export default async function CmsBlogSection() {
-  let blogs: Blog[] = [];
-  try {
-    if (process.env.MONGODB_URI && process.env.PAYLOAD_SECRET) {
-      const payload = await getPayload({ config });
-      const result = await payload.find({ collection: "industrial-blogs", where: { status: { equals: "published" } }, sort: "-publishedAt", limit: 10, depth: 1 });
-      blogs = result.docs as Blog[];
-    }
-  } catch (error) {
-    console.error("Industrial blog section could not load", error);
-  }
+  const blogs = await getIndustrialBlogs(10);
 
   const formatDate = (date?: string | null) => date ? new Date(date).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "";
   const runningBlogs = blogs.length > 1 ? [...blogs, ...blogs] : blogs;
@@ -36,12 +26,12 @@ export default async function CmsBlogSection() {
           <div className="industrial-blog-slider relative overflow-hidden py-5">
             <div className={`industrial-blog-track flex w-max gap-5 ${blogs.length === 1 ? "!animate-none" : ""}`}>
               {runningBlogs.map((blog, index) => {
-                const media = typeof blog.featuredImage === "object" && blog.featuredImage !== null ? blog.featuredImage as Media : null;
-                const date = blog.publishedAt || blog.createdAt;
+                const imageUrl = getIndustrialBlogImage(blog.imageUrl);
+                const date = blog.publishedAt;
                 return (
                   <article key={`${blog.id}-${index}`} className="group flex w-72 shrink-0 flex-col overflow-hidden rounded-2xl border border-[#12568d]/15 bg-white shadow-[0_8px_25px_rgba(18,86,141,0.08)] transition hover:-translate-y-2 hover:border-[#fdb713] hover:shadow-[0_18px_40px_rgba(18,86,141,0.16)] sm:w-80">
                     <Link href={`/blog/${blog.slug}`} className="relative block h-48 overflow-hidden bg-[#eaf4fb]">
-                      {media?.url ? <Image src={media.url} alt={media.alt || blog.title} fill sizes="320px" className="object-cover transition-transform duration-700 group-hover:scale-110" /> : <div className="absolute inset-0 bg-linear-to-br from-[#12568d] to-[#4385b4]" />}
+                      {imageUrl ? <Image src={imageUrl} alt={blog.imageAlt || blog.title} fill sizes="320px" className="object-cover transition-transform duration-700 group-hover:scale-110" /> : <div className="absolute inset-0 bg-linear-to-br from-[#12568d] to-[#4385b4]" />}
                       <div className="absolute inset-0 bg-linear-to-t from-[#12568d]/60 via-transparent to-transparent" />
                       <span className="absolute left-4 top-4 rounded-full bg-[#fdb713] px-3 py-1.5 text-[10px] font-black uppercase text-[#12568d]">Industrial</span>
                     </Link>
@@ -56,7 +46,7 @@ export default async function CmsBlogSection() {
               })}
             </div>
           </div>
-        ) : <div className="rounded-2xl border border-dashed border-[#12568d]/20 bg-white px-6 py-12 text-center text-sm text-slate-500">Industrial blog posts published in the CMS will appear here.</div>}
+        ) : <div className="rounded-2xl border border-dashed border-[#12568d]/20 bg-white px-6 py-12 text-center text-sm text-slate-500">No blog found.</div>}
       </div>
     </section>
   );
