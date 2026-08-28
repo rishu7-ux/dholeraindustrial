@@ -167,7 +167,7 @@ export default function Footer() {
           MAIN FOOTER
       ===================================================== */}
 
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-12 px-4 py-16 sm:gap-x-10 sm:px-6 lg:grid-cols-[1.5fr_0.8fr_1fr] lg:gap-12 lg:px-8 lg:py-20">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-10 px-4 py-12 sm:gap-x-10 sm:gap-y-12 sm:px-6 sm:py-16 lg:grid-cols-[1.5fr_0.8fr_1fr] lg:gap-12 lg:px-8 lg:py-20">
         {/* =====================================================
             CONTACT COLUMN
         ===================================================== */}
@@ -240,7 +240,7 @@ export default function Footer() {
               SOCIAL LINKS
           ===================================================== */}
 
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
             {socialLinks.map(({ label, href, icon: Icon }) => (
               <motion.div
                 key={label}
@@ -283,6 +283,7 @@ export default function Footer() {
             delay: 0.12,
             ease: [0.22, 1, 0.36, 1],
           }}
+          className="pl-10 sm:pl-0"
         >
           <FooterHeading title="Quick Links" />
 

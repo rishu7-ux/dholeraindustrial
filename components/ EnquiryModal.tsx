@@ -16,7 +16,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 type Props = { open: boolean; onClose: () => void; propertyName?: string };
 
-const inputClass = "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#fdb713] focus:ring-4 focus:ring-[#fdb713]/15";
+const inputClass = "w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-[13px] text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#fdb713] focus:ring-4 focus:ring-[#fdb713]/15 sm:px-4 sm:py-3 sm:text-sm";
 const labelClass = "mb-2 block text-xs font-black uppercase tracking-wide text-[#12568d]";
 
 export default function EnquiryModal({ open, onClose, propertyName = "Dholera Industrial Property" }: Props) {
@@ -66,7 +66,7 @@ export default function EnquiryModal({ open, onClose, propertyName = "Dholera In
   return (
     <AnimatePresence>
       {open && (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={close} className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto bg-[#12568d]/70 px-4 py-5 backdrop-blur-sm">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={close} className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto bg-[#12568d]/70 px-6 py-4 backdrop-blur-sm sm:px-4 sm:py-5">
           <motion.aside
             role="dialog"
             aria-modal="true"
@@ -76,9 +76,9 @@ export default function EnquiryModal({ open, onClose, propertyName = "Dholera In
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             onClick={(event) => event.stopPropagation()}
-            className="w-full max-w-md overflow-hidden rounded-[28px] border border-[#fdb713]/25 bg-[#f7fbff] shadow-[0_24px_70px_rgba(0,0,0,0.32)]"
+            className="max-h-[calc(100dvh-2rem)] w-full max-w-[360px] overflow-hidden rounded-[20px] border border-[#fdb713]/25 bg-[#f7fbff] shadow-[0_24px_70px_rgba(0,0,0,0.32)] sm:max-h-[calc(100dvh-2.5rem)] sm:max-w-md sm:rounded-[28px]"
           >
-            <header className="relative overflow-hidden border-b border-[#fdb713]/20 bg-linear-to-b from-[#f7fbff] to-[#fff4d6] px-6 py-6 text-center sm:px-8">
+            <header className="relative overflow-hidden border-b border-[#fdb713]/20 bg-linear-to-b from-[#f7fbff] to-[#fff4d6] px-5 py-4 text-center sm:px-8 sm:py-6">
               <div className="absolute -right-14 -top-14 h-40 w-40 rounded-full bg-[#fdb713]/20 blur-2xl" />
               <div className="absolute -bottom-16 -left-14 h-36 w-36 rounded-full bg-[#12568d]/15 blur-2xl" />
               <div className="absolute bottom-0 left-0 h-1 w-full bg-[#fdb713]" />
@@ -88,16 +88,16 @@ export default function EnquiryModal({ open, onClose, propertyName = "Dholera In
               <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-[#fdb713]/25 bg-white/80 px-3 py-1 text-[10px] font-black uppercase tracking-[0.15em] text-[#12568d]">
                 <FaCheckCircle className="text-[#fdb713]" /> Property Enquiry
               </div>
-              <h2 id="enquiry-title" className="mt-3 text-3xl font-black text-[#12568d]">Enquire Now</h2>
+              <h2 id="enquiry-title" className="mt-2 text-2xl font-black text-[#12568d] sm:mt-3 sm:text-3xl">Enquire Now</h2>
               <div className="mx-auto mt-3 h-1 w-11 rounded-full bg-[#fdb713]" />
-              <p className="mx-auto mt-3 max-w-sm text-sm leading-6 text-slate-600">Share your details and our property consultant will contact you shortly.</p>
-              <div className="mx-auto mt-4 max-w-sm rounded-xl border border-[#fdb713]/20 bg-white/70 px-3 py-2">
+              <p className="mx-auto mt-2 max-w-sm text-xs leading-5 text-slate-600 sm:mt-3 sm:text-sm sm:leading-6">Share your details and our property consultant will contact you shortly.</p>
+              <div className="mx-auto mt-3 max-w-sm rounded-xl border border-[#fdb713]/20 bg-white/70 px-3 py-2 sm:mt-4">
                 <p className="text-[9px] font-semibold uppercase tracking-[0.15em] text-slate-400">Enquiring About</p>
                 <p className="mt-1 text-sm font-black text-[#12568d]">{propertyName}</p>
               </div>
             </header>
 
-            <div className="max-h-[70vh] overflow-y-auto bg-linear-to-b from-[#f7fbff] to-[#fff8e8] px-5 py-6 sm:px-7">
+            <div className="max-h-[58dvh] overflow-y-auto bg-linear-to-b from-[#f7fbff] to-[#fff8e8] px-4 py-3.5 sm:max-h-[70vh] sm:px-7 sm:py-6">
               {submitted ? (
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex min-h-full flex-col items-center justify-center py-12 text-center">
                   <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#fdb713]/15 text-[#12568d]"><FaCheckCircle size={36} /></div>
@@ -106,14 +106,14 @@ export default function EnquiryModal({ open, onClose, propertyName = "Dholera In
                   <button type="button" onClick={close} className="mt-8 rounded-xl bg-[#12568d] px-7 py-3.5 text-sm font-black uppercase text-white transition hover:bg-[#fdb713] hover:text-[#12568d]">Close</button>
                 </motion.div>
               ) : (
-                <form onSubmit={handleSubmit(submit)} noValidate className="space-y-5">
+                <form onSubmit={handleSubmit(submit)} noValidate className="space-y-3.5 sm:space-y-5">
                   <div>
                     <label htmlFor="enquiry-name" className={labelClass}>Full Name</label>
                     <div className="relative"><FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fdb713]" size={13} /><input id="enquiry-name" autoComplete="name" placeholder="Enter your full name" {...register("name")} className={`${inputClass} pl-11`} /></div>
                     {error(errors.name?.message)}
                   </div>
 
-                  <div className="space-y-5">
+                  <div className="space-y-3.5 sm:space-y-5">
                     <div>
                       <label htmlFor="enquiry-email" className={labelClass}>Email</label>
                       <div className="relative"><FaEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fdb713]" size={13} /><input id="enquiry-email" type="email" autoComplete="email" placeholder="Email address" {...register("email")} className={`${inputClass} pl-11`} /></div>

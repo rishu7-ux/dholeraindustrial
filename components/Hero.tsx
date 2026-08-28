@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       aria-label="Dholera industrial development"
-      className="relative min-h-[560px] w-full overflow-hidden sm:min-h-[640px] lg:min-h-[720px]"
+      className="relative min-h-[340px] w-full overflow-hidden min-[400px]:min-h-[400px] sm:min-h-[640px] lg:min-h-[720px]"
     >
       <motion.div
         className="absolute -inset-4"

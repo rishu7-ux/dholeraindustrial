@@ -8,4 +8,112 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+/* Site-wide small-screen guardrails. The project contains several long-form
+   landing pages; these rules keep their shared visual language readable on
+   narrow phones without changing the desktop composition. */
+@media (max-width: 639px) {
+  main h1 {
+    font-size: clamp(2rem, 10vw, 2.75rem) !important;
+    line-height: 1.08 !important;
+    overflow-wrap: anywhere;
+  }
+
+  main h2 {
+    font-size: clamp(1.75rem, 8vw, 2.25rem) !important;
+    line-height: 1.15 !important;
+    overflow-wrap: anywhere;
+  }
+
+  main h3,
+  main p,
+  main a,
+  main button,
+  footer a,
+  footer p {
+    overflow-wrap: anywhere;
+  }
+
+  main section {
+    scroll-margin-top: 72px;
+  }
+
+  main .rounded-\[30px\],
+  main .rounded-\[28px\],
+  main .rounded-\[26px\] {
+    border-radius: 1.25rem;
+  }
+
+  main .p-10 {
+    padding: 1.5rem;
+  }
+
+  main .p-9,
+  main .p-8,
+  main .p-7 {
+    padding: 1.25rem;
+  }
+
+  main .py-24,
+  main .py-28,
+  main .py-32 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  main .py-20 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  main .tracking-\[0\.35em\],
+  main .tracking-\[0\.3em\],
+  main .tracking-\[0\.28em\],
+  main .tracking-\[0\.25em\] {
+    letter-spacing: 0.14em;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    padding: 0.75rem !important;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

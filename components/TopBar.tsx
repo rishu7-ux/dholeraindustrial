@@ -170,7 +170,8 @@ export default function TopBar() {
         </div>
       </div>
 
-      {/* Mobile */}
+      {/* The floating social dock remains available on mobile, so repeating
+          the same links here would unnecessarily double the header height. */}
       <motion.div
         initial={{
           opacity: 0,
@@ -184,7 +185,7 @@ export default function TopBar() {
           duration: 0.5,
           delay: 0.2,
         }}
-        className="relative z-10 flex justify-center border-t border-white/20 md:hidden"
+        className="relative z-10 hidden justify-center border-t border-white/20"
       >
         {socialLinks.map(({ name, href, icon: Icon }, index) => (
           <motion.div

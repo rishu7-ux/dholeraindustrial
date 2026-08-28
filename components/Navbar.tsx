@@ -69,7 +69,7 @@ export default function Navbar() {
         }`}
       />
 
-      <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
         {/* LOGO */}
 
 {/* LOGO - NEVER CHANGES ON SCROLL */}
@@ -107,7 +107,7 @@ export default function Navbar() {
       width={70}
       height={40}
       priority
-      className="h-auto w-[72px] object-contain sm:w-[82px]"
+      className="h-auto w-16 object-contain sm:w-[82px]"
     />
   </Link>
 </motion.div>
@@ -240,12 +240,12 @@ export default function Navbar() {
         </motion.div>
 
         {/* MOBILE ACTIONS */}
-        <div className="flex items-center gap-3 lg:hidden">
+        <div className="flex items-center gap-2 sm:gap-3 lg:hidden">
           <motion.div whileTap={{ scale: 0.9 }}>
             <Link
               href="tel:+919217104219"
               aria-label="Call us"
-              className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#fdb713] text-[#12568d] shadow-md"
+              className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#fdb713] text-[#12568d] shadow-md sm:h-11 sm:w-11"
             >
               <FaPhoneAlt size={15} />
             </Link>
@@ -265,7 +265,7 @@ export default function Navbar() {
             whileTap={{
               scale: 0.9,
             }}
-            className={`relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl shadow-md transition-all duration-300 ${
+            className={`relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-md transition-all duration-300 sm:h-11 sm:w-11 ${
               scrolled
                 ? "bg-white/15 text-white ring-1 ring-white/20"
                 : "bg-[#12568d] text-white"
@@ -363,7 +363,7 @@ export default function Navbar() {
                   },
                 },
               }}
-              className="mx-auto max-w-7xl px-4 py-4 sm:px-6"
+              className="mx-auto max-h-[calc(100dvh-4rem)] max-w-7xl overflow-y-auto px-4 py-3 sm:max-h-[calc(100dvh-5rem)] sm:px-6 sm:py-4"
             >
               {navLinks.map((link) => {
                 const active = isActive(link.href);
