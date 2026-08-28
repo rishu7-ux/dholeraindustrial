@@ -232,7 +232,7 @@ export default function Samridhi621Page() {
       <Navbar />
       <SocialBar />
 
-      <main className="overflow-hidden bg-white text-slate-700">
+      <main className="compact-page property-detail-page overflow-hidden bg-white text-slate-700">
         {/* ================= HERO — SAME SCREENSHOT UI ================= */}
         <section className="relative bg-gradient-to-br from-[#fffaf0] via-white to-[#eef6fc] py-14 sm:py-16 lg:py-20">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
@@ -263,7 +263,7 @@ export default function Samridhi621Page() {
                 investment growth.
               </p>
 
-              <div className="mt-8 space-y-5">
+              <div className="property-contact-grid mt-5 grid grid-cols-2 gap-2 sm:mt-8 sm:block sm:space-y-5">
                 <div className="flex items-center gap-4">
                   <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#12568d] text-[#fdb713]">
                     <FaMapMarkerAlt size={19} />
@@ -301,7 +301,7 @@ export default function Samridhi621Page() {
                 </Link>
               </div>
 
-              <div className="mt-9 grid gap-4 sm:grid-cols-3">
+              <div className="property-facts-grid mt-5 grid grid-cols-3 gap-2 sm:mt-9 sm:gap-4">
                 {[
                   ["Starting Price", "₹85,00,000*", "Only"],
                   ["Plot Sizes", "1318 / 1865", "1882 Sq. Yd."],

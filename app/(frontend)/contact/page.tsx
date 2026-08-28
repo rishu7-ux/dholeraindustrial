@@ -61,7 +61,7 @@ export default function ContactPage() {
         <Navbar />
         <SocialBar />
         
-      <main>
+      <main className="compact-page contact-page">
         {/* ================= Hero Banner ================= */}
         <section className="relative h-115 overflow-hidden bg-linear-to-br from-[#0b3f68] via-[#12568d] to-[#1973ad]">
 

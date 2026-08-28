@@ -42,7 +42,7 @@ export default function DirectorMessagePage() {
        <Navbar />
        <SocialSidebar />
 
-      <main>
+      <main className="compact-page director-page">
 
         {/* ================= HERO ================= */}
 

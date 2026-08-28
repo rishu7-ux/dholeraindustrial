@@ -127,9 +127,9 @@ function Counter({
 
 export default function StatsCounter() {
   return (
-    <section className="relative overflow-hidden bg-white py-12 sm:py-14 lg:py-16">
+    <section className="relative overflow-hidden bg-white py-8 sm:py-14 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-y-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-y-0">
+        <div className="grid grid-cols-2 gap-3 sm:gap-y-10 lg:grid-cols-5 lg:gap-y-0">
           {stats.map((stat, index) => (
             <motion.article
               key={stat.label}
@@ -156,7 +156,9 @@ export default function StatsCounter() {
                 y: -5,
                 scale: 1.02,
               }}
-              className="group relative px-4 text-center sm:text-left lg:px-7"
+              className={`group relative rounded-xl bg-[#f7fbff] px-2 py-3 text-center sm:bg-transparent sm:px-4 sm:py-0 sm:text-left lg:px-7 ${
+                index === stats.length - 1 ? "col-span-2 lg:col-span-1" : ""
+              }`}
             >
               {/* Separator */}
               {index !== 0 && (
@@ -166,10 +168,10 @@ export default function StatsCounter() {
               {/* Icon */}
               <motion.span
                 whileHover={{ rotate: 6, scale: 1.1 }}
-                className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#12568d]/10 text-[#12568d] transition-colors duration-300 group-hover:bg-[#12568d] group-hover:text-white"
+                className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#12568d]/10 text-[#12568d] transition-colors duration-300 group-hover:bg-[#12568d] group-hover:text-white sm:mb-4 sm:h-12 sm:w-12 sm:rounded-xl"
                 aria-hidden="true"
               >
-                <stat.icon className="text-xl" />
+                <stat.icon className="text-sm sm:text-xl" />
               </motion.span>
 
               {/* Number */}
@@ -182,7 +184,7 @@ export default function StatsCounter() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="text-3xl font-black text-[#12568d] sm:text-4xl"
+                className="text-xl font-black text-[#12568d] sm:text-4xl"
               >
                 <Counter
                   value={stat.value}
@@ -193,12 +195,12 @@ export default function StatsCounter() {
               </motion.p>
 
               {/* Label */}
-              <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-slate-700 sm:text-xs">
+              <p className="mt-1 text-[9px] font-semibold uppercase leading-4 tracking-[0.1em] text-slate-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-slate-700 sm:mt-2 sm:text-xs sm:tracking-[0.18em]">
                 {stat.label}
               </p>
 
               {/* Blue underline */}
-              <span className="mx-auto mt-4 block h-[3px] w-0 bg-[#12568d] transition-all duration-500 group-hover:w-14 sm:mx-0" />
+              <span className="mx-auto mt-4 hidden h-[3px] w-0 bg-[#12568d] transition-all duration-500 group-hover:w-14 sm:block sm:mx-0" />
             </motion.article>
           ))}
         </div>

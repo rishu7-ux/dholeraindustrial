@@ -167,7 +167,7 @@ export default function Footer() {
           MAIN FOOTER
       ===================================================== */}
 
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-10 px-4 py-12 sm:gap-x-10 sm:gap-y-12 sm:px-6 sm:py-16 lg:grid-cols-[1.5fr_0.8fr_1fr] lg:gap-12 lg:px-8 lg:py-20">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-6 px-4 py-8 sm:gap-x-10 sm:gap-y-12 sm:px-6 sm:py-16 lg:grid-cols-[1.5fr_0.8fr_1fr] lg:gap-12 lg:px-8 lg:py-20">
         {/* =====================================================
             CONTACT COLUMN
         ===================================================== */}
@@ -188,18 +188,18 @@ export default function Footer() {
         >
           <FooterHeading title="Contact Us" />
 
-          <div className="mt-8 space-y-5">
+          <div className="mt-4 space-y-3 sm:mt-8 sm:space-y-5">
             {/* PHONE */}
 
             <Link
               href="tel:+919217104219"
-              className="group flex items-start gap-4 text-sm text-white/80 transition hover:text-[#fdb713] sm:text-base"
+              className="group flex items-start gap-3 text-xs text-white/80 transition hover:text-[#fdb713] sm:gap-4 sm:text-base"
             >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d]">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:h-10 sm:w-10">
                 <FaPhoneAlt size={14} />
               </span>
 
-              <span className="pt-2 font-semibold">
+              <span className="pt-1.5 font-semibold sm:pt-2">
                 +91 9217104219
               </span>
             </Link>
@@ -208,25 +208,25 @@ export default function Footer() {
 
             <Link
               href="mailto:customercare@omanaprojects.com"
-              className="group flex items-start gap-4 text-sm text-white/80 transition hover:text-[#fdb713] sm:text-base"
+              className="group flex items-start gap-3 text-xs text-white/80 transition hover:text-[#fdb713] sm:gap-4 sm:text-base"
             >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d]">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:h-10 sm:w-10">
                 <FaEnvelope size={15} />
               </span>
 
-              <span className="break-all pt-2 font-semibold">
+              <span className="break-all pt-1.5 font-semibold sm:pt-2">
                 customercare@omanaprojects.com
               </span>
             </Link>
 
             {/* ADDRESS */}
 
-            <div className="flex items-start gap-4 text-sm text-white/80 sm:text-base">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713]">
+            <div className="flex items-start gap-3 text-xs text-white/80 sm:gap-4 sm:text-base">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] sm:h-10 sm:w-10">
                 <FaMapMarkerAlt size={15} />
               </span>
 
-              <p className="max-w-xl pt-1 leading-7">
+              <p className="max-w-xl pt-0.5 leading-5 sm:pt-1 sm:leading-7">
                 7th floor, Plot No. 56A/16, C Block, Phase 2,
                 Industrial Area, Sector 62, Noida,
                 Uttar Pradesh 201309
@@ -234,13 +234,13 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mt-8 h-px bg-white/10" />
+          <div className="mt-4 h-px bg-white/10 sm:mt-8" />
 
           {/* =====================================================
               SOCIAL LINKS
           ===================================================== */}
 
-          <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
+          <div className="mt-4 flex flex-wrap justify-center gap-2 sm:mt-6 sm:gap-3 lg:justify-start">
             {socialLinks.map(({ label, href, icon: Icon }) => (
               <motion.div
                 key={label}
@@ -257,7 +257,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex h-11 w-11 items-center justify-center border border-white/10 bg-white/10 text-white transition-all duration-300 hover:border-[#fdb713] hover:bg-[#fdb713] hover:text-[#12568d]"
+                  className="flex h-9 w-9 items-center justify-center border border-white/10 bg-white/10 text-white transition-all duration-300 hover:border-[#fdb713] hover:bg-[#fdb713] hover:text-[#12568d] sm:h-11 sm:w-11"
                 >
                   <Icon size={15} />
                 </Link>
@@ -283,16 +283,16 @@ export default function Footer() {
             delay: 0.12,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="pl-10 sm:pl-0"
+          className="pl-3 sm:pl-0"
         >
           <FooterHeading title="Quick Links" />
 
-          <ul className="mt-8 space-y-4">
+          <ul className="mt-4 space-y-2 sm:mt-8 sm:space-y-4">
             {quickLinks.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group inline-flex items-center gap-2 text-sm font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base"
+                  className="group inline-flex items-center gap-2 text-xs font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base"
                 >
                   <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
 
@@ -323,12 +323,12 @@ export default function Footer() {
         >
           <FooterHeading title="Properties" />
 
-          <ul className="mt-8 space-y-4">
+          <ul className="mt-4 space-y-2 sm:mt-8 sm:space-y-4">
             {propertyLinks.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group inline-flex items-start gap-2 text-sm font-medium leading-6 text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base"
+                  className="group inline-flex items-start gap-2 text-xs font-medium leading-5 text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base sm:leading-6"
                 >
                   <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
 
@@ -342,7 +342,7 @@ export default function Footer() {
 
           <Link
             href="/properties"
-            className="group mt-7 inline-flex items-center gap-3 text-xs font-black uppercase tracking-[0.14em] text-[#fdb713]"
+            className="group mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.1em] text-[#fdb713] sm:mt-7 sm:gap-3 sm:text-xs sm:tracking-[0.14em]"
           >
             View All Properties
 
@@ -356,7 +356,7 @@ export default function Footer() {
       ===================================================== */}
 
       <div className="relative z-10 border-t border-white/10 bg-[#0d456f]">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-center text-xs text-white/65 sm:px-6 sm:text-sm md:flex-row md:text-left lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-3 text-center text-[10px] text-white/65 sm:px-6 sm:py-5 sm:text-sm md:flex-row md:text-left lg:px-8">
           <p>
             Copyright © 2026 Dholera Industrial Plots.
             All rights reserved.
@@ -378,11 +378,11 @@ function FooterHeading({
 }) {
   return (
     <div>
-      <h3 className="text-lg font-black uppercase tracking-wide text-white">
+      <h3 className="text-sm font-black uppercase tracking-wide text-white sm:text-lg">
         {title}
       </h3>
 
-      <div className="mt-3 flex items-center gap-1.5">
+      <div className="mt-2 flex items-center gap-1.5 sm:mt-3">
         <span className="h-0.75 w-10 bg-[#fdb713]" />
 
         <span className="h-0.75 w-4 bg-white/50" />

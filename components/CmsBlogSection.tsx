@@ -29,17 +29,17 @@ export default async function CmsBlogSection() {
                 const imageUrl = getIndustrialBlogImage(blog.imageUrl);
                 const date = blog.publishedAt;
                 return (
-                  <article key={`${blog.id}-${index}`} className="group flex w-72 shrink-0 flex-col overflow-hidden rounded-2xl border border-[#12568d]/15 bg-white shadow-[0_8px_25px_rgba(18,86,141,0.08)] transition hover:-translate-y-2 hover:border-[#fdb713] hover:shadow-[0_18px_40px_rgba(18,86,141,0.16)] sm:w-80">
-                    <Link href={`/blog/${blog.slug}`} className="relative block h-48 overflow-hidden bg-[#eaf4fb]">
+                  <article key={`${blog.id}-${index}`} className="group flex w-64 shrink-0 flex-col overflow-hidden rounded-xl border border-[#12568d]/15 bg-white shadow-[0_8px_25px_rgba(18,86,141,0.08)] transition hover:-translate-y-2 hover:border-[#fdb713] hover:shadow-[0_18px_40px_rgba(18,86,141,0.16)] sm:w-80 sm:rounded-2xl">
+                    <Link href={`/blog/${blog.slug}`} className="relative block h-40 overflow-hidden bg-[#eaf4fb] sm:h-48">
                       {imageUrl ? <Image src={imageUrl} alt={blog.imageAlt || blog.title} fill sizes="320px" className="object-cover transition-transform duration-700 group-hover:scale-110" /> : <div className="absolute inset-0 bg-linear-to-br from-[#12568d] to-[#4385b4]" />}
                       <div className="absolute inset-0 bg-linear-to-t from-[#12568d]/60 via-transparent to-transparent" />
                       <span className="absolute left-4 top-4 rounded-full bg-[#fdb713] px-3 py-1.5 text-[10px] font-black uppercase text-[#12568d]">Industrial</span>
                     </Link>
-                    <div className="flex flex-1 flex-col p-5">
+                    <div className="flex flex-1 flex-col p-4 sm:p-5">
                       <div className="flex items-center gap-4 text-[11px] text-slate-500"><span className="flex items-center gap-1.5"><FaUserAlt className="text-[#fdb713]" />Admin</span>{date && <span className="flex items-center gap-1.5"><FaCalendarAlt className="text-[#fdb713]" />{formatDate(date)}</span>}</div>
-                      <Link href={`/blog/${blog.slug}`}><h3 className="mt-4 line-clamp-2 text-lg font-black leading-7 text-[#12568d] transition group-hover:text-[#fdb713]">{blog.title}</h3></Link>
-                      {blog.excerpt && <p className="mt-3 line-clamp-2 text-sm leading-6 text-slate-500">{blog.excerpt}</p>}
-                      <Link href={`/blog/${blog.slug}`} className="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-black text-[#12568d] transition hover:gap-3 hover:text-[#fdb713]">Read More <FaArrowRight /></Link>
+                      <Link href={`/blog/${blog.slug}`}><h3 className="mt-3 line-clamp-2 text-base font-black leading-6 text-[#12568d] transition group-hover:text-[#fdb713] sm:mt-4 sm:text-lg sm:leading-7">{blog.title}</h3></Link>
+                      {blog.excerpt && <p className="mt-2 line-clamp-2 text-xs leading-5 text-slate-500 sm:mt-3 sm:text-sm sm:leading-6">{blog.excerpt}</p>}
+                      <Link href={`/blog/${blog.slug}`} className="mt-auto inline-flex items-center gap-2 pt-4 text-xs font-black text-[#12568d] transition hover:gap-3 hover:text-[#fdb713] sm:pt-5 sm:text-sm">Read More <FaArrowRight /></Link>
                     </div>
                   </article>
                 );

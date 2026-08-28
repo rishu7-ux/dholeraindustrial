@@ -88,7 +88,7 @@ const cardAnimation: Variants = {
 
 export default function LandCategories() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffdf4] py-16 sm:py-20 lg:py-24">
+    <section className="relative w-full overflow-hidden bg-[#fffdf4] py-12 sm:py-20 lg:py-24">
       {/* Very light transparent yellow glow */}
       <motion.div
         aria-hidden="true"
@@ -151,21 +151,21 @@ export default function LandCategories() {
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#12568d] sm:text-sm"
+            className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#12568d] sm:text-sm sm:tracking-[0.25em]"
           >
             Land Categories
           </motion.p>
 
           <motion.h2
             variants={fadeUp}
-            className="mt-4 text-3xl font-black leading-tight text-[#12568d] sm:text-4xl lg:text-5xl"
+            className="mt-3 text-2xl font-black leading-tight text-[#12568d] sm:mt-4 sm:text-4xl lg:text-5xl"
           >
             Find the land best suited for you
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
-            className="mt-5 max-w-2xl text-sm font-medium leading-7 text-[#173b57] sm:text-base"
+            className="mt-3 max-w-2xl text-xs font-medium leading-5 text-[#173b57] sm:mt-5 sm:text-base sm:leading-7"
           >
             At Omana Projects, we make land investment easy, transparent, and
             future-focused.
@@ -173,7 +173,7 @@ export default function LandCategories() {
 
           <motion.div
             variants={fadeUp}
-            className="mt-6 flex items-center gap-2"
+            className="mt-4 flex items-center gap-2 sm:mt-6"
           >
             <span className="h-1 w-16 rounded-full bg-[#fdb713]" />
             <span className="h-1 w-8 rounded-full bg-[#12568d]" />
@@ -189,7 +189,7 @@ export default function LandCategories() {
             once: true,
             amount: 0.12,
           }}
-          className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+          className="mt-8 grid gap-4 sm:mt-12 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
           {categories.map((category) => (
             <motion.article
@@ -202,7 +202,7 @@ export default function LandCategories() {
               transition={{
                 duration: 0.35,
               }}
-              className="group relative overflow-hidden rounded-[26px] border-[3px] border-white bg-white shadow-[0_20px_55px_rgba(18,86,141,0.14)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_35px_85px_rgba(18,86,141,0.24)]"
+              className="group relative grid min-h-38 grid-cols-[40%_60%] overflow-hidden rounded-xl border-2 border-white bg-white shadow-[0_10px_30px_rgba(18,86,141,0.12)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_35px_85px_rgba(18,86,141,0.24)] md:block md:min-h-0 md:rounded-[26px] md:border-[3px] md:shadow-[0_20px_55px_rgba(18,86,141,0.14)]"
             >
               {/* Top accent line */}
               <div className="absolute left-0 top-0 z-20 h-1.5 w-full bg-[#fdb713]" />
@@ -212,7 +212,7 @@ export default function LandCategories() {
               <div className="pointer-events-none absolute bottom-0 left-0 z-10 h-20 w-20 rounded-tr-[30px] bg-[#12568d]/5" />
 
               {/* Image */}
-              <div className="relative h-65 overflow-hidden lg:h-72.5">
+              <div className="relative min-h-38 overflow-hidden md:h-65 md:min-h-0 lg:h-72.5">
                 <Image
                   src={category.image}
                   alt={category.title}
@@ -223,14 +223,14 @@ export default function LandCategories() {
               </div>
 
               {/* Content */}
-              <div className="relative flex min-h-63.75 flex-col border-t-[3px] border-[#fdb713]/70 bg-white p-7 transition-all duration-500 group-hover:bg-[#fffdf4] sm:p-8">
-                <h3 className="text-2xl font-black leading-tight text-[#12568d] transition-all duration-500 group-hover:translate-x-1 group-hover:text-black">
+              <div className="relative flex min-h-0 flex-col border-l-[3px] border-t-0 border-[#fdb713]/70 bg-white p-4 transition-all duration-500 group-hover:bg-[#fffdf4] md:min-h-63.75 md:border-l-0 md:border-t-[3px] md:p-7 lg:p-8">
+                <h3 className="text-base font-black leading-tight text-[#12568d] transition-all duration-500 group-hover:translate-x-1 group-hover:text-black md:text-2xl">
                   {category.title}
                 </h3>
 
-                <span className="mt-4 block h-1 w-14 rounded-full bg-[#fdb713] transition-all duration-500 group-hover:w-28 group-hover:bg-[#12568d]" />
+                <span className="mt-2 block h-0.5 w-8 rounded-full bg-[#fdb713] transition-all duration-500 group-hover:w-28 group-hover:bg-[#12568d] md:mt-4 md:h-1 md:w-14" />
 
-                <p className="mt-5 text-[15px] leading-8 text-slate-600 transition-colors duration-500 group-hover:text-slate-900">
+                <p className="mt-2 line-clamp-3 text-[10px] leading-4 text-slate-600 transition-colors duration-500 group-hover:text-slate-900 md:mt-5 md:line-clamp-none md:text-[15px] md:leading-8">
                   {category.description}
                 </p>
 
@@ -238,7 +238,7 @@ export default function LandCategories() {
                   whileHover={{
                     x: 6,
                   }}
-                  className="mt-auto pt-7"
+                  className="mt-auto hidden pt-7 md:block"
                 >
                   <Link
                     href="#contact"

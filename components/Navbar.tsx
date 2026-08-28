@@ -69,7 +69,7 @@ export default function Navbar() {
         }`}
       />
 
-      <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
         {/* LOGO */}
 
 {/* LOGO - NEVER CHANGES ON SCROLL */}
@@ -107,7 +107,7 @@ export default function Navbar() {
       width={70}
       height={40}
       priority
-      className="h-auto w-16 object-contain sm:w-[82px]"
+      className="h-auto w-14 object-contain sm:w-[82px]"
     />
   </Link>
 </motion.div>
@@ -245,7 +245,7 @@ export default function Navbar() {
             <Link
               href="tel:+919217104219"
               aria-label="Call us"
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#fdb713] text-[#12568d] shadow-md sm:h-11 sm:w-11"
+              className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fdb713] text-[#12568d] shadow-md sm:h-11 sm:w-11 sm:rounded-xl"
             >
               <FaPhoneAlt size={15} />
             </Link>
@@ -265,7 +265,7 @@ export default function Navbar() {
             whileTap={{
               scale: 0.9,
             }}
-            className={`relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-md transition-all duration-300 sm:h-11 sm:w-11 ${
+            className={`relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg shadow-md transition-all duration-300 sm:h-11 sm:w-11 sm:rounded-xl ${
               scrolled
                 ? "bg-white/15 text-white ring-1 ring-white/20"
                 : "bg-[#12568d] text-white"
@@ -363,7 +363,7 @@ export default function Navbar() {
                   },
                 },
               }}
-              className="mx-auto max-h-[calc(100dvh-4rem)] max-w-7xl overflow-y-auto px-4 py-3 sm:max-h-[calc(100dvh-5rem)] sm:px-6 sm:py-4"
+              className="mx-auto max-h-[calc(100dvh-3.5rem)] max-w-7xl overflow-y-auto px-3 py-2 sm:max-h-[calc(100dvh-5rem)] sm:px-6 sm:py-4"
             >
               {navLinks.map((link) => {
                 const active = isActive(link.href);
@@ -390,7 +390,7 @@ export default function Navbar() {
                       onClick={() =>
                         setMenuOpen(false)
                       }
-                      className={`group relative flex items-center justify-center rounded-lg border-b px-10 py-4 text-center text-sm font-semibold uppercase tracking-[0.04em] transition-all duration-300 ${
+                      className={`group relative flex items-center justify-center rounded-md border-b px-8 py-2.5 text-center text-[11px] font-semibold uppercase tracking-[0.04em] transition-all duration-300 sm:rounded-lg sm:px-10 sm:py-4 sm:text-sm ${
                         scrolled
                           ? active
                             ? "border-white/10 bg-white/10 text-[#fdb713]"
@@ -436,14 +436,14 @@ export default function Navbar() {
                     y: 0,
                   },
                 }}
-                className="pt-4"
+                className="pt-2 sm:pt-4"
               >
                 <Link
                   href="tel:+919217104219"
                   onClick={() =>
                     setMenuOpen(false)
                   }
-                  className="group flex w-full items-center justify-center gap-3 rounded-xl bg-[#fdb713] px-5 py-4 text-sm font-extrabold text-[#12568d] shadow-lg"
+                  className="group flex w-full items-center justify-center gap-2 rounded-lg bg-[#fdb713] px-4 py-2.5 text-xs font-extrabold text-[#12568d] shadow-lg sm:gap-3 sm:rounded-xl sm:px-5 sm:py-4 sm:text-sm"
                 >
                   <FaPhoneAlt size={14} />
 

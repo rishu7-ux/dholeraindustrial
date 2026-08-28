@@ -181,7 +181,7 @@ export default function AboutUsPage() {
       <Navbar />
       <SocialBar />
 
-      <main className="overflow-hidden">
+      <main className="about-page compact-page overflow-hidden">
         {/* =====================================================
             HERO
         ===================================================== */}

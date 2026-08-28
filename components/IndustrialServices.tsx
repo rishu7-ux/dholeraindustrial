@@ -124,7 +124,7 @@ export default function IndustrialServices() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24"
+      className="relative overflow-hidden bg-white py-12 sm:py-20 lg:py-24"
     >
       {/* Soft background decorations */}
       
@@ -170,21 +170,21 @@ export default function IndustrialServices() {
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#fdb713] sm:text-sm"
+            className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#fdb713] sm:text-sm sm:tracking-[0.25em]"
           >
             Industrial Plot Services
           </motion.p>
 
           <motion.h2
             variants={fadeUp}
-            className="mt-4 text-3xl font-black leading-tight text-[#12568d] sm:text-4xl lg:text-5xl"
+            className="mt-3 text-2xl font-black leading-tight text-[#12568d] sm:mt-4 sm:text-4xl lg:text-5xl"
           >
             Everything You Need For A Safe Industrial Investment
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
-            className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base"
+            className="mx-auto mt-3 max-w-2xl text-xs leading-5 text-slate-600 sm:mt-5 sm:text-base sm:leading-7"
           >
             From verified properties to final registration, our experienced
             team helps you invest confidently in Dholera SIR.
@@ -192,7 +192,7 @@ export default function IndustrialServices() {
 
           <motion.div
             variants={fadeUp}
-            className="mx-auto mt-6 flex items-center justify-center gap-2"
+            className="mx-auto mt-4 flex items-center justify-center gap-2 sm:mt-6"
           >
             <span className="h-0.75 w-16 bg-[#fdb713]" />
             <span className="h-0.75 w-8 bg-[#12568d]" />
@@ -208,7 +208,7 @@ export default function IndustrialServices() {
             once: true,
             amount: 0.08,
           }}
-          className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4"
+          className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 xl:grid-cols-4"
         >
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -224,7 +224,7 @@ export default function IndustrialServices() {
                 transition={{
                   duration: 0.35,
                 }}
-                className="group relative min-h-71.25 overflow-hidden rounded-2xl border-2 border-[#12568d]/10 bg-white p-6 shadow-[0_14px_40px_rgba(18,86,141,0.08)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_26px_65px_rgba(18,86,141,0.18)] sm:p-7"
+                className="group relative min-h-48 overflow-hidden rounded-xl border border-[#12568d]/10 bg-white p-3 shadow-[0_8px_24px_rgba(18,86,141,0.08)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_26px_65px_rgba(18,86,141,0.18)] sm:min-h-71.25 sm:rounded-2xl sm:border-2 sm:p-7 sm:shadow-[0_14px_40px_rgba(18,86,141,0.08)]"
               >
                 {/* Light hover background */}
                 <div className="pointer-events-none absolute inset-0 origin-bottom scale-y-0 bg-[#eef5fb] transition-transform duration-500 group-hover:scale-y-100" />
@@ -242,7 +242,7 @@ export default function IndustrialServices() {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="absolute right-5 top-4 text-5xl font-black text-[#12568d]/8 transition-all duration-500 group-hover:text-[#12568d]/12"
+                  className="absolute right-3 top-3 text-3xl font-black text-[#12568d]/8 transition-all duration-500 group-hover:text-[#12568d]/12 sm:right-5 sm:top-4 sm:text-5xl"
                 >
                   {service.number}
                 </motion.span>
@@ -254,18 +254,18 @@ export default function IndustrialServices() {
                       rotate: 8,
                       scale: 1.08,
                     }}
-                    className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#12568d] text-[#fdb713] shadow-lg transition-colors duration-500 group-hover:bg-[#fdb713] group-hover:text-[#12568d]"
+                    className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#12568d] text-sm text-[#fdb713] shadow-lg transition-colors duration-500 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:h-14 sm:w-14 sm:rounded-2xl"
                   >
-                    <Icon size={22} />
+                    <Icon className="text-sm sm:text-[22px]" />
                   </motion.div>
 
-                  <h3 className="mt-6 text-lg font-black text-[#12568d] transition-all duration-500 group-hover:translate-x-1 group-hover:text-slate-950 sm:text-xl">
+                  <h3 className="mt-3 text-[13px] font-black leading-4 text-[#12568d] transition-all duration-500 group-hover:translate-x-1 group-hover:text-slate-950 sm:mt-6 sm:text-xl sm:leading-normal">
                     {service.title}
                   </h3>
 
-                  <span className="mt-4 block h-0.75 w-12 bg-[#fdb713] transition-all duration-500 group-hover:w-24" />
+                  <span className="mt-2 block h-0.5 w-8 bg-[#fdb713] transition-all duration-500 group-hover:w-24 sm:mt-4 sm:h-0.75 sm:w-12" />
 
-                  <p className="mt-4 text-sm leading-7 text-slate-600 transition-colors duration-500 group-hover:text-slate-800">
+                  <p className="mt-2 line-clamp-3 text-[10px] leading-4 text-slate-600 transition-colors duration-500 group-hover:text-slate-800 sm:mt-4 sm:line-clamp-none sm:text-sm sm:leading-7">
                     {service.description}
                   </p>
 
@@ -273,7 +273,7 @@ export default function IndustrialServices() {
                     whileHover={{
                       x: 5,
                     }}
-                    className="mt-auto pt-7"
+                    className="mt-auto hidden pt-7 sm:block"
                   >
                     <a
                       href="#contact"

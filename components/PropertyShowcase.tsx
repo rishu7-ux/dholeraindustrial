@@ -196,7 +196,7 @@ export default function PropertyShowcase() {
             once: true,
             amount: 0.08,
           }}
-          className="mt-14 space-y-8"
+          className="mt-10 space-y-5 sm:mt-14 sm:space-y-8"
         >
           {projects.map((project) => (
             <motion.article
@@ -205,14 +205,14 @@ export default function PropertyShowcase() {
               whileHover={{
                 y: -8,
               }}
-              className="group relative overflow-hidden rounded-[30px] border border-white/70 bg-white/65 shadow-[0_20px_60px_rgba(18,86,141,0.10)] backdrop-blur-xl"
+              className="group relative overflow-hidden rounded-2xl border border-white/70 bg-white/65 shadow-[0_12px_36px_rgba(18,86,141,0.10)] backdrop-blur-xl sm:rounded-[30px] sm:shadow-[0_20px_60px_rgba(18,86,141,0.10)]"
             >
               <div className="grid lg:grid-cols-[45%_55%]">
                 {/* =====================================================
                     LEFT IMAGE
                 ===================================================== */}
 
-                <div className="relative min-h-75 overflow-hidden sm:min-h-95 lg:min-h-100">
+                <div className="relative min-h-52 overflow-hidden sm:min-h-95 lg:min-h-100">
                   <motion.div
                     whileHover={{
                       scale: 1.06,
@@ -247,7 +247,7 @@ export default function PropertyShowcase() {
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
-                    className="absolute left-6 top-6 flex h-12 w-12 items-center justify-center rounded-xl border border-white/30 bg-white/15 text-sm font-black text-white shadow-xl backdrop-blur-xl"
+                    className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-lg border border-white/30 bg-white/15 text-xs font-black text-white shadow-xl backdrop-blur-xl sm:left-6 sm:top-6 sm:h-12 sm:w-12 sm:rounded-xl sm:text-sm"
                   >
                     {project.id}
                   </motion.div>
@@ -258,7 +258,7 @@ export default function PropertyShowcase() {
                     whileHover={{
                       y: -5,
                     }}
-                    className="absolute bottom-5 left-5 rounded-xl border border-white/25 bg-black/35 px-5 py-3 text-white backdrop-blur-xl"
+                    className="absolute bottom-3 left-3 rounded-lg border border-white/25 bg-black/35 px-3 py-2 text-white backdrop-blur-xl sm:bottom-5 sm:left-5 sm:rounded-xl sm:px-5 sm:py-3"
                   >
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#fdb713]">
                       Dholera SIR
@@ -274,7 +274,7 @@ export default function PropertyShowcase() {
                     RIGHT CONTENT
                 ===================================================== */}
 
-                <div className="relative flex flex-col justify-center overflow-hidden p-7 sm:p-9 lg:p-11">
+                <div className="relative flex flex-col justify-center overflow-hidden p-5 sm:p-9 lg:p-11">
                   {/* Animated Glow */}
 
                   <motion.div
@@ -300,7 +300,7 @@ export default function PropertyShowcase() {
                       Featured Project
                     </p>
 
-                    <h3 className="mt-3 font-serif text-3xl font-black text-[#12568d] sm:text-4xl">
+                    <h3 className="mt-2 font-serif text-2xl font-black text-[#12568d] sm:mt-3 sm:text-4xl">
                       {project.title}
                     </h3>
 
@@ -317,7 +317,7 @@ export default function PropertyShowcase() {
                       transition={{
                         duration: 0.8,
                       }}
-                      className="mt-5 flex origin-left gap-2"
+                      className="mt-3 flex origin-left gap-2 sm:mt-5"
                     >
                       <span className="h-1 w-14 rounded-full bg-[#fdb713]" />
 
@@ -330,9 +330,9 @@ export default function PropertyShowcase() {
                       whileHover={{
                         x: 6,
                       }}
-                      className="mt-7 flex items-center gap-3"
+                      className="mt-5 flex items-center gap-3 sm:mt-7"
                     >
-                      <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#12568d] text-[#fdb713]">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#12568d] text-[#fdb713] sm:h-10 sm:w-10 sm:rounded-xl">
                         <FaMapMarkerAlt size={14} />
                       </span>
 
@@ -349,7 +349,7 @@ export default function PropertyShowcase() {
                       }}
                       className="mt-4 flex items-center gap-3"
                     >
-                      <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#fff2c9] text-[#12568d]">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fff2c9] text-[#12568d] sm:h-10 sm:w-10 sm:rounded-xl">
                         <FaRoad size={14} />
                       </span>
 
@@ -360,10 +360,10 @@ export default function PropertyShowcase() {
 
                     {/* EXPLORE */}
 
-                    <div className="mt-7">
+                    <div className="mt-5 sm:mt-7">
                       <Link
                         href={project.href}
-                        className="group/button inline-flex items-center gap-3 rounded-xl bg-[#12568d] px-6 py-4 text-xs font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#fdb713] hover:text-[#12568d]"
+                        className="group/button inline-flex items-center gap-2 rounded-lg bg-[#12568d] px-5 py-3 text-[11px] font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#fdb713] hover:text-[#12568d] sm:gap-3 sm:rounded-xl sm:px-6 sm:py-4 sm:text-xs"
                       >
                         Explore
 

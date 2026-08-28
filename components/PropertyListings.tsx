@@ -144,7 +144,7 @@ function PropertyCard({
       transition={{
         duration: 0.35,
       }}
-      className="group relative overflow-hidden rounded-2xl border border-[#12568d]/20 bg-linear-to-r from-[#12568d] via-[#246b9d] to-[#4385b4] shadow-[0_14px_45px_rgba(18,86,141,0.18)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_28px_75px_rgba(18,86,141,0.32)]"
+      className="group relative overflow-hidden rounded-xl border border-[#12568d]/20 bg-linear-to-r from-[#12568d] via-[#246b9d] to-[#4385b4] shadow-[0_10px_30px_rgba(18,86,141,0.18)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_28px_75px_rgba(18,86,141,0.32)] sm:rounded-2xl sm:shadow-[0_14px_45px_rgba(18,86,141,0.18)]"
     >
       {/* Moving shine */}
       {!property.soldOut && (
@@ -178,7 +178,7 @@ function PropertyCard({
       >
         {/* ================= IMAGE ================= */}
 
-        <div className="relative min-h-68.75 overflow-hidden sm:min-h-82.5 lg:min-h-91.25">
+        <div className="relative min-h-40 overflow-hidden sm:min-h-82.5 lg:min-h-91.25">
           <Image
             src={property.image}
             alt={property.title}
@@ -201,7 +201,7 @@ function PropertyCard({
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute left-5 top-5 flex h-12 w-12 items-center justify-center rounded-lg bg-[#12568d] text-sm font-black text-[#fdb713] shadow-xl transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d]"
+            className="absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-md bg-[#12568d] text-[10px] font-black text-[#fdb713] shadow-xl transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:left-5 sm:top-5 sm:h-12 sm:w-12 sm:rounded-lg sm:text-sm"
           >
             {String(index + 1).padStart(2, "0")}
           </motion.div>
@@ -272,7 +272,7 @@ function PropertyCard({
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-9 py-6 text-center shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-2xl"
+                  className="relative overflow-hidden rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-center shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-2xl sm:rounded-2xl sm:px-9 sm:py-6"
                 >
                   <motion.div
                     aria-hidden="true"
@@ -294,13 +294,13 @@ function PropertyCard({
                     Property Status
                   </p>
 
-                  <p className="relative z-10 mt-2 text-2xl font-black uppercase tracking-[0.08em] text-white sm:text-3xl">
+                  <p className="relative z-10 mt-1 text-xl font-black uppercase tracking-[0.08em] text-white sm:mt-2 sm:text-3xl">
                     Sold Out
                   </p>
 
-                  <div className="relative z-10 mx-auto mt-4 h-px w-16 bg-white/30" />
+                  <div className="relative z-10 mx-auto mt-2 h-px w-12 bg-white/30 sm:mt-4 sm:w-16" />
 
-                  <p className="relative z-10 mt-3 text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">
+                  <p className="relative z-10 mt-2 text-[8px] font-bold uppercase tracking-[0.16em] text-white/60 sm:mt-3 sm:text-[10px] sm:tracking-[0.2em]">
                     Currently Unavailable
                   </p>
                 </motion.div>
@@ -325,9 +325,9 @@ function PropertyCard({
 
         {/* ================= CONTENT ================= */}
 
-        <div className="relative flex min-h-91.25 flex-col p-5 text-white sm:p-7 lg:p-8">
+        <div className="relative flex flex-col p-3 text-white sm:min-h-91.25 sm:p-7 lg:p-8">
           {/* Price */}
-          <div className="relative mb-7 ml-auto flex min-h-14.5 w-full max-w-75 items-center justify-center bg-[#12568d] px-7 text-center text-lg font-black uppercase text-white shadow-xl transition-all duration-500 group-hover:-translate-x-2 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:absolute sm:right-0 sm:top-0 sm:mb-0">
+          <div className="relative mb-3 ml-auto flex min-h-9 w-fit min-w-28 items-center justify-center rounded-md bg-[#12568d] px-4 text-center text-xs font-black uppercase text-white shadow-xl transition-all duration-500 group-hover:-translate-x-2 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:absolute sm:right-0 sm:top-0 sm:mb-0 sm:min-h-14.5 sm:w-full sm:max-w-75 sm:rounded-none sm:px-7 sm:text-lg">
             <span className="absolute -left-5 hidden h-10 w-10 rotate-45 bg-[#246b9d] transition-colors duration-500 group-hover:bg-[#fdb713] sm:block" />
 
             <span className="relative z-10">
@@ -346,31 +346,31 @@ function PropertyCard({
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="mb-2 text-xs font-extrabold uppercase tracking-[0.2em] text-[#fdb713] transition-colors duration-500 group-hover:text-white"
+              className="mb-1 text-[9px] font-extrabold uppercase tracking-[0.16em] text-[#fdb713] transition-colors duration-500 group-hover:text-white sm:mb-2 sm:text-xs sm:tracking-[0.2em]"
             >
               Industrial Property
             </motion.p>
 
-            <h3 className="font-serif text-xl font-black uppercase leading-tight text-white transition-transform duration-500 group-hover:translate-x-1.5 sm:text-2xl">
+            <h3 className="font-serif text-base font-black uppercase leading-tight text-white transition-transform duration-500 group-hover:translate-x-1.5 sm:text-2xl">
               {property.title}
             </h3>
 
-            <span className="mt-4 block h-0.75 w-16 bg-[#fdb713] transition-all duration-500 group-hover:w-32 group-hover:bg-white" />
+            <span className="mt-2 block h-0.5 w-10 bg-[#fdb713] transition-all duration-500 group-hover:w-32 group-hover:bg-white sm:mt-4 sm:h-0.75 sm:w-16" />
           </div>
 
           {/* Location + Phone */}
-          <div className="mt-6 flex flex-col gap-4 text-sm sm:flex-row sm:flex-wrap sm:gap-6">
+          <div className="mt-3 flex flex-col gap-2 text-[11px] sm:mt-6 sm:flex-row sm:flex-wrap sm:gap-6 sm:text-sm">
             <div className="flex max-w-lg items-start gap-3 transition-transform duration-300 hover:translate-x-2">
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/15 text-[#fdb713] transition-all duration-300 hover:rotate-12 hover:bg-[#fdb713] hover:text-[#12568d]">
+              <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/15 text-[#fdb713] transition-all duration-300 hover:rotate-12 hover:bg-[#fdb713] hover:text-[#12568d] sm:h-9 sm:w-9">
                 <FaMapMarkerAlt size={13} />
               </span>
 
-              <span className="leading-7 text-white/90">
+              <span className="line-clamp-1 leading-5 text-white/90 sm:line-clamp-none sm:leading-7">
                 {property.location}
               </span>
             </div>
 
-            <div className="flex items-center gap-3 text-white/90">
+            <div className="hidden items-center gap-3 text-white/90 sm:flex">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/15 text-[#fdb713] transition-all duration-300 hover:-rotate-12 hover:bg-[#fdb713] hover:text-[#12568d]">
                 <FaPhoneAlt size={12} />
               </span>
@@ -382,12 +382,12 @@ function PropertyCard({
           </div>
 
           {/* Description */}
-          <p className="mt-5 text-sm font-medium leading-7 text-white/85 transition-colors duration-500 group-hover:text-white sm:text-[15px]">
+          <p className="mt-5 hidden text-[15px] font-medium leading-7 text-white/85 transition-colors duration-500 group-hover:text-white sm:block">
             {property.description}
           </p>
 
           {/* Features */}
-          <div className="mt-6 grid gap-4 text-sm sm:grid-cols-2">
+          <div className="mt-6 hidden gap-4 text-sm sm:grid sm:grid-cols-2">
             <div className="flex items-center gap-3 transition-transform duration-300 hover:translate-x-2">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/10 text-[#fdb713] transition-all duration-300 hover:scale-110 hover:bg-[#fdb713] hover:text-[#12568d]">
                 <FaArrowsAlt size={14} />
@@ -413,7 +413,7 @@ function PropertyCard({
 
           {/* ================= BUTTONS ================= */}
 
-          <div className="mt-auto flex flex-wrap gap-3 pt-7">
+          <div className="mt-auto hidden flex-wrap gap-3 pt-7 sm:flex">
             {!property.soldOut && (
               <motion.div
                   whileHover={{
@@ -443,18 +443,18 @@ function PropertyCard({
       </div>
 
       {property.soldOut && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-950/25 p-5 backdrop-blur-[2px]">
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-950/25 p-3 backdrop-blur-[2px] sm:p-5">
           <div
             role="status"
-            className="rounded-2xl border border-white/30 bg-[#12568d]/90 px-10 py-7 text-center shadow-[0_24px_70px_rgba(0,0,0,0.4)] backdrop-blur-xl"
+            className="rounded-lg border border-white/30 bg-[#12568d]/90 px-5 py-3 text-center shadow-[0_24px_70px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:rounded-2xl sm:px-10 sm:py-7"
           >
             <p className="text-[10px] font-black uppercase tracking-[0.32em] text-[#fdb713]">
               Property Status
             </p>
-            <p className="mt-2 text-3xl font-black uppercase tracking-wider text-white sm:text-4xl">
+            <p className="mt-1 text-xl font-black uppercase tracking-wider text-white sm:mt-2 sm:text-4xl">
               Sold Out
             </p>
-            <p className="mt-3 text-xs font-bold uppercase tracking-[0.18em] text-white/65">
+            <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.14em] text-white/65 sm:mt-3 sm:text-xs sm:tracking-[0.18em]">
               Currently Unavailable
             </p>
             <button
@@ -463,7 +463,7 @@ function PropertyCard({
                 event.stopPropagation();
                 onEnquire(property.title);
               }}
-              className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-[#fdb713] px-7 text-sm font-black uppercase tracking-wide text-[#12568d] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-white"
+              className="mt-3 inline-flex min-h-9 items-center justify-center gap-2 rounded-md bg-[#fdb713] px-4 text-[10px] font-black uppercase tracking-wide text-[#12568d] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-white sm:mt-6 sm:min-h-12 sm:rounded-lg sm:px-7 sm:text-sm"
             >
               Enquiry Now
               <FaArrowRight size={12} />

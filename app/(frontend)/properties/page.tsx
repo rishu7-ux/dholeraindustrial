@@ -30,7 +30,7 @@ export default function PropertiesPage() {
       <Navbar />
       <SocialBar />
 
-      <main className="overflow-hidden">
+      <main className="compact-page overflow-hidden">
         {/* =====================================================
             HERO
         ===================================================== */}
