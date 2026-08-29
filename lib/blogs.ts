@@ -21,7 +21,9 @@ async function loadBlogs(params = "") {
     const response = await fetch(
       `${cmsUrl}/api/industrial-blog-feed${params}`,
       {
-        next: { revalidate: 60 },
+        // Blog publishing is an editorial action, so do not serve a stale
+        // feed after a post is changed from draft to published in the CMS.
+        cache: "no-store",
         signal: AbortSignal.timeout(8_000),
       },
     );

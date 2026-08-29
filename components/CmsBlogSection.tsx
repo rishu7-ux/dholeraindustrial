@@ -46,7 +46,7 @@ export default async function CmsBlogSection() {
               })}
             </div>
           </div>
-        ) : <div className="rounded-2xl border border-dashed border-[#12568d]/20 bg-white px-6 py-12 text-center text-sm text-slate-500">No blog found.</div>}
+        ) : <div className="rounded-2xl border border-dashed border-[#12568d]/20 bg-white px-6 py-12 text-center text-sm text-slate-500">No published blogs found. Publish a post in the CMS and refresh this page.</div>}
       </div>
     </section>
   );
