@@ -13,10 +13,27 @@ export async function GET(request: Request) {
       return new Response("Not found", { status: 404 });
     }
 
-    const response = await fetch(mediaUrl, {
-      next: { revalidate: 3600 },
+    let response = await fetch(mediaUrl, {
+      cache: "no-store",
       signal: AbortSignal.timeout(8_000),
     });
+
+    // Payload can retain a numbered duplicate filename in the media record
+    // even when the stored file is still available under the original name.
+    // Retry that original filename before reporting a missing image.
+    if (!response.ok) {
+      const fallbackPath = mediaUrl.pathname.replace(
+        /-(\d+)(\.[^/.]+)$/,
+        "$2",
+      );
+      if (fallbackPath !== mediaUrl.pathname) {
+        response = await fetch(new URL(fallbackPath, mediaUrl.origin), {
+          cache: "no-store",
+          signal: AbortSignal.timeout(8_000),
+        });
+      }
+    }
+
     if (!response.ok || !response.body) {
       return new Response("Not found", { status: 404 });
     }
