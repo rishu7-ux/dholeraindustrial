@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   images: {
     localPatterns: [
-      // Legacy Payload media is served through this same-origin proxy.
-      // The path query is intentionally dynamic and is validated by the route.
-      { pathname: "/api/blog-media" },
+      // Keep every existing local asset (gallery, logos, hero/property images)
+      // working, while also allowing the dynamic query on the legacy proxy.
+      { pathname: "/**" },
     ],
     remotePatterns: [
       {
