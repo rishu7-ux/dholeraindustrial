@@ -44,7 +44,7 @@ export default function SideEnquiry() {
             whileHover={{ x: -4, scale: 1.02 }}
             whileTap={{ scale: 0.96 }}
             aria-label="Open enquiry form"
-            className="fixed right-0 top-1/2 z-[9990] flex h-28 w-10 -translate-y-1/2 items-center justify-center overflow-hidden rounded-l-lg border-y border-l border-[#fdb713]/30 bg-[#fdb713] text-[#12568d] shadow-[-5px_8px_22px_rgba(18,86,141,0.25)] transition-colors hover:bg-[#12568d] hover:text-white"
+            className="fixed right-0 top-1/2 z-[9990] flex h-28 w-10 -translate-y-1/2 items-center justify-center overflow-hidden border-y border-l border-[#FF7A00]/30 bg-[#FF7A00] text-[#081A3A] shadow-[-5px_8px_22px_rgba(8,26,58,0.25)] transition-colors hover:bg-[#081A3A] hover:text-white"
           >
             <span className="pointer-events-none absolute inset-0 bg-linear-to-b from-white/25 via-transparent to-white/10" />
             <span className="relative z-10 rotate-180 whitespace-nowrap text-[11px] font-black uppercase tracking-[0.08em] [writing-mode:vertical-rl]">

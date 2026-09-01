@@ -186,7 +186,7 @@ export default function AboutUsPage() {
             HERO
         ===================================================== */}
 
-        <section className="relative overflow-hidden bg-[#12568d] py-24 text-white sm:py-28 lg:py-32">
+        <section className="relative overflow-hidden bg-[#081A3A] py-10 text-white sm:py-12 lg:py-14">
           {/* Glow 1 */}
           <motion.div
             animate={
@@ -202,7 +202,7 @@ export default function AboutUsPage() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="pointer-events-none absolute -left-40 top-0 h-[450px] w-[450px] rounded-full bg-[#fdb713]/15 blur-3xl"
+            className="pointer-events-none absolute -left-40 top-0 h-[450px] w-[450px] rounded-full bg-white/20 blur-3xl"
           />
 
           {/* Glow 2 */}
@@ -220,7 +220,7 @@ export default function AboutUsPage() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="pointer-events-none absolute -right-40 bottom-0 h-[450px] w-[450px] rounded-full bg-white/10 blur-3xl"
+            className="pointer-events-none absolute -right-40 bottom-0 h-[450px] w-[450px] rounded-full bg-[#081A3A]/10 blur-3xl"
           />
 
           <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
@@ -242,18 +242,18 @@ export default function AboutUsPage() {
                 ease: smoothEase,
               }}
             >
-              <p className="text-xs font-black uppercase tracking-[0.35em] text-[#fdb713]">
+              <p className="text-xs font-black uppercase tracking-[0.35em] text-[#FF7A00]">
                 About Dholera Industrial Plot
               </p>
 
-              <h1 className="mx-auto mt-5 max-w-5xl font-serif text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+              <h1 className="mx-auto mt-5 max-w-5xl font-serif text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
                 Building Trust In Dholera&apos;s
-                <span className="text-[#fdb713]"> Industrial Future</span>
+                <span className="text-[#FF7A00]"> Industrial Future</span>
               </h1>
 
               <div className="mx-auto mt-7 flex w-fit gap-3">
-                <span className="h-1 w-20 bg-[#fdb713]" />
-                <span className="h-1 w-10 bg-white" />
+                <span className="h-1 w-20 bg-[#FF7A00]" />
+                <span className="h-1 w-10 bg-white/70" />
               </div>
 
               <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-white/75 sm:text-lg">
@@ -282,17 +282,17 @@ export default function AboutUsPage() {
                 }}
                 className="lg:sticky lg:top-28"
               >
-                <p className="text-xs font-black uppercase tracking-[0.3em] text-[#fdb713]">
+                <p className="text-xs font-black uppercase tracking-[0.3em] text-[#FF7A00]">
                   Our Journey
                 </p>
 
-                <h2 className="mt-5 font-serif text-4xl font-black leading-tight text-[#12568d] sm:text-5xl">
+                <h2 className="mt-5 font-serif text-4xl font-black leading-tight text-[#081A3A] sm:text-5xl">
                   Our Company History
                 </h2>
 
                 <div className="mt-6 flex gap-3">
-                  <span className="h-1 w-20 bg-[#fdb713]" />
-                  <span className="h-1 w-10 bg-[#12568d]" />
+                  <span className="h-1 w-20 bg-[#FF7A00]" />
+                  <span className="h-1 w-10 bg-[#081A3A]" />
                 </div>
 
                 <motion.div
@@ -303,13 +303,13 @@ export default function AboutUsPage() {
                           y: -6,
                         }
                   }
-                  className="mt-10 overflow-hidden rounded-[28px] bg-[#12568d] p-8 text-white shadow-[0_22px_65px_rgba(18,86,141,0.20)]"
+                  className="mt-10 overflow-hidden border border-[#FF7A00]/25 bg-[#FFFFFF] p-8 text-[#081A3A] shadow-[0_22px_65px_rgba(8,26,58,0.12)]"
                 >
-                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#fdb713] text-[#12568d]">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#081A3A] text-[#FF7A00]">
                     <FaBuilding size={23} />
                   </span>
 
-                  <p className="mt-6 text-xs font-black uppercase tracking-[0.25em] text-[#fdb713]">
+                  <p className="mt-6 text-xs font-black uppercase tracking-[0.25em] text-[#FF7A00]">
                     Established
                   </p>
 
@@ -317,7 +317,7 @@ export default function AboutUsPage() {
                     2024
                   </p>
 
-                  <p className="mt-4 leading-8 text-white/75">
+                  <p className="mt-4 leading-8 text-[#0A2E73]">
                     Founded as a subsidiary of Omana Projects to support
                     India&apos;s next-generation industrial revolution.
                   </p>
@@ -337,9 +337,9 @@ export default function AboutUsPage() {
               >
                 <motion.div
                   variants={fadeUp}
-                  className="rounded-[28px] border border-[#12568d]/10 bg-[#f7fbff] p-7 sm:p-9"
+                  className="border border-[#081A3A]/10 bg-[#ffffff] p-7 sm:p-9"
                 >
-                  <p className="text-base leading-9 text-slate-600">
+                  <p className="text-base leading-9 text-[#0A2E73]">
                     Dholera Industrial Plot was founded in 2024 as a subsidiary
                     of Omana Projects with the goal of supporting India&apos;s
                     next-generation industrial revolution. The company
@@ -352,9 +352,9 @@ export default function AboutUsPage() {
 
                 <motion.div
                   variants={fadeUp}
-                  className="rounded-[28px] border border-[#12568d]/10 bg-white p-7 shadow-[0_15px_45px_rgba(18,86,141,0.07)] sm:p-9"
+                  className="border border-[#081A3A]/10 bg-white p-7 shadow-[0_15px_45px_rgba(8,26,58,0.07)] sm:p-9"
                 >
-                  <p className="text-base leading-9 text-slate-600">
+                  <p className="text-base leading-9 text-[#0A2E73]">
                     Early on, we had to negotiate a new market environment
                     characterized by quick changes in regulations, a lack of
                     infrastructure, and low investor confidence. However, we
@@ -366,22 +366,22 @@ export default function AboutUsPage() {
 
                 <motion.div
                   variants={fadeUp}
-                  className="relative overflow-hidden rounded-[28px] bg-[#fff8e8] p-7 sm:p-9"
+                  className="relative overflow-hidden bg-[#FFFFFF] p-7 sm:p-9"
                 >
-                  <div className="absolute left-0 top-0 h-full w-1 bg-[#fdb713]" />
+                  <div className="absolute left-0 top-0 h-full w-1 bg-[#FF7A00]" />
 
-                  <p className="text-xs font-black uppercase tracking-[0.25em] text-[#12568d]">
+                  <p className="text-xs font-black uppercase tracking-[0.25em] text-[#081A3A]">
                     Dholera Industrial Plot
                   </p>
 
-                  <p className="mt-5 text-base leading-9 text-slate-600">
+                  <p className="mt-5 text-base leading-9 text-[#0A2E73]">
                     Beginning with a modest portfolio of plots, our team
                     established solid local connections and gained a reputation
                     for honest business practices, genuine sites, and timely
                     legal and advisory assistance.
                   </p>
 
-                  <p className="mt-5 text-base leading-9 text-slate-600">
+                  <p className="mt-5 text-base leading-9 text-[#0A2E73]">
                     With time, we branched out into investment consulting,
                     customized land planning, and strategic alliances with
                     logistics companies, SMEs, and industrial players.
@@ -390,9 +390,9 @@ export default function AboutUsPage() {
 
                 <motion.div
                   variants={fadeUp}
-                  className="rounded-[28px] bg-[#12568d] p-7 text-white sm:p-9"
+                  className="border border-[#FF7A00]/25 bg-[#FFFFFF] p-7 text-[#081A3A] sm:p-9"
                 >
-                  <p className="text-base leading-9 text-white/80">
+                  <p className="text-base leading-9 text-[#0A2E73]">
                     It is now known as a reliable brand for purchasing industrial
                     real estate in Dholera. A decade of progress is reflected in
                     our track record, which includes hundreds of happy customers,
@@ -400,7 +400,7 @@ export default function AboutUsPage() {
                     strategic SIR zones.
                   </p>
 
-                  <p className="mt-5 text-base leading-9 text-white/80">
+                  <p className="mt-5 text-base leading-9 text-[#0A2E73]">
                     We&apos;re still dedicated to supporting our clients&apos;
                     growth as Dholera develops into a major force in smart
                     infrastructure and manufacturing worldwide.
@@ -415,7 +415,7 @@ export default function AboutUsPage() {
             VALUES
         ===================================================== */}
 
-        <section className="bg-[#f7fbff] py-20 sm:py-24">
+        <section className="bg-[#ffffff] py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div
               variants={stagger}
@@ -429,14 +429,14 @@ export default function AboutUsPage() {
             >
               <motion.p
                 variants={fadeUp}
-                className="text-xs font-black uppercase tracking-[0.3em] text-[#fdb713]"
+                className="text-xs font-black uppercase tracking-[0.3em] text-[#FF7A00]"
               >
                 What Defines Us
               </motion.p>
 
               <motion.h2
                 variants={fadeUp}
-                className="mt-5 font-serif text-4xl font-black text-[#12568d] sm:text-5xl"
+                className="mt-5 font-serif text-4xl font-black text-[#081A3A] sm:text-5xl"
               >
                 Built On Trust &amp; Expertise
               </motion.h2>
@@ -467,17 +467,17 @@ export default function AboutUsPage() {
                             scale: 1.015,
                           }
                     }
-                    className="group rounded-[28px] border border-[#12568d]/10 bg-white p-8 shadow-[0_15px_45px_rgba(18,86,141,0.08)]"
+                    className="group border border-[#081A3A]/10 bg-white p-8 shadow-[0_15px_45px_rgba(8,26,58,0.08)]"
                   >
-                    <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#12568d] text-[#fdb713] transition-all duration-300 group-hover:bg-[#fdb713] group-hover:text-[#12568d]">
+                    <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#081A3A] text-[#FF7A00] transition-all duration-300 group-hover:bg-[#0A2E73]">
                       <Icon size={22} />
                     </span>
 
-                    <h3 className="mt-7 text-xl font-black text-[#12568d]">
+                    <h3 className="mt-7 text-xl font-black text-[#081A3A]">
                       {item.title}
                     </h3>
 
-                    <p className="mt-4 leading-8 text-slate-600">
+                    <p className="mt-4 leading-8 text-[#0A2E73]">
                       {item.description}
                     </p>
                   </motion.div>
@@ -501,7 +501,7 @@ export default function AboutUsPage() {
               viewport={{
                 once: true,
               }}
-              className="relative overflow-hidden rounded-[32px] bg-[#12568d] p-8 text-white shadow-[0_24px_70px_rgba(18,86,141,0.20)] sm:p-10"
+              className="relative overflow-hidden border border-[#FF7A00]/25 bg-[#FFFFFF] p-8 text-[#081A3A] shadow-[0_24px_70px_rgba(8,26,58,0.12)] sm:p-10"
             >
               <motion.div
                 animate={
@@ -516,12 +516,12 @@ export default function AboutUsPage() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#fdb713] text-[#12568d]"
+                className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#081A3A] text-[#FF7A00]"
               >
                 <FaBullseye size={23} />
               </motion.div>
 
-              <p className="mt-7 text-xs font-black uppercase tracking-[0.3em] text-[#fdb713]">
+              <p className="mt-7 text-xs font-black uppercase tracking-[0.3em] text-[#FF7A00]">
                 Objective
               </p>
 
@@ -529,14 +529,14 @@ export default function AboutUsPage() {
                 Empowering Industrial Growth
               </h2>
 
-              <p className="mt-7 text-base leading-9 text-white/80">
+              <p className="mt-7 text-base leading-9 text-[#0A2E73]">
                 Providing verified, well-located industrial plots in Dholera
                 SIR that guarantee long-term growth, legal security, and a high
                 return on investment in order to empower industries, investors,
                 and entrepreneurs.
               </p>
 
-              <p className="mt-5 text-base leading-9 text-white/80">
+              <p className="mt-5 text-base leading-9 text-[#0A2E73]">
                 With openness, knowledge, and dependability at the heart of each
                 real estate transaction, we seek to close the gap between
                 Dholera&apos;s development potential and practical business
@@ -552,9 +552,9 @@ export default function AboutUsPage() {
               viewport={{
                 once: true,
               }}
-              className="rounded-[32px] bg-[#fdb713] p-8 text-[#12568d] shadow-[0_24px_70px_rgba(253,183,19,0.18)] sm:p-10"
+              className="bg-[#FF7A00] p-8 text-[#081A3A] shadow-[0_24px_70px_rgba(255,122,0,0.18)] sm:p-10"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#12568d] text-[#fdb713]">
+              <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#081A3A] text-[#FF7A00]">
                 <FaLightbulb size={23} />
               </span>
 
@@ -582,9 +582,9 @@ export default function AboutUsPage() {
                             x: 5,
                           }
                     }
-                    className="flex items-center gap-3 rounded-xl bg-white/70 p-4 backdrop-blur"
+                    className="flex items-center gap-3 bg-white/70 p-4 backdrop-blur"
                   >
-                    <FaCheckCircle size={15} />
+                    <FaCheckCircle size={15} className="text-[#FF7A00]" />
 
                     <span className="font-black">
                       {item}
@@ -600,7 +600,7 @@ export default function AboutUsPage() {
             CONTACT + FORM
         ===================================================== */}
 
-        <section className="bg-[#f7fbff] py-20 sm:py-24 lg:py-28">
+        <section className="bg-[#ffffff] py-20 sm:py-24 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
             {/* CONTACT */}
             <motion.div
@@ -611,15 +611,15 @@ export default function AboutUsPage() {
                 once: true,
               }}
             >
-              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#fdb713]">
+              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#FF7A00]">
                 Contact Us
               </p>
 
-              <h2 className="mt-5 font-serif text-4xl font-black text-[#12568d] sm:text-5xl">
+              <h2 className="mt-5 font-serif text-4xl font-black text-[#081A3A] sm:text-5xl">
                 Reach Out To Us
               </h2>
 
-              <p className="mt-6 max-w-xl leading-8 text-slate-600">
+              <p className="mt-6 max-w-xl leading-8 text-[#0A2E73]">
                 Speak with our team regarding industrial plots, documentation,
                 location guidance or site visits in Dholera SIR.
               </p>
@@ -627,18 +627,18 @@ export default function AboutUsPage() {
               <div className="mt-10 space-y-5">
                 <Link
                   href="tel:+919217104219"
-                  className="group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1"
+                    className="group flex items-center gap-4 bg-white p-5 shadow-sm transition hover:-translate-y-1"
                 >
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#12568d] text-[#fdb713]">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#081A3A] text-[#FF7A00]">
                     <FaPhoneAlt size={16} />
                   </span>
 
                   <div>
-                    <p className="text-xs font-black uppercase tracking-wider text-slate-400">
+                    <p className="text-xs font-black uppercase tracking-wider text-[#0A2E73]">
                       Call Us
                     </p>
 
-                    <p className="mt-1 font-black text-[#12568d]">
+                    <p className="mt-1 font-black text-[#081A3A]">
                       +91 9217104219
                     </p>
                   </div>
@@ -646,34 +646,34 @@ export default function AboutUsPage() {
 
                 <Link
                   href="mailto:customercare@omanaprojects.com"
-                  className="group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-1"
+                    className="group flex items-center gap-4 bg-white p-5 shadow-sm transition hover:-translate-y-1"
                 >
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#fdb713] text-[#12568d]">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#081A3A] text-[#FF7A00]">
                     <FaEnvelope size={16} />
                   </span>
 
                   <div>
-                    <p className="text-xs font-black uppercase tracking-wider text-slate-400">
+                    <p className="text-xs font-black uppercase tracking-wider text-[#0A2E73]">
                       Email
                     </p>
 
-                    <p className="mt-1 break-all font-black text-[#12568d]">
+                    <p className="mt-1 break-all font-black text-[#081A3A]">
                       customercare@omanaprojects.com
                     </p>
                   </div>
                 </Link>
 
-                <div className="flex items-start gap-4 rounded-2xl bg-white p-5 shadow-sm">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#12568d] text-[#fdb713]">
+                <div className="flex items-start gap-4 bg-white p-5 shadow-sm">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#081A3A] text-[#FF7A00]">
                     <FaMapMarkerAlt size={16} />
                   </span>
 
                   <div>
-                    <p className="text-xs font-black uppercase tracking-wider text-slate-400">
+                    <p className="text-xs font-black uppercase tracking-wider text-[#0A2E73]">
                       Office
                     </p>
 
-                    <p className="mt-1 leading-7 font-semibold text-slate-600">
+                    <p className="mt-1 leading-7 font-semibold text-[#0A2E73]">
                       7th floor, plot no 56a/16, C Block, Phase 2,
                       Industrial Area, Sector 62, Noida,
                       Uttar Pradesh 201309
@@ -691,15 +691,15 @@ export default function AboutUsPage() {
               viewport={{
                 once: true,
               }}
-              className="relative overflow-hidden rounded-[32px] bg-white p-6 shadow-[0_25px_70px_rgba(18,86,141,0.12)] sm:p-8 lg:p-10"
+              className="relative overflow-hidden bg-white p-6 shadow-[0_25px_70px_rgba(8,26,58,0.12)] sm:p-8 lg:p-10"
             >
-              <div className="absolute left-0 top-0 h-1 w-full bg-[#fdb713]" />
+              <div className="absolute left-0 top-0 h-1 w-full bg-[#FF7A00]" />
 
-              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#fdb713]">
+              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#FF7A00]">
                 Enquiry Form
               </p>
 
-              <h3 className="mt-4 text-3xl font-black text-[#12568d]">
+              <h3 className="mt-4 text-3xl font-black text-[#081A3A]">
                 Reach Out To Us
               </h3>
 
@@ -715,15 +715,15 @@ export default function AboutUsPage() {
                   }}
                   className="flex min-h-[400px] flex-col items-center justify-center text-center"
                 >
-                  <span className="flex h-20 w-20 items-center justify-center rounded-full bg-green-50 text-green-600">
+                  <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#FFFFFF] text-[#FF7A00]">
                     <FaCheckCircle size={34} />
                   </span>
 
-                  <h4 className="mt-6 text-2xl font-black text-[#12568d]">
+                  <h4 className="mt-6 text-2xl font-black text-[#081A3A]">
                     Thank You
                   </h4>
 
-                  <p className="mt-3 text-slate-500">
+                  <p className="mt-3 text-[#0A2E73]">
                     Your enquiry has been submitted successfully.
                   </p>
                 </motion.div>
@@ -734,12 +734,12 @@ export default function AboutUsPage() {
                 >
                   {/* NAME */}
                   <div>
-                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#12568d]">
+                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#081A3A]">
                       Name
                     </label>
 
-                    <div className="flex items-center rounded-xl border border-slate-200 bg-[#f8fbfd] transition focus-within:border-[#12568d]">
-                      <span className="flex h-13 w-13 items-center justify-center text-[#12568d]">
+                    <div className="flex items-center rounded-xl border border-[#081A3A]/15 bg-[#ffffff] transition focus-within:border-[#081A3A]">
+                      <span className="flex h-13 w-13 items-center justify-center text-[#FF7A00]">
                         <FaUser size={14} />
                       </span>
 
@@ -761,12 +761,12 @@ export default function AboutUsPage() {
 
                   {/* EMAIL */}
                   <div>
-                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#12568d]">
+                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#081A3A]">
                       Email
                     </label>
 
-                    <div className="flex items-center rounded-xl border border-slate-200 bg-[#f8fbfd] transition focus-within:border-[#12568d]">
-                      <span className="flex h-13 w-13 items-center justify-center text-[#12568d]">
+                    <div className="flex items-center rounded-xl border border-[#081A3A]/15 bg-[#ffffff] transition focus-within:border-[#081A3A]">
+                      <span className="flex h-13 w-13 items-center justify-center text-[#FF7A00]">
                         <FaEnvelope size={14} />
                       </span>
 
@@ -788,16 +788,16 @@ export default function AboutUsPage() {
 
                   {/* PHONE */}
                   <div>
-                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#12568d]">
+                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#081A3A]">
                       Phone
                     </label>
 
-                    <div className="flex items-center rounded-xl border border-slate-200 bg-[#f8fbfd] transition focus-within:border-[#12568d]">
-                      <span className="flex h-13 w-13 items-center justify-center text-[#12568d]">
+                    <div className="flex items-center rounded-xl border border-[#081A3A]/15 bg-[#ffffff] transition focus-within:border-[#081A3A]">
+                      <span className="flex h-13 w-13 items-center justify-center text-[#FF7A00]">
                         <FaPhoneAlt size={14} />
                       </span>
 
-                      <span className="border-r border-slate-200 pr-3 text-sm font-bold text-slate-500">
+                      <span className="border-r border-[#081A3A]/15 pr-3 text-sm font-bold text-[#0A2E73]">
                         +91
                       </span>
 
@@ -822,7 +822,7 @@ export default function AboutUsPage() {
 
                   {/* MESSAGE */}
                   <div>
-                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#12568d]">
+                    <label className="mb-2 block text-xs font-black uppercase tracking-wider text-[#081A3A]">
                       Message
                     </label>
 
@@ -837,7 +837,7 @@ export default function AboutUsPage() {
                         })
                       }
                       placeholder="Write comment"
-                      className="w-full resize-none rounded-xl border border-slate-200 bg-[#f8fbfd] p-4 text-sm outline-none transition focus:border-[#12568d]"
+                      className="w-full resize-none rounded-xl border border-[#081A3A]/15 bg-[#ffffff] p-4 text-sm outline-none transition focus:border-[#081A3A]"
                     />
                   </div>
 
@@ -854,13 +854,13 @@ export default function AboutUsPage() {
                       scale: 0.98,
                     }}
                     type="submit"
-                    className="group flex min-h-13 w-full items-center justify-center gap-3 rounded-xl bg-[#fdb713] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#12568d] transition hover:bg-[#12568d] hover:text-white"
+                    className="group flex min-h-13 w-full items-center justify-center gap-3 rounded-xl bg-[#081A3A] px-6 py-4 text-sm font-black uppercase tracking-wide text-white transition hover:bg-white hover:text-[#081A3A]"
                   >
                     Submit
 
                     <FaArrowRight
                       size={12}
-                      className="transition-transform group-hover:translate-x-2"
+                      className="text-[#FF7A00] transition-transform group-hover:translate-x-2"
                     />
                   </motion.button>
                 </form>
@@ -873,7 +873,7 @@ export default function AboutUsPage() {
             FINAL CTA
         ===================================================== */}
 
-        <section className="bg-[#fff8e8] py-16 sm:py-20">
+        <section className="bg-[#FFFFFF] py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{
@@ -893,13 +893,13 @@ export default function AboutUsPage() {
                 duration: 0.8,
                 ease: smoothEase,
               }}
-              className="relative overflow-hidden rounded-[32px] bg-[#12568d] px-7 py-12 text-white shadow-[0_25px_70px_rgba(18,86,141,0.22)] sm:px-10 lg:px-14"
+              className="relative overflow-hidden border border-[#FF7A00]/25 bg-[#FFFFFF] px-7 py-12 text-[#081A3A] shadow-[0_25px_70px_rgba(8,26,58,0.12)] sm:px-10 lg:px-14"
             >
-              <div className="absolute left-0 top-0 h-1 w-full bg-[#fdb713]" />
+              <div className="absolute left-0 top-0 h-1 w-full bg-[#FF7A00]" />
 
               <div className="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
                 <div>
-                  <p className="text-xs font-black uppercase tracking-[0.3em] text-[#fdb713]">
+                  <p className="text-xs font-black uppercase tracking-[0.3em] text-[#FF7A00]">
                     Invest With Confidence
                   </p>
 
@@ -907,7 +907,7 @@ export default function AboutUsPage() {
                     Explore Industrial Properties In Dholera
                   </h2>
 
-                  <p className="mt-4 max-w-2xl leading-8 text-white/75">
+                  <p className="mt-4 max-w-2xl leading-8 text-[#0A2E73]">
                     Discover verified industrial land opportunities designed
                     for long-term growth and strategic investment.
                   </p>
@@ -915,13 +915,13 @@ export default function AboutUsPage() {
 
                 <Link
                   href="/properties"
-                  className="group inline-flex items-center justify-center gap-3 rounded-xl bg-[#fdb713] px-7 py-4 text-sm font-black uppercase text-[#12568d] transition hover:bg-white"
+                  className="group inline-flex items-center justify-center gap-3 rounded-xl bg-[#081A3A] px-7 py-4 text-sm font-black uppercase text-white transition hover:bg-white hover:text-[#081A3A]"
                 >
                   View Properties
 
                   <FaArrowRight
                     size={12}
-                    className="transition-transform group-hover:translate-x-2"
+                    className="text-[#FF7A00] transition-transform group-hover:translate-x-2"
                   />
                 </Link>
               </div>

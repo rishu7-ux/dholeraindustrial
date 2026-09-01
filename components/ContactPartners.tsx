@@ -50,7 +50,7 @@ export default function ContactPartners() {
   return (
     <section className="w-full overflow-hidden">
       {/* Contact CTA */}
-      <div className="relative overflow-hidden bg-linear-to-r from-[#12568d] via-[#4b7895] to-[#fdb713] py-16 text-white sm:py-20 lg:py-24">
+      <div className="relative overflow-hidden bg-linear-to-r from-[#081A3A] via-[#0A2E73] to-[#FF7A00] py-16 text-white sm:py-20 lg:py-24">
         {/* Animated floating glow */}
         <motion.div
           aria-hidden="true"
@@ -77,7 +77,7 @@ export default function ContactPartners() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="pointer-events-none absolute -bottom-28 -right-24 h-80 w-80 rounded-full bg-[#fdb713]/20 blur-3xl"
+          className="pointer-events-none absolute -bottom-28 -right-24 h-80 w-80 rounded-full bg-[#FF7A00]/20 blur-3xl"
         />
 
         {/* Moving diagonal shape */}
@@ -129,7 +129,7 @@ export default function ContactPartners() {
                 duration: 0.6,
                 delay: 0.1,
               }}
-              className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#fdb713] sm:text-sm"
+              className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#FF7A00] sm:text-sm"
             >
               Invest in Dholera
             </motion.p>
@@ -199,7 +199,7 @@ export default function ContactPartners() {
               >
                 <Link
                   href="#contact"
-                  className="group inline-flex min-h-13 items-center justify-center gap-3 border-2 border-white bg-transparent px-7 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition-all duration-300 hover:border-[#fdb713] hover:bg-[#fdb713] hover:text-[#12568d]"
+                  className="group inline-flex min-h-13 items-center justify-center gap-3 border-2 border-white bg-transparent px-7 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition-all duration-300 hover:border-[#FF7A00] hover:bg-[#FF7A00] hover:text-[#081A3A]"
                 >
                   Contact Agent
 
@@ -221,7 +221,7 @@ export default function ContactPartners() {
               >
                 <Link
                   href="tel:+919217104219"
-                  className="group inline-flex min-h-13 items-center justify-center gap-3 bg-[#12568d] px-7 py-4 text-sm font-extrabold uppercase tracking-wide text-white shadow-xl transition-all duration-300 hover:bg-white hover:text-[#12568d]"
+                  className="group inline-flex min-h-13 items-center justify-center gap-3 bg-[#081A3A] px-7 py-4 text-sm font-extrabold uppercase tracking-wide text-white shadow-xl transition-all duration-300 hover:bg-white hover:text-[#081A3A]"
                 >
                   <FaPhoneAlt
                     size={13}
@@ -237,12 +237,12 @@ export default function ContactPartners() {
       </div>
 
       {/* Continuous partners slider */}
-      <div className="relative overflow-hidden bg-[#eef5fb] py-8 sm:py-10">
+      <div className="relative overflow-hidden bg-[#FFFFFF] py-8 sm:py-10">
         {/* Left fade */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-12 bg-linear-to-r from-[#eef5fb] to-transparent sm:w-28" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-12 bg-linear-to-r from-[#FFFFFF] to-transparent sm:w-28" />
 
         {/* Right fade */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-12 bg-linear-to-l from-[#eef5fb] to-transparent sm:w-28" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-12 bg-linear-to-l from-[#FFFFFF] to-transparent sm:w-28" />
 
         <motion.div
           animate={{
@@ -265,10 +265,10 @@ export default function ContactPartners() {
               transition={{
                 duration: 0.3,
               }}
-              className="group relative flex h-27.5 w-50 shrink-0 items-center justify-center overflow-hidden border border-[#12568d]/10 bg-white px-7 shadow-sm transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_18px_45px_rgba(18,86,141,0.15)] sm:h-[125px] sm:w-[230px]"
+              className="group relative flex h-27.5 w-50 shrink-0 items-center justify-center overflow-hidden border border-[#081A3A]/10 bg-white px-7 shadow-sm transition-all duration-500 hover:border-[#FF7A00] hover:shadow-[0_18px_45px_rgba(8,26,58,0.15)] sm:h-[125px] sm:w-[230px]"
             >
-              {/* Hover yellow line */}
-              <span className="absolute bottom-0 left-0 h-1 w-0 bg-[#fdb713] transition-all duration-500 group-hover:w-full" />
+              {/* Hover accent line */}
+              <span className="absolute bottom-0 left-0 h-1 w-0 bg-[#FF7A00] transition-all duration-500 group-hover:w-full" />
 
               {/* Shine effect */}
               <div className="pointer-events-none absolute inset-y-0 -left-28 z-10 w-20 -skew-x-12 bg-linear-to-r from-transparent via-white/60 to-transparent transition-all duration-700 group-hover:left-[120%]" />

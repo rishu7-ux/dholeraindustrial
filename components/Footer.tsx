@@ -130,7 +130,7 @@ const fadeUp = {
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#12568d] text-white">
+    <footer className="relative overflow-hidden bg-[#0A2E73] text-white">
       {/* =====================================================
           DECORATIVE BACKGROUND
       ===================================================== */}
@@ -146,7 +146,7 @@ export default function Footer() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#fdb713]/10 blur-3xl"
+        className="pointer-events-none absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#FF7A00]/10 blur-3xl"
       />
 
       <motion.div
@@ -193,9 +193,9 @@ export default function Footer() {
 
             <Link
               href="tel:+919217104219"
-              className="group flex items-start gap-3 text-xs text-white/80 transition hover:text-[#fdb713] sm:gap-4 sm:text-base"
+              className="group flex items-start gap-3 text-xs text-white/80 transition hover:text-[#FF7A00] sm:gap-4 sm:text-base"
             >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:h-10 sm:w-10">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#FF7A00] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#FF7A00] group-hover:text-[#081A3A] sm:h-10 sm:w-10">
                 <FaPhoneAlt size={14} />
               </span>
 
@@ -208,9 +208,9 @@ export default function Footer() {
 
             <Link
               href="mailto:customercare@omanaprojects.com"
-              className="group flex items-start gap-3 text-xs text-white/80 transition hover:text-[#fdb713] sm:gap-4 sm:text-base"
+              className="group flex items-start gap-3 text-xs text-white/80 transition hover:text-[#FF7A00] sm:gap-4 sm:text-base"
             >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:h-10 sm:w-10">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#FF7A00] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#FF7A00] group-hover:text-[#081A3A] sm:h-10 sm:w-10">
                 <FaEnvelope size={15} />
               </span>
 
@@ -222,7 +222,7 @@ export default function Footer() {
             {/* ADDRESS */}
 
             <div className="flex items-start gap-3 text-xs text-white/80 sm:gap-4 sm:text-base">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#fdb713] sm:h-10 sm:w-10">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#FF7A00] sm:h-10 sm:w-10">
                 <FaMapMarkerAlt size={15} />
               </span>
 
@@ -257,7 +257,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center border border-white/10 bg-white/10 text-white transition-all duration-300 hover:border-[#fdb713] hover:bg-[#fdb713] hover:text-[#12568d] sm:h-11 sm:w-11"
+                  className="flex h-9 w-9 items-center justify-center border border-white/10 bg-white/10 text-white transition-all duration-300 hover:border-[#FF7A00] hover:bg-[#FF7A00] hover:text-[#081A3A] sm:h-11 sm:w-11"
                 >
                   <Icon size={15} />
                 </Link>
@@ -292,9 +292,9 @@ export default function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group inline-flex items-center gap-2 text-xs font-medium text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base"
+                  className="group inline-flex items-center gap-2 text-xs font-medium text-white/70 transition-colors duration-300 hover:text-[#FF7A00] sm:gap-3 sm:text-base"
                 >
-                  <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
+                  <span className="h-0.5 w-0 bg-[#FF7A00] transition-all duration-300 group-hover:w-5" />
 
                   {link.label}
                 </Link>
@@ -328,9 +328,9 @@ export default function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group inline-flex items-start gap-2 text-xs font-medium leading-5 text-white/70 transition-colors duration-300 hover:text-[#fdb713] sm:gap-3 sm:text-base sm:leading-6"
+                  className="group inline-flex items-start gap-2 text-xs font-medium leading-5 text-white/70 transition-colors duration-300 hover:text-[#FF7A00] sm:gap-3 sm:text-base sm:leading-6"
                 >
-                  <span className="h-0.5 w-0 bg-[#fdb713] transition-all duration-300 group-hover:w-5" />
+                  <span className="h-0.5 w-0 bg-[#FF7A00] transition-all duration-300 group-hover:w-5" />
 
                   {link.label}
                 </Link>
@@ -342,11 +342,11 @@ export default function Footer() {
 
           <Link
             href="/properties"
-            className="group mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.1em] text-[#fdb713] sm:mt-7 sm:gap-3 sm:text-xs sm:tracking-[0.14em]"
+            className="group mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.1em] text-[#FF7A00] sm:mt-7 sm:gap-3 sm:text-xs sm:tracking-[0.14em]"
           >
             View All Properties
 
-            <span className="h-0.5 w-8 bg-[#fdb713] transition-all duration-300 group-hover:w-14" />
+            <span className="h-0.5 w-8 bg-[#FF7A00] transition-all duration-300 group-hover:w-14" />
           </Link>
         </motion.div>
       </div>
@@ -355,7 +355,7 @@ export default function Footer() {
           COPYRIGHT
       ===================================================== */}
 
-      <div className="relative z-10 border-t border-white/10 bg-[#0d456f]">
+      <div className="relative z-10 border-t border-white/10 bg-[#0A2E73]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-3 text-center text-[10px] text-white/65 sm:px-6 sm:py-5 sm:text-sm md:flex-row md:text-left lg:px-8">
           <p>
             Copyright © 2026 Dholera Industrial Plots.
@@ -383,7 +383,7 @@ function FooterHeading({
       </h3>
 
       <div className="mt-2 flex items-center gap-1.5 sm:mt-3">
-        <span className="h-0.75 w-10 bg-[#fdb713]" />
+        <span className="h-0.75 w-10 bg-[#FF7A00]" />
 
         <span className="h-0.75 w-4 bg-white/50" />
       </div>

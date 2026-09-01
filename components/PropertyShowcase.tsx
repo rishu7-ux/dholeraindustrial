@@ -73,7 +73,7 @@ const projects = [
 
     title: "Samridhi 872/2",
 
-    image: "/gallery/psamridhi 872:2.webp",
+    image: "/gallery/psamridhi-872-2.webp",
 
     location: "Dholera SIR",
 
@@ -86,7 +86,7 @@ const projects = [
 
 export default function PropertyShowcase() {
   return (
-    <section className="relative overflow-hidden bg-[#f7fbff] py-16 sm:py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-[#ffffff] py-16 sm:py-20 lg:py-24">
       {/* =====================================================
           BACKGROUND GLOW
       ===================================================== */}
@@ -101,7 +101,7 @@ export default function PropertyShowcase() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -left-40 top-20 h-105 w-105 rounded-full bg-[#fdb713]/15 blur-3xl"
+        className="pointer-events-none absolute -left-40 top-20 h-105 w-105 rounded-full bg-[#FF7A00]/15 blur-3xl"
       />
 
       <motion.div
@@ -114,7 +114,7 @@ export default function PropertyShowcase() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -right-40 bottom-10 h-112.5 w-112.5 rounded-full bg-[#12568d]/15 blur-3xl"
+        className="pointer-events-none absolute -right-40 bottom-10 h-112.5 w-112.5 rounded-full bg-[#081A3A]/15 blur-3xl"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -140,11 +140,11 @@ export default function PropertyShowcase() {
           }}
           className="mx-auto max-w-3xl text-center"
         >
-          <p className="text-xs font-black uppercase tracking-[0.32em] text-[#fdb713]">
+          <p className="text-xs font-black uppercase tracking-[0.32em] text-[#FF7A00]">
             Investment Opportunities
           </p>
 
-          <h2 className="mt-5 font-serif text-4xl font-black text-[#12568d] sm:text-5xl">
+          <h2 className="mt-5 font-serif text-4xl font-black text-[#081A3A] sm:text-5xl">
             Explore Dholera
           </h2>
 
@@ -162,7 +162,7 @@ export default function PropertyShowcase() {
               transition={{
                 duration: 0.8,
               }}
-              className="h-1 rounded-full bg-[#fdb713]"
+              className="h-1 rounded-full bg-[#FF7A00]"
             />
 
             <motion.span
@@ -179,7 +179,7 @@ export default function PropertyShowcase() {
                 duration: 0.8,
                 delay: 0.15,
               }}
-              className="h-1 rounded-full bg-[#12568d]"
+              className="h-1 rounded-full bg-[#081A3A]"
             />
           </div>
         </motion.div>
@@ -205,7 +205,7 @@ export default function PropertyShowcase() {
               whileHover={{
                 y: -8,
               }}
-              className="group relative overflow-hidden rounded-2xl border border-white/70 bg-white/65 shadow-[0_12px_36px_rgba(18,86,141,0.10)] backdrop-blur-xl sm:rounded-[30px] sm:shadow-[0_20px_60px_rgba(18,86,141,0.10)]"
+              className="group relative overflow-hidden border border-white/70 bg-white/65 shadow-[0_12px_36px_rgba(8,26,58,0.10)] backdrop-blur-xl sm:shadow-[0_20px_60px_rgba(8,26,58,0.10)]"
             >
               <div className="grid lg:grid-cols-[45%_55%]">
                 {/* =====================================================
@@ -234,7 +234,7 @@ export default function PropertyShowcase() {
 
                   {/* Image Gradient */}
 
-                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#081A3A]/70 via-[#081A3A]/10 to-transparent" />
 
                   {/* Floating Number */}
 
@@ -258,9 +258,9 @@ export default function PropertyShowcase() {
                     whileHover={{
                       y: -5,
                     }}
-                    className="absolute bottom-3 left-3 rounded-lg border border-white/25 bg-black/35 px-3 py-2 text-white backdrop-blur-xl sm:bottom-5 sm:left-5 sm:rounded-xl sm:px-5 sm:py-3"
+                    className="absolute bottom-3 left-3 rounded-lg border border-white/25 bg-[#081A3A]/35 px-3 py-2 text-white backdrop-blur-xl sm:bottom-5 sm:left-5 sm:rounded-xl sm:px-5 sm:py-3"
                   >
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#fdb713]">
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#FF7A00]">
                       Dholera SIR
                     </p>
 
@@ -288,19 +288,19 @@ export default function PropertyShowcase() {
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
-                    className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-[#fdb713]/15 blur-3xl"
+                    className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-[#FF7A00]/15 blur-3xl"
                   />
 
-                  {/* Gold Border */}
+                  {/* Accent border */}
 
-                  <div className="absolute left-0 top-0 hidden h-full w-1 bg-[#fdb713] lg:block" />
+                  <div className="absolute left-0 top-0 hidden h-full w-1 bg-[#FF7A00] lg:block" />
 
                   <div className="relative z-10">
-                    <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#fdb713]">
+                    <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#FF7A00]">
                       Featured Project
                     </p>
 
-                    <h3 className="mt-2 font-serif text-2xl font-black text-[#12568d] sm:mt-3 sm:text-4xl">
+                    <h3 className="mt-2 font-serif text-2xl font-black text-[#081A3A] sm:mt-3 sm:text-4xl">
                       {project.title}
                     </h3>
 
@@ -319,9 +319,9 @@ export default function PropertyShowcase() {
                       }}
                       className="mt-3 flex origin-left gap-2 sm:mt-5"
                     >
-                      <span className="h-1 w-14 rounded-full bg-[#fdb713]" />
+                      <span className="h-1 w-14 rounded-full bg-[#FF7A00]" />
 
-                      <span className="h-1 w-7 rounded-full bg-[#12568d]" />
+                      <span className="h-1 w-7 rounded-full bg-[#081A3A]" />
                     </motion.div>
 
                     {/* LOCATION */}
@@ -332,11 +332,11 @@ export default function PropertyShowcase() {
                       }}
                       className="mt-5 flex items-center gap-3 sm:mt-7"
                     >
-                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#12568d] text-[#fdb713] sm:h-10 sm:w-10 sm:rounded-xl">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#081A3A] text-[#FF7A00] sm:h-10 sm:w-10 sm:rounded-xl">
                         <FaMapMarkerAlt size={14} />
                       </span>
 
-                      <span className="text-sm font-bold text-slate-600">
+                      <span className="text-sm font-bold text-[#0A2E73]">
                         {project.location}
                       </span>
                     </motion.div>
@@ -349,11 +349,11 @@ export default function PropertyShowcase() {
                       }}
                       className="mt-4 flex items-center gap-3"
                     >
-                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fff2c9] text-[#12568d] sm:h-10 sm:w-10 sm:rounded-xl">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FF7A00]/12 text-[#FF7A00] sm:h-10 sm:w-10 sm:rounded-xl">
                         <FaRoad size={14} />
                       </span>
 
-                      <span className="text-sm font-bold text-slate-600">
+                      <span className="text-sm font-bold text-[#0A2E73]">
                         {project.highlight}
                       </span>
                     </motion.div>
@@ -363,13 +363,13 @@ export default function PropertyShowcase() {
                     <div className="mt-5 sm:mt-7">
                       <Link
                         href={project.href}
-                        className="group/button inline-flex items-center gap-2 rounded-lg bg-[#12568d] px-5 py-3 text-[11px] font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#fdb713] hover:text-[#12568d] sm:gap-3 sm:rounded-xl sm:px-6 sm:py-4 sm:text-xs"
+                        className="group/button inline-flex items-center gap-2 rounded-lg bg-[#081A3A] px-5 py-3 text-[11px] font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#081A3A] sm:gap-3 sm:rounded-xl sm:px-6 sm:py-4 sm:text-xs"
                       >
                         Explore
 
                         <FaArrowRight
                           size={11}
-                          className="transition-transform duration-300 group-hover/button:translate-x-2"
+                          className="text-[#FF7A00] transition-transform duration-300 group-hover/button:translate-x-2"
                         />
                       </Link>
                     </div>

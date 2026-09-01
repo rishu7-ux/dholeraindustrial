@@ -69,9 +69,9 @@ export default function SocialBar() {
         flex-col
         gap-2
         sm:left-2
-        sm:gap-2.5
+        sm:gap-2
         lg:left-3
-        lg:gap-3
+        lg:gap-2.5
       "
     >
       {socialLinks.map(
@@ -115,19 +115,19 @@ export default function SocialBar() {
                 rounded-[11px]
                 border
                 border-white/20
-                shadow-[inset_0_1px_1px_rgba(255,255,255,.4),0_6px_16px_rgba(0,0,0,.22)]
+                shadow-[inset_0_1px_1px_rgba(255,255,255,.4),0_6px_16px_rgba(8,26,58,.22)]
                 transition-all
                 duration-500
                 active:scale-90
                 sm:h-10
                 sm:w-10
                 sm:rounded-xl
-                lg:h-12
-                lg:w-12
-                lg:rounded-[14px]
+                lg:h-10
+                lg:w-10
+                lg:rounded-xl
                 lg:group-hover:-translate-y-1
                 lg:group-hover:translate-x-1
-                lg:group-hover:scale-110
+                lg:group-hover:scale-105
               "
             >
               {/* Top glass shine */}
@@ -144,7 +144,7 @@ export default function SocialBar() {
                   via-white/10
                   to-transparent
                   sm:rounded-t-xl
-                  lg:rounded-t-[14px]
+                  lg:rounded-t-xl
                 "
               />
 
@@ -158,7 +158,7 @@ export default function SocialBar() {
                   border
                   border-white/15
                   sm:rounded-[11px]
-                  lg:rounded-[13px]
+                  lg:rounded-[11px]
                 "
               />
 
@@ -188,8 +188,8 @@ export default function SocialBar() {
                   transition-transform
                   duration-300
                   sm:text-[17px]
-                  lg:text-[20px]
-                  lg:group-hover:scale-110
+                  lg:text-[18px]
+                  lg:group-hover:scale-105
                 "
               />
 
@@ -206,7 +206,7 @@ export default function SocialBar() {
                   rounded-full
                   bg-white/20
                   blur-[1px]
-                  lg:w-5
+                lg:w-4
                 "
               />
             </span>
@@ -216,16 +216,16 @@ export default function SocialBar() {
               className="
                 pointer-events-none
                 absolute
-                left-14
+                left-12
                 top-1/2
                 hidden
                 -translate-y-1/2
                 whitespace-nowrap
                 rounded-lg
-                bg-slate-900
-                px-3
+                bg-[#081A3A]
+                px-2.5
                 py-1.5
-                text-xs
+                text-[11px]
                 font-semibold
                 text-white
                 opacity-0
@@ -235,7 +235,7 @@ export default function SocialBar() {
                 group-hover:translate-x-1
                 group-hover:opacity-100
                 lg:block
-                lg:left-16
+                lg:left-13
               "
             >
               {label}

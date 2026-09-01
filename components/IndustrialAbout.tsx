@@ -69,20 +69,21 @@ export default function IndustrialAbout() {
   return (
     <section
       id="about-industrial"
-      className="relative w-full overflow-hidden bg-[#f5f8fc] py-10 sm:py-20 lg:py-24"
+      data-section-number="02"
+      className="relative w-full overflow-hidden bg-[#ffffff] py-10 sm:py-20 lg:py-24"
     >
       {/* Premium light background */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-44 -top-44 h-125 w-125 rounded-full bg-white/90 blur-[140px]" />
 
-        <div className="absolute -bottom-44 -right-44 h-130 w-130 rounded-full bg-[#12568d]/5 blur-[160px]" />
+        <div className="absolute -bottom-44 -right-44 h-130 w-130 rounded-full bg-[#081A3A]/5 blur-[160px]" />
 
         <div className="absolute left-1/2 top-1/2 h-175 w-175 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/35 blur-[180px]" />
 
-        <div className="absolute inset-0 bg-linear-to-br from-white/80 via-[#f5f8fc] to-[#eef4fa]" />
+        <div className="absolute inset-0 bg-linear-to-br from-white/80 via-[#ffffff] to-[#FFFFFF]" />
       </div>
 
-      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-6 px-4 sm:gap-10 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
+      <div className="premium-story-grid relative z-10 mx-auto grid max-w-7xl items-center gap-6 px-4 sm:gap-10 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
         {/* Left image */}
         <motion.div
           initial={{
@@ -103,9 +104,9 @@ export default function IndustrialAbout() {
             duration: 0.85,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="group relative"
+          className="premium-about-visual group relative"
         >
-          {/* Yellow decorative shape */}
+          {/* Accent decorative shape */}
           <motion.div
             animate={{
               y: [0, -10, 0],
@@ -115,10 +116,10 @@ export default function IndustrialAbout() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute -left-2 -top-2 h-14 w-14 rounded-lg bg-[#fdb713] sm:-left-5 sm:-top-5 sm:h-32 sm:w-32 sm:rounded-xl"
+            className="premium-about-accent absolute -left-2 -top-2 h-14 w-14 rounded-lg bg-[#FF7A00] sm:-left-5 sm:-top-5 sm:h-32 sm:w-32 sm:rounded-xl"
           />
 
-          {/* Blue decorative shape */}
+          {/* Charcoal decorative shape */}
           <motion.div
             animate={{
               y: [0, 10, 0],
@@ -128,21 +129,21 @@ export default function IndustrialAbout() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute -bottom-2 -right-2 h-14 w-14 rounded-lg bg-[#12568d] sm:-bottom-5 sm:-right-5 sm:h-32 sm:w-32 sm:rounded-xl"
+            className="premium-about-accent absolute -bottom-2 -right-2 h-14 w-14 rounded-lg bg-[#081A3A] sm:-bottom-5 sm:-right-5 sm:h-32 sm:w-32 sm:rounded-xl"
           />
 
-          <div className="relative overflow-hidden rounded-2xl bg-white p-2 shadow-[0_25px_70px_rgba(18,86,141,0.18)]">
-            <div className="relative overflow-hidden rounded-lg sm:rounded-xl">
+          <div className="premium-about-image-shell relative overflow-hidden rounded-2xl bg-white p-2 shadow-[0_25px_70px_rgba(8,26,58,0.18)]">
+            <div className="premium-about-image-media relative overflow-hidden rounded-lg sm:rounded-xl">
               <Image
                 src="/gallery/industrial  heart.webp"
                 alt="Dholera industrial development"
                 width={800}
                 height={520}
                 priority
-                className="h-44 w-full object-cover transition-transform duration-1000 group-hover:scale-105 sm:h-100 lg:h-117.5"
+                className="premium-about-image h-44 w-full object-cover transition-transform duration-1000 group-hover:scale-105 sm:h-100 lg:h-117.5"
               />
 
-              <div className="absolute inset-0 bg-linear-to-t from-[#12568d]/35 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#081A3A]/35 via-transparent to-transparent" />
 
               {/* Small image label */}
               <motion.div
@@ -161,13 +162,13 @@ export default function IndustrialAbout() {
                   duration: 0.6,
                   delay: 0.45,
                 }}
-                className="absolute bottom-2 left-2 right-2 border-l-2 border-[#fdb713] bg-[#12568d]/90 px-3 py-2 text-white shadow-lg backdrop-blur-sm sm:bottom-5 sm:left-5 sm:right-auto sm:max-w-[330px] sm:border-l-4 sm:px-5 sm:py-4"
+                className="premium-about-image-label absolute bottom-2 left-2 right-2 border-l-2 border-[#FF7A00] bg-[#081A3A]/90 px-3 py-2 text-white shadow-lg backdrop-blur-sm sm:bottom-5 sm:left-5 sm:right-auto sm:max-w-[330px] sm:border-l-4 sm:px-5 sm:py-4"
               >
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#fdb713]">
+                <p className="premium-about-image-kicker text-xs font-bold uppercase tracking-[0.18em] text-[#FF7A00]">
                   Dholera SIR
                 </p>
 
-                <p className="mt-1 text-sm font-semibold sm:text-base">
+                <p className="premium-about-image-caption mt-1 text-sm font-semibold sm:text-base">
                   India&apos;s future industrial and investment destination
                 </p>
               </motion.div>
@@ -177,6 +178,7 @@ export default function IndustrialAbout() {
 
         {/* Right content */}
         <motion.div
+          className="premium-about-content"
           variants={contentContainer}
           initial="hidden"
           whileInView="visible"
@@ -187,14 +189,14 @@ export default function IndustrialAbout() {
         >
           <motion.p
             variants={fadeUp}
-            className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#fdb713] sm:text-sm sm:tracking-[0.25em]"
+            className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#FF7A00] sm:text-sm sm:tracking-[0.25em]"
           >
             About Dholera Industrial
           </motion.p>
 
           <motion.h2
             variants={fadeUp}
-            className="mt-2 font-serif text-2xl font-black leading-tight text-[#12568d] sm:mt-4 sm:text-4xl lg:text-5xl"
+            className="mt-2 font-serif text-2xl font-black leading-tight text-[#081A3A] sm:mt-4 sm:text-4xl lg:text-5xl"
           >
             Invest Smart. Build Big. In Dholera&apos;s Industrial Heart!
           </motion.h2>
@@ -203,13 +205,13 @@ export default function IndustrialAbout() {
             variants={fadeUp}
             className="mt-3 flex items-center gap-2 sm:mt-5"
           >
-            <span className="h-0.75 w-16 bg-[#fdb713]" />
-            <span className="h-0.75 w-8 bg-[#12568d]" />
+            <span className="h-0.75 w-16 bg-[#FF7A00]" />
+            <span className="h-0.75 w-8 bg-[#081A3A]" />
           </motion.div>
 
           <motion.p
             variants={fadeUp}
-            className="mt-4 line-clamp-3 text-xs leading-5 text-slate-600 sm:mt-7 sm:line-clamp-none sm:text-base sm:leading-8"
+            className="premium-about-summary mt-4 text-sm leading-6 text-[#0A2E73] sm:mt-7 sm:text-base sm:leading-8"
           >
             At Omana Projects, we help businesses secure high-potential
             industrial plots in Dholera SIR — India&apos;s most advanced
@@ -219,7 +221,7 @@ export default function IndustrialAbout() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-4 hidden text-[15px] leading-8 text-slate-600 sm:block sm:text-base"
+            className="mt-4 hidden text-[15px] leading-8 text-[#0A2E73] sm:block sm:text-base"
           >
             Backed by the Government of India, Dholera is becoming a major
             destination for manufacturing, logistics, infrastructure and
@@ -229,7 +231,7 @@ export default function IndustrialAbout() {
           {/* Feature lists */}
           <motion.div
             variants={featureContainer}
-            className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 sm:mt-8 sm:gap-x-8 sm:gap-y-5"
+            className="premium-about-features mt-5 grid grid-cols-2 gap-x-3 gap-y-3 sm:mt-8 sm:gap-x-8 sm:gap-y-5"
           >
             <div className="space-y-2 sm:space-y-5">
               {leftFeatures.map((item) => (
@@ -241,11 +243,11 @@ export default function IndustrialAbout() {
                   }}
                   className="group/feature flex items-center gap-2 sm:gap-3"
                 >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#12568d]/10 text-[#12568d] transition-all duration-300 group-hover/feature:bg-[#fdb713] sm:h-9 sm:w-9">
+                  <span className="premium-about-feature-icon flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#FF7A00]/12 text-[#FF7A00] transition-all duration-300 group-hover/feature:bg-[#081A3A] sm:h-9 sm:w-9">
                     <FaRegCheckCircle size={14} />
                   </span>
 
-                  <span className="text-[11px] font-semibold leading-4 text-slate-700 sm:text-base sm:leading-normal">
+                  <span className="text-[11px] font-semibold leading-4 text-[#0A2E73] sm:text-base sm:leading-normal">
                     {item}
                   </span>
                 </motion.div>
@@ -262,11 +264,11 @@ export default function IndustrialAbout() {
                   }}
                   className="group/feature flex items-center gap-2 sm:gap-3"
                 >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#12568d]/10 text-[#12568d] transition-all duration-300 group-hover/feature:bg-[#fdb713] sm:h-9 sm:w-9">
+                  <span className="premium-about-feature-icon flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#FF7A00]/12 text-[#FF7A00] transition-all duration-300 group-hover/feature:bg-[#081A3A] sm:h-9 sm:w-9">
                     <FaRegCheckCircle size={14} />
                   </span>
 
-                  <span className="text-[11px] font-semibold leading-4 text-slate-700 sm:text-base sm:leading-normal">
+                  <span className="text-[11px] font-semibold leading-4 text-[#0A2E73] sm:text-base sm:leading-normal">
                     {item}
                   </span>
                 </motion.div>
@@ -275,7 +277,7 @@ export default function IndustrialAbout() {
           </motion.div>
 
           {/* Button */}
-          <motion.div variants={fadeUp} className="mt-5 sm:mt-9">
+          <motion.div variants={fadeUp} className="premium-about-action mt-6 sm:mt-9">
             <motion.div
               whileHover={{
                 y: -4,
@@ -288,13 +290,13 @@ export default function IndustrialAbout() {
             >
               <Link
                 href="#properties"
-                className="group/button inline-flex min-h-10 items-center justify-center gap-2 rounded-md bg-[#12568d] px-5 py-2.5 text-[11px] font-extrabold uppercase tracking-wide text-white shadow-lg transition-colors duration-300 hover:bg-[#fdb713] hover:text-[#12568d] sm:min-h-13 sm:gap-3 sm:px-7 sm:py-4 sm:text-sm"
+                className="group/button inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-md bg-[#081A3A] px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide text-white shadow-lg transition-colors duration-300 hover:bg-white hover:text-[#081A3A] active:bg-white active:text-[#081A3A] sm:min-h-13 sm:gap-3 sm:px-7 sm:py-4 sm:text-sm"
               >
                 Explore Projects
 
                 <FaArrowRight
                   size={13}
-                  className="transition-transform duration-300 group-hover/button:translate-x-1"
+                  className="text-[#FF7A00] transition-transform duration-300 group-hover/button:translate-x-1"
                 />
               </Link>
             </motion.div>

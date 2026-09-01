@@ -71,11 +71,11 @@ function BlogCard({ post }: { post: BlogPost }) {
       transition={{
         duration: 0.3,
       }}
-      className="group relative w-77.5 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_30px_70px_rgba(18,86,141,0.18)] sm:w-90 lg:w-97.5"
+      className="group relative w-77.5 shrink-0 overflow-hidden rounded-xl border border-[#081A3A]/15 bg-white shadow-sm transition-all duration-500 hover:border-[#FF7A00] hover:shadow-[0_30px_70px_rgba(8,26,58,0.18)] sm:w-90 lg:w-97.5"
     >
-      {/* Top yellow line */}
+      {/* Top accent line */}
 
-      <span className="absolute left-0 top-0 z-20 h-1 w-full bg-[#fdb713]" />
+      <span className="absolute left-0 top-0 z-20 h-1 w-full bg-[#FF7A00]" />
 
       {/* Blog image */}
       <div className="relative h-57.5 overflow-hidden sm:h-62.5">
@@ -88,10 +88,10 @@ function BlogCard({ post }: { post: BlogPost }) {
         />
 
         {/* Very light image hover */}
-        <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/5" />
+        <div className="absolute inset-0 bg-[#081A3A]/0 transition-colors duration-500 group-hover:bg-[#081A3A]/5" />
 
         {/* Hover label */}
-        <div className="absolute bottom-5 left-5 translate-y-5 border-l-4 border-[#fdb713] bg-white/95 px-4 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#12568d] opacity-0 shadow-lg backdrop-blur-md transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+        <div className="absolute bottom-5 left-5 translate-y-5 border-l-4 border-[#FF7A00] bg-white/95 px-4 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#081A3A] opacity-0 shadow-lg backdrop-blur-md transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           Dholera Blog
         </div>
       </div>
@@ -101,14 +101,14 @@ function BlogCard({ post }: { post: BlogPost }) {
 
       {/* Blog content */}
       <div className="relative z-10 flex min-h-61.25 flex-col bg-white p-6 sm:p-7">
-        <h3 className="font-serif text-xl font-black leading-tight text-slate-800 transition-all duration-500 group-hover:translate-x-1 group-hover:text-[#12568d]">
+        <h3 className="font-serif text-xl font-black leading-tight text-[#0A2E73] transition-all duration-500 group-hover:translate-x-1 group-hover:text-[#081A3A]">
           {post.title}
         </h3>
 
-        <span className="mt-4 block h-0.75 w-12 bg-[#fdb713] transition-all duration-500 group-hover:w-24" />
+        <span className="mt-4 block h-0.75 w-12 bg-[#FF7A00] transition-all duration-500 group-hover:w-24" />
 
-        <div className="mt-5 flex items-center gap-3 text-sm text-slate-500 transition-colors duration-500 group-hover:text-slate-700">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#12568d]/10 text-[#12568d] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#fdb713]">
+        <div className="mt-5 flex items-center gap-3 text-sm text-[#0A2E73] transition-colors duration-500 group-hover:text-[#0A2E73]">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#081A3A]/10 text-[#081A3A] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#FF7A00]">
             <FaCalendarAlt size={14} />
           </span>
 
@@ -118,7 +118,7 @@ function BlogCard({ post }: { post: BlogPost }) {
         <div className="mt-auto pt-7">
           <Link
             href={post.href}
-            className="group/link inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.12em] text-[#12568d] transition-colors duration-300 hover:text-[#fdb713]"
+            className="group/link inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.12em] text-[#081A3A] transition-colors duration-300 hover:text-[#FF7A00]"
           >
             Read More
 
@@ -130,8 +130,8 @@ function BlogCard({ post }: { post: BlogPost }) {
         </div>
       </div>
 
-      {/* Bottom yellow hover line */}
-      <span className="absolute bottom-0 left-0 h-1 w-0 bg-[#fdb713] transition-all duration-700 group-hover:w-full" />
+      {/* Bottom accent hover line */}
+      <span className="absolute bottom-0 left-0 h-1 w-0 bg-[#FF7A00] transition-all duration-700 group-hover:w-full" />
     </motion.article>
   );
 }
@@ -140,7 +140,7 @@ export default function BlogSlider() {
   return (
     <section
       id="blog"
-      className="relative overflow-hidden bg-[#eef5fb] py-16 sm:py-20 lg:py-24"
+      className="relative overflow-hidden bg-[#FFFFFF] py-16 sm:py-20 lg:py-24"
     >
       {/* Floating left shape */}
       <motion.div
@@ -154,7 +154,7 @@ export default function BlogSlider() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#12568d]/5 blur-3xl"
+        className="pointer-events-none absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#081A3A]/5 blur-3xl"
       />
 
       {/* Floating right shape */}
@@ -169,7 +169,7 @@ export default function BlogSlider() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-[#fdb713]/10 blur-3xl"
+        className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-[#FF7A00]/10 blur-3xl"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -193,23 +193,23 @@ export default function BlogSlider() {
           }}
           className="mx-auto max-w-2xl text-center"
         >
-          <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#fdb713] sm:text-sm">
+          <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#FF7A00] sm:text-sm">
             Latest Updates
           </p>
 
-          <h2 className="mt-4 font-serif text-3xl font-black uppercase text-[#12568d] sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 font-serif text-3xl font-black uppercase text-[#081A3A] sm:text-4xl lg:text-5xl">
             Blog
           </h2>
 
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-[#0A2E73] sm:text-base">
             Explore the latest updates, investment insights and industrial
             development news from Dholera.
           </p>
 
           <div className="mx-auto mt-6 flex w-28 flex-col items-center gap-1.5">
-            <span className="h-0.5 w-20 bg-[#fdb713]" />
-            <span className="h-0.5 w-12 bg-[#12568d]" />
-            <span className="h-0.5 w-20 bg-[#fdb713]" />
+            <span className="h-0.5 w-20 bg-[#FF7A00]" />
+            <span className="h-0.5 w-12 bg-[#081A3A]" />
+            <span className="h-0.5 w-20 bg-[#FF7A00]" />
           </div>
         </motion.div>
       </div>
@@ -217,10 +217,10 @@ export default function BlogSlider() {
       {/* Automatic continuous slider */}
       <div className="relative mt-12 overflow-hidden">
         {/* Left fade matching background */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-10 bg-linear-to-r from-[#eef5fb] to-transparent sm:w-24" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-10 bg-linear-to-r from-[#FFFFFF] to-transparent sm:w-24" />
 
         {/* Right fade matching background */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-30 w-10 bg-linear-to-l from-[#eef5fb] to-transparent sm:w-24" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-30 w-10 bg-linear-to-l from-[#FFFFFF] to-transparent sm:w-24" />
 
         <motion.div
           animate={{

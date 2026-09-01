@@ -88,174 +88,90 @@ const cardAnimation: Variants = {
 
 export default function LandCategories() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffdf4] py-12 sm:py-20 lg:py-24">
-      {/* Very light transparent yellow glow */}
-      <motion.div
-        aria-hidden="true"
-        animate={{
-          x: [-25, 25, -25],
-          y: [-20, 20, -20],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="pointer-events-none absolute -left-44 -top-44 h-120 w-120 rounded-full bg-[#fdb713]/10 blur-[130px]"
-      />
-
-      {/* Soft white glow */}
-      <motion.div
-        aria-hidden="true"
-        animate={{
-          x: [20, -20, 20],
-          y: [20, -20, 20],
-        }}
-        transition={{
-          duration: 14,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="pointer-events-none absolute right-0 top-0 h-130 w-130 rounded-full bg-white/75 blur-[150px]"
-      />
-
-      {/* Subtle blue balance */}
-      <motion.div
-        aria-hidden="true"
-        animate={{
-          x: [-20, 20, -20],
-          y: [15, -15, 15],
-        }}
-        transition={{
-          duration: 16,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="pointer-events-none absolute bottom-0 left-1/2 h-105 w-105 -translate-x-1/2 rounded-full bg-[#12568d]/4 blur-[120px]"
-      />
-
-      {/* Premium transparent overlay */}
-      <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-white/35 via-transparent to-[#fdb713]/5" />
-
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
+    <section
+      id="land-categories"
+      data-section-number="04"
+      className="premium-land-categories relative w-full overflow-hidden bg-white py-16 text-[#081A3A] sm:py-24 lg:py-28"
+    >
+      <div className="relative z-10 mx-auto w-full max-w-[1680px] px-5 sm:px-8 lg:px-14">
         <motion.div
           variants={headingContainer}
-          initial="hidden"
+          initial={false}
           whileInView="visible"
-          viewport={{
-            once: true,
-            amount: 0.25,
-          }}
-          className="max-w-3xl"
+          viewport={{ once: true, amount: 0.25 }}
+          className="premium-category-heading grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16"
         >
+          <div>
+            <motion.p
+              variants={fadeUp}
+              className="premium-category-eyebrow flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.28em] text-[#ff5e1a] sm:text-xs"
+            >
+              <span className="h-px w-10 bg-[#ff5e1a]" />
+              Land Categories
+            </motion.p>
+            <motion.h2
+              variants={fadeUp}
+              className="premium-category-title mt-5 max-w-4xl text-[clamp(2.7rem,6vw,6.2rem)] font-semibold uppercase leading-[0.9] tracking-[-0.035em] text-[#081A3A]"
+            >
+              Find the land best suited for you
+            </motion.h2>
+          </div>
           <motion.p
             variants={fadeUp}
-            className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#12568d] sm:text-sm sm:tracking-[0.25em]"
-          >
-            Land Categories
-          </motion.p>
-
-          <motion.h2
-            variants={fadeUp}
-            className="mt-3 text-2xl font-black leading-tight text-[#12568d] sm:mt-4 sm:text-4xl lg:text-5xl"
-          >
-            Find the land best suited for you
-          </motion.h2>
-
-          <motion.p
-            variants={fadeUp}
-            className="mt-3 max-w-2xl text-xs font-medium leading-5 text-[#173b57] sm:mt-5 sm:text-base sm:leading-7"
+            className="premium-category-lede max-w-lg text-base leading-7 text-[#0A2E73] sm:text-lg sm:leading-8"
           >
             At Omana Projects, we make land investment easy, transparent, and
             future-focused.
           </motion.p>
-
-          <motion.div
-            variants={fadeUp}
-            className="mt-4 flex items-center gap-2 sm:mt-6"
-          >
-            <span className="h-1 w-16 rounded-full bg-[#fdb713]" />
-            <span className="h-1 w-8 rounded-full bg-[#12568d]" />
-          </motion.div>
         </motion.div>
 
-        {/* Cards */}
         <motion.div
           variants={cardsContainer}
-          initial="hidden"
+          initial={false}
           whileInView="visible"
-          viewport={{
-            once: true,
-            amount: 0.12,
-          }}
-          className="mt-8 grid gap-4 sm:mt-12 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"
+          viewport={{ once: true, amount: 0.12 }}
+          className="premium-category-grid mt-12 grid gap-5 sm:mt-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-7"
         >
           {categories.map((category) => (
             <motion.article
               key={category.id}
               variants={cardAnimation}
-              whileHover={{
-                y: -12,
-                scale: 1.02,
-              }}
-              transition={{
-                duration: 0.35,
-              }}
-              className="group relative grid min-h-38 grid-cols-[40%_60%] overflow-hidden rounded-xl border-2 border-white bg-white shadow-[0_10px_30px_rgba(18,86,141,0.12)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_35px_85px_rgba(18,86,141,0.24)] md:block md:min-h-0 md:rounded-[26px] md:border-[3px] md:shadow-[0_20px_55px_rgba(18,86,141,0.14)]"
+              whileHover={{ y: -8 }}
+              transition={{ duration: 0.35 }}
+              className="premium-category-card group relative flex min-h-[34rem] flex-col overflow-hidden border border-white/20 bg-[#0A2E73] transition-[border-color,box-shadow,transform] duration-500"
             >
-              {/* Top accent line */}
-              <div className="absolute left-0 top-0 z-20 h-1.5 w-full bg-[#fdb713]" />
-
-              {/* Decorative corners */}
-              <div className="pointer-events-none absolute right-0 top-0 z-10 h-20 w-20 rounded-bl-[30px] bg-[#fdb713]/15" />
-              <div className="pointer-events-none absolute bottom-0 left-0 z-10 h-20 w-20 rounded-tr-[30px] bg-[#12568d]/5" />
-
-              {/* Image */}
-              <div className="relative min-h-38 overflow-hidden md:h-65 md:min-h-0 lg:h-72.5">
+              <div className="premium-category-media relative h-[19rem] shrink-0 overflow-hidden bg-[#d9d6cf] sm:h-[21rem] lg:h-[22rem]">
                 <Image
                   src={category.image}
                   alt={category.title}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#191b1d]/35 via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-40" />
               </div>
 
-              {/* Content */}
-              <div className="relative flex min-h-0 flex-col border-l-[3px] border-t-0 border-[#fdb713]/70 bg-white p-4 transition-all duration-500 group-hover:bg-[#fffdf4] md:min-h-63.75 md:border-l-0 md:border-t-[3px] md:p-7 lg:p-8">
-                <h3 className="text-base font-black leading-tight text-[#12568d] transition-all duration-500 group-hover:translate-x-1 group-hover:text-black md:text-2xl">
+              <div className="premium-category-body flex flex-1 flex-col bg-[#0A2E73] p-6 text-white sm:p-7 lg:p-8">
+                <h3 className="premium-category-card-title text-[1.6rem] font-semibold uppercase leading-none tracking-[-0.02em] text-white sm:text-[1.8rem]">
                   {category.title}
                 </h3>
-
-                <span className="mt-2 block h-0.5 w-8 rounded-full bg-[#fdb713] transition-all duration-500 group-hover:w-28 group-hover:bg-[#12568d] md:mt-4 md:h-1 md:w-14" />
-
-                <p className="mt-2 line-clamp-3 text-[10px] leading-4 text-slate-600 transition-colors duration-500 group-hover:text-slate-900 md:mt-5 md:line-clamp-none md:text-[15px] md:leading-8">
+                <span className="premium-category-rule mt-5 h-px w-12 bg-[#ff5e1a] transition-all duration-500 group-hover:w-24" />
+                <p className="premium-category-description mt-5 max-w-md text-sm leading-6 text-white/72 sm:text-[15px] sm:leading-7">
                   {category.description}
                 </p>
-
-                <motion.div
-                  whileHover={{
-                    x: 6,
-                  }}
-                  className="mt-auto hidden pt-7 md:block"
-                >
+                <motion.div whileHover={{ x: 5 }} className="mt-auto pt-8">
                   <Link
                     href="#contact"
-                    className="group/link inline-flex items-center gap-3 text-sm font-black uppercase tracking-[0.12em] text-[#12568d] transition-colors duration-300 hover:text-[#d99800]"
+                    className="premium-category-link group/link inline-flex items-center gap-3 border-b border-[#ff7a00] pb-1 font-mono text-xs font-medium uppercase tracking-[0.14em] text-white transition-colors duration-300 hover:text-[#ff7a00]"
                   >
                     Enquiry Now
-
                     <FaArrowRight
-                      size={12}
-                      className="transition-transform duration-300 group-hover/link:translate-x-2"
+                      size={11}
+                      className="transition-transform duration-300 group-hover/link:translate-x-1.5"
                     />
                   </Link>
                 </motion.div>
               </div>
-
-              {/* Bottom animated line */}
-              <div className="absolute bottom-0 left-0 h-1.5 w-0 bg-[#12568d] transition-all duration-700 group-hover:w-full" />
             </motion.article>
           ))}
         </motion.div>

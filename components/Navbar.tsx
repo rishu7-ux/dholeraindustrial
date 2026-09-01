@@ -47,13 +47,14 @@ export default function Navbar() {
 
   return (
     <header
+      data-premium-navbar
       className={`sticky top-0 z-50 w-full border-b transition-all duration-500 ${
         scrolled
-          ? "border-white/10 bg-[#12568d]/90 shadow-[0_10px_35px_rgba(18,86,141,0.28)] backdrop-blur-xl"
-          : "border-slate-200/80 bg-white shadow-sm"
+          ? "border-[#191B1D]/20 bg-white/95 shadow-[0_10px_35px_rgba(25,27,29,0.12)] backdrop-blur-xl"
+          : "border-[#191B1D]/15 bg-white shadow-sm"
       }`}
     >
-      {/* BLUE GLOW */}
+      {/* Charcoal glow */}
       <motion.div
         aria-hidden="true"
         animate={{
@@ -69,7 +70,7 @@ export default function Navbar() {
         }`}
       />
 
-      <div className="relative mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex h-14 max-w-none items-center justify-between px-5 sm:h-20 sm:px-8 lg:h-[112px] lg:px-12 xl:px-14">
         {/* LOGO */}
 
 {/* LOGO - NEVER CHANGES ON SCROLL */}
@@ -99,23 +100,25 @@ export default function Navbar() {
     href="/"
     onClick={() => setMenuOpen(false)}
     aria-label="Go to homepage"
-    className="flex items-center"
+    className="flex items-center gap-3 sm:gap-4"
   >
-    <Image
-      src="/gallery/logo.png"
-      alt="Dholera Industrial Logo"
-      width={70}
-      height={40}
-      priority
-      className="h-auto w-14 object-contain sm:w-[82px]"
-    />
+    <span className="premium-logo-mark">
+      <Image
+        src="/gallery/logo.png"
+        alt="Omana Projects — We think about you"
+        width={1080}
+        height={1080}
+        preload
+        className="absolute inset-0 h-full w-full object-contain"
+      />
+    </span>
   </Link>
 </motion.div>
 
 
 
         {/* DESKTOP MENU */}
-        <nav className="hidden items-center gap-5 lg:flex xl:gap-7">
+        <nav className="hidden items-center gap-5 lg:flex xl:gap-9">
           {navLinks.map((link, index) => {
             const active = isActive(link.href);
 
@@ -137,14 +140,10 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className={`group relative block whitespace-nowrap py-7 text-[12px] font-semibold uppercase tracking-[0.04em] transition-all duration-300 xl:text-[13px] ${
-                    scrolled
-                      ? active
-                        ? "text-[#fdb713]"
-                        : "text-white hover:text-[#fdb713]"
-                      : active
-                      ? "text-[#12568d]"
-                      : "text-slate-700 hover:text-[#12568d]"
+                    className={`group relative block whitespace-nowrap py-7 text-[12px] font-semibold uppercase tracking-[0.06em] transition-all duration-300 xl:text-[13px] ${
+                    active
+                      ? "text-[#FF7A00]"
+                      : "text-[#191B1D] hover:text-[#FF7A00]"
                   }`}
                 >
                   <span className="relative z-10 inline-block transition-all duration-300 group-hover:-translate-y-0.5 group-hover:font-bold">
@@ -153,7 +152,7 @@ export default function Navbar() {
 
                   {/* UNDERLINE */}
                   <span
-                    className={`absolute bottom-3 left-1/2 h-[3px] -translate-x-1/2 rounded-full bg-[#fdb713] transition-all duration-300 ${
+                    className={`absolute bottom-3 left-1/2 h-[3px] -translate-x-1/2 rounded-full bg-[#FF7A00] transition-all duration-300 ${
                       active
                         ? "w-full opacity-100"
                         : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"
@@ -165,7 +164,7 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* DESKTOP CALL BUTTON */}
+        {/* DESKTOP CONTACT ACTIONS */}
         <motion.div
           initial={{
             opacity: 0,
@@ -188,55 +187,22 @@ export default function Navbar() {
           }}
           className="hidden shrink-0 lg:block"
         >
-          <Link
-            href="tel:+919217104219"
-            className={`group flex items-center gap-3 rounded-xl border px-3 py-2 transition-all duration-300 ${
-              scrolled
-                ? "border-white/20 bg-white/10 shadow-lg backdrop-blur-xl"
-                : "border-[#12568d]/10 bg-white shadow-sm"
-            } hover:border-[#fdb713]`}
-          >
-            <span
-              className={`relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-lg shadow-md transition-all duration-300 ${
-                scrolled
-                  ? "bg-[#fdb713] text-[#12568d]"
-                  : "bg-[#12568d] text-white group-hover:bg-[#fdb713] group-hover:text-[#12568d]"
-              }`}
+          <div className="flex items-center gap-7 xl:gap-9">
+            <Link
+              href="tel:+919217104219"
+              className="whitespace-nowrap font-mono text-[13px] tracking-[0.04em] text-[#191B1D] transition-colors duration-300 hover:text-[#FF7A00]"
             >
-              <motion.span
-                animate={{
-                  scale: [1, 1.12, 1],
-                }}
-                transition={{
-                  duration: 2.2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                <FaPhoneAlt size={15} />
-              </motion.span>
-            </span>
+              Call: +91 92171 04219
+            </Link>
 
-            <span>
-              <span
-                className={`block text-[11px] font-medium ${
-                  scrolled ? "text-white/65" : "text-slate-500"
-                }`}
-              >
-                Call Us Now
-              </span>
-
-              <span
-                className={`block whitespace-nowrap text-sm font-extrabold ${
-                  scrolled
-                    ? "text-white"
-                    : "text-[#12568d]"
-                }`}
-              >
-                +91 9217104219
-              </span>
-            </span>
-          </Link>
+            <Link
+              href="/contact"
+              className="premium-header-enquire group inline-flex items-center gap-3 bg-[#FF7A00] px-7 py-4 font-mono text-[13px] font-medium uppercase tracking-[0.14em] text-[#191B1D] shadow-[0_12px_28px_rgba(255,122,0,0.2)] transition-all duration-300 hover:bg-white hover:text-[#191B1D]"
+            >
+              <span>ENQUIRE NOW</span>
+              <span aria-hidden="true" className="text-base leading-none transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </Link>
+          </div>
         </motion.div>
 
         {/* MOBILE ACTIONS */}
@@ -245,7 +211,7 @@ export default function Navbar() {
             <Link
               href="tel:+919217104219"
               aria-label="Call us"
-              className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fdb713] text-[#12568d] shadow-md sm:h-11 sm:w-11 sm:rounded-xl"
+              className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FF7A00] text-[#191B1D] shadow-md sm:h-11 sm:w-11 sm:rounded-xl"
             >
               <FaPhoneAlt size={15} />
             </Link>
@@ -265,11 +231,7 @@ export default function Navbar() {
             whileTap={{
               scale: 0.9,
             }}
-            className={`relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg shadow-md transition-all duration-300 sm:h-11 sm:w-11 sm:rounded-xl ${
-              scrolled
-                ? "bg-white/15 text-white ring-1 ring-white/20"
-                : "bg-[#12568d] text-white"
-            }`}
+            className="premium-menu-toggle relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg bg-[#191B1D] text-white shadow-md transition-all duration-300 sm:h-11 sm:w-11 sm:rounded-xl"
           >
             <AnimatePresence mode="wait" initial={false}>
               {menuOpen ? (
@@ -346,11 +308,7 @@ export default function Navbar() {
               duration: 0.35,
               ease: "easeInOut",
             }}
-            className={`overflow-hidden border-t lg:hidden ${
-              scrolled
-                ? "border-white/10 bg-[#12568d]/95 backdrop-blur-xl"
-                : "border-slate-200 bg-white"
-            }`}
+            className="premium-mobile-menu overflow-hidden border-t border-[#191B1D]/15 bg-white lg:hidden"
           >
             <motion.nav
               initial="hidden"
@@ -391,29 +349,23 @@ export default function Navbar() {
                         setMenuOpen(false)
                       }
                       className={`group relative flex items-center justify-center rounded-md border-b px-8 py-2.5 text-center text-[11px] font-semibold uppercase tracking-[0.04em] transition-all duration-300 sm:rounded-lg sm:px-10 sm:py-4 sm:text-sm ${
-                        scrolled
-                          ? active
-                            ? "border-white/10 bg-white/10 text-[#fdb713]"
-                            : "border-white/10 text-white hover:bg-white/10 hover:text-[#fdb713]"
-                          : active
-                          ? "border-slate-200/60 bg-[#12568d]/10 text-[#12568d]"
-                          : "border-slate-200/60 text-slate-700 hover:bg-[#12568d]/5 hover:text-[#12568d]"
+                        active
+                          ? "border-[#191B1D]/15 bg-[#191B1D]/10 text-[#FF7A00]"
+                          : "border-[#191B1D]/15 text-[#5B6672] hover:bg-[#191B1D]/5 hover:text-[#191B1D]"
                       }`}
                     >
                       <span
                         className={`absolute left-3 h-2 w-2 shrink-0 rounded-full ${
                           active
-                            ? "bg-[#fdb713]"
-                            : scrolled
-                            ? "bg-white/40"
-                            : "bg-[#12568d]/30"
+                            ? "bg-[#FF7A00]"
+                            : "bg-[#191B1D]/30"
                         }`}
                       />
 
                       <span>{link.label}</span>
 
                       <span
-                        className={`absolute right-3 h-0.5 rounded-full bg-[#fdb713] transition-all duration-300 ${
+                        className={`absolute right-3 h-0.5 rounded-full bg-[#FF7A00] transition-all duration-300 ${
                           active
                             ? "w-8"
                             : "w-0 group-hover:w-8"
@@ -443,7 +395,7 @@ export default function Navbar() {
                   onClick={() =>
                     setMenuOpen(false)
                   }
-                  className="group flex w-full items-center justify-center gap-2 rounded-lg bg-[#fdb713] px-4 py-2.5 text-xs font-extrabold text-[#12568d] shadow-lg sm:gap-3 sm:rounded-xl sm:px-5 sm:py-4 sm:text-sm"
+                  className="premium-mobile-call group flex w-full items-center justify-center gap-2 rounded-lg bg-[#FF7A00] px-4 py-2.5 text-xs font-extrabold text-[#191B1D] shadow-lg sm:gap-3 sm:rounded-xl sm:px-5 sm:py-4 sm:text-sm"
                 >
                   <FaPhoneAlt size={14} />
 

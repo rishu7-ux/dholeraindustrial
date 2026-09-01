@@ -124,7 +124,8 @@ export default function IndustrialServices() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-white py-12 sm:py-20 lg:py-24"
+      data-section-number="03"
+      className="relative overflow-hidden bg-[#0A2E73] py-12 text-white sm:py-20 lg:py-24"
     >
       {/* Soft background decorations */}
       
@@ -139,7 +140,7 @@ export default function IndustrialServices() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#12568d]/5 blur-3xl"
+        className="pointer-events-none absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#081A3A]/5 blur-3xl"
       />
 
       <motion.div
@@ -153,10 +154,10 @@ export default function IndustrialServices() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -bottom-36 -right-28 h-96 w-96 rounded-full bg-[#fdb713]/8 blur-3xl"
+        className="pointer-events-none absolute -bottom-36 -right-28 h-96 w-96 rounded-full bg-[#FF7A00]/8 blur-3xl"
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="premium-services-wrap relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.div
           variants={sectionVariants}
@@ -166,37 +167,44 @@ export default function IndustrialServices() {
             once: true,
             amount: 0.25,
           }}
-          className="mx-auto max-w-3xl text-center"
+          className="premium-services-heading max-w-none text-left lg:grid lg:grid-cols-[minmax(0,1.5fr)_minmax(18rem,0.7fr)] lg:items-end lg:gap-16"
         >
+          <div>
+            <motion.p
+              variants={fadeUp}
+              className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#FF7A00] sm:text-sm sm:tracking-[0.25em]"
+            >
+              Industrial Plot Services
+            </motion.p>
+
+            <motion.h2
+              variants={fadeUp}
+              className="premium-services-title mt-4 max-w-5xl text-4xl font-black uppercase leading-[0.94] text-[#081A3A] sm:text-5xl lg:text-7xl"
+            >
+              Everything You Need
+              <br />
+              For A Safe Industrial
+              <br />
+              Investment
+            </motion.h2>
+
+            <motion.div
+              variants={fadeUp}
+              className="mt-6 flex items-center gap-2 sm:mt-7"
+            >
+              <span className="h-0.75 w-16 bg-[#FF7A00]" />
+              <span className="h-0.75 w-8 bg-white/60" />
+            </motion.div>
+          </div>
+
           <motion.p
             variants={fadeUp}
-            className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#fdb713] sm:text-sm sm:tracking-[0.25em]"
-          >
-            Industrial Plot Services
-          </motion.p>
-
-          <motion.h2
-            variants={fadeUp}
-            className="mt-3 text-2xl font-black leading-tight text-[#12568d] sm:mt-4 sm:text-4xl lg:text-5xl"
-          >
-            Everything You Need For A Safe Industrial Investment
-          </motion.h2>
-
-          <motion.p
-            variants={fadeUp}
-            className="mx-auto mt-3 max-w-2xl text-xs leading-5 text-slate-600 sm:mt-5 sm:text-base sm:leading-7"
+            className="premium-services-lede mt-3 max-w-md text-xs leading-5 text-[#5B6672] sm:mt-5 sm:text-base sm:leading-7 lg:mt-0"
           >
             From verified properties to final registration, our experienced
             team helps you invest confidently in Dholera SIR.
           </motion.p>
 
-          <motion.div
-            variants={fadeUp}
-            className="mx-auto mt-4 flex items-center justify-center gap-2 sm:mt-6"
-          >
-            <span className="h-0.75 w-16 bg-[#fdb713]" />
-            <span className="h-0.75 w-8 bg-[#12568d]" />
-          </motion.div>
         </motion.div>
 
         {/* Services cards */}
@@ -208,9 +216,9 @@ export default function IndustrialServices() {
             once: true,
             amount: 0.08,
           }}
-          className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 xl:grid-cols-4"
+          className="premium-services-grid mt-10 grid grid-cols-1 gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-px sm:border sm:border-[#191B1D]/15 lg:grid-cols-3 xl:grid-cols-4"
         >
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
 
             return (
@@ -219,65 +227,44 @@ export default function IndustrialServices() {
                 variants={cardVariants}
                 whileHover={{
                   y: -10,
-                  scale: 1.015,
+                  scale: 1.02,
                 }}
-                transition={{
-                  duration: 0.35,
-                }}
-                className="group relative min-h-48 overflow-hidden rounded-xl border border-[#12568d]/10 bg-white p-3 shadow-[0_8px_24px_rgba(18,86,141,0.08)] transition-all duration-500 hover:border-[#fdb713] hover:shadow-[0_26px_65px_rgba(18,86,141,0.18)] sm:min-h-71.25 sm:rounded-2xl sm:border-2 sm:p-7 sm:shadow-[0_14px_40px_rgba(18,86,141,0.08)]"
+                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                className="premium-service-card group relative flex min-h-[19rem] flex-col overflow-hidden border border-[#191B1D]/15 bg-white p-6 transition-colors duration-500 sm:min-h-[21rem] sm:border-0 sm:p-8"
               >
-                {/* Light hover background */}
-                <div className="pointer-events-none absolute inset-0 origin-bottom scale-y-0 bg-[#eef5fb] transition-transform duration-500 group-hover:scale-y-100" />
-
-                {/* Yellow top line */}
-                <span className="absolute left-0 top-0 h-1 w-full bg-[#fdb713]" />
-
-                {/* Decorative number */}
-                <motion.span
-                  animate={{
-                    y: [0, -5, 0],
-                  }}
-                  transition={{
-                    duration: 3.5 + index * 0.2,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute right-3 top-3 text-3xl font-black text-[#12568d]/8 transition-all duration-500 group-hover:text-[#12568d]/12 sm:right-5 sm:top-4 sm:text-5xl"
-                >
+                <span className="premium-service-number font-mono text-sm font-semibold tracking-[0.12em] text-[#FF7A00] transition-colors duration-500">
                   {service.number}
-                </motion.span>
+                </span>
+
+                {/* Orange-only hover surface keeps the interaction focused on
+                    the project's primary accent color. */}
+                <div className="premium-service-hover-surface pointer-events-none absolute inset-0 origin-bottom scale-y-0 bg-[#FF7A00] transition-transform duration-500 group-hover:scale-y-100" />
 
                 <div className="relative z-10 flex h-full flex-col">
-                  {/* Icon */}
                   <motion.div
-                    whileHover={{
-                      rotate: 8,
-                      scale: 1.08,
-                    }}
-                    className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#12568d] text-sm text-[#fdb713] shadow-lg transition-colors duration-500 group-hover:bg-[#fdb713] group-hover:text-[#12568d] sm:h-14 sm:w-14 sm:rounded-2xl"
+                    whileHover={{ scale: 1.08 }}
+                    className="premium-service-icon mt-10 flex h-11 w-11 items-center justify-center border border-[#FF7A00]/50 text-[#FF7A00] transition-colors duration-500 sm:h-14 sm:w-14"
                   >
-                    <Icon className="text-sm sm:text-[22px]" />
+                    <Icon className="text-base sm:text-xl" />
                   </motion.div>
 
-                  <h3 className="mt-3 text-[13px] font-black leading-4 text-[#12568d] transition-all duration-500 group-hover:translate-x-1 group-hover:text-slate-950 sm:mt-6 sm:text-xl sm:leading-normal">
+                  <h3 className="premium-service-title mt-7 text-xl font-semibold uppercase leading-[1.05] text-[#191B1D] transition-colors duration-500 sm:text-2xl">
                     {service.title}
                   </h3>
 
-                  <span className="mt-2 block h-0.5 w-8 bg-[#fdb713] transition-all duration-500 group-hover:w-24 sm:mt-4 sm:h-0.75 sm:w-12" />
+                  <span className="premium-service-rule mt-4 block h-px w-12 bg-[#FF7A00] transition-all duration-500 group-hover:w-24" />
 
-                  <p className="mt-2 line-clamp-3 text-[10px] leading-4 text-slate-600 transition-colors duration-500 group-hover:text-slate-800 sm:mt-4 sm:line-clamp-none sm:text-sm sm:leading-7">
+                  <p className="premium-service-description mt-5 text-xs leading-6 text-[#5B6672] transition-colors duration-500 sm:text-sm sm:leading-7">
                     {service.description}
                   </p>
 
                   <motion.div
-                    whileHover={{
-                      x: 5,
-                    }}
-                    className="mt-auto hidden pt-7 sm:block"
+                    whileHover={{ x: 5 }}
+                    className="mt-auto pt-7"
                   >
                     <a
                       href="#contact"
-                      className="group/link inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.12em] text-[#12568d] transition-colors duration-300 hover:text-[#fdb713]"
+                      className="premium-service-link group/link inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#FF7A00] transition-colors duration-300 hover:text-[#191B1D]"
                     >
                       Learn More
 
@@ -290,7 +277,7 @@ export default function IndustrialServices() {
                 </div>
 
                 {/* Bottom animated line */}
-                <span className="absolute bottom-0 left-0 h-1 w-0 bg-[#12568d] transition-all duration-700 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 h-1 w-0 bg-[#081A3A] transition-all duration-700 group-hover:w-full" />
               </motion.article>
             );
           })}

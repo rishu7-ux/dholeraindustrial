@@ -57,7 +57,7 @@ const projects = [
   {
     id: "03",
     title: "Samridhi 872/2",
-    image: "/gallery/psamridhi 872:2.webp",
+    image: "/gallery/psamridhi-872-2.webp",
     location: "Dholera SIR",
     highlight: "70M + 48M Roads",
     href: "/samridhi-872-2-industrial-plots",
@@ -66,7 +66,7 @@ const projects = [
 
 export default function HomeProjects() {
   return (
-    <section className="relative overflow-hidden bg-[#f7fbff] py-14 sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-[#ffffff] py-14 sm:py-24 lg:py-28">
       {/* ================= BACKGROUND ANIMATION ================= */}
 
       <motion.div
@@ -79,7 +79,7 @@ export default function HomeProjects() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -left-40 top-20 h-[420px] w-[420px] rounded-full bg-[#fdb713]/15 blur-3xl"
+        className="pointer-events-none absolute -left-40 top-20 h-[420px] w-[420px] rounded-full bg-[#FF7A00]/15 blur-3xl"
       />
 
       <motion.div
@@ -92,7 +92,7 @@ export default function HomeProjects() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -right-40 bottom-10 h-[450px] w-[450px] rounded-full bg-[#12568d]/15 blur-3xl"
+        className="pointer-events-none absolute -right-40 bottom-10 h-[450px] w-[450px] rounded-full bg-[#081A3A]/15 blur-3xl"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -116,11 +116,11 @@ export default function HomeProjects() {
           }}
           className="mx-auto max-w-3xl text-center"
         >
-          <p className="text-xs font-black uppercase tracking-[0.32em] text-[#fdb713]">
+          <p className="text-xs font-black uppercase tracking-[0.32em] text-[#FF7A00]">
             Featured Opportunities
           </p>
 
-          <h2 className="mt-5 font-serif text-4xl font-black text-[#12568d] sm:text-5xl">
+          <h2 className="mt-5 font-serif text-4xl font-black text-[#081A3A] sm:text-5xl">
             Invest In Dholera
           </h2>
 
@@ -132,7 +132,7 @@ export default function HomeProjects() {
               transition={{
                 duration: 0.8,
               }}
-              className="h-1 rounded-full bg-[#fdb713]"
+              className="h-1 rounded-full bg-[#FF7A00]"
             />
 
             <motion.span
@@ -143,7 +143,7 @@ export default function HomeProjects() {
                 duration: 0.8,
                 delay: 0.15,
               }}
-              className="h-1 rounded-full bg-[#12568d]"
+              className="h-1 rounded-full bg-[#081A3A]"
             />
           </div>
         </motion.div>
@@ -167,7 +167,7 @@ export default function HomeProjects() {
               whileHover={{
                 y: -8,
               }}
-              className="group relative overflow-hidden rounded-2xl border border-white/60 bg-white/60 shadow-[0_12px_36px_rgba(18,86,141,0.10)] backdrop-blur-xl sm:rounded-[30px] sm:shadow-[0_20px_60px_rgba(18,86,141,0.10)]"
+              className="group relative overflow-hidden rounded-2xl border border-white/60 bg-white/60 shadow-[0_12px_36px_rgba(8,26,58,0.10)] backdrop-blur-xl sm:rounded-[30px] sm:shadow-[0_20px_60px_rgba(8,26,58,0.10)]"
             >
               <div className="grid grid-cols-[42%_58%] sm:grid-cols-1 lg:grid-cols-[44%_56%]">
                 {/* ================= LEFT IMAGE ================= */}
@@ -194,7 +194,7 @@ export default function HomeProjects() {
 
                   {/* IMAGE OVERLAY */}
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#081A3A]/70 via-[#081A3A]/5 to-transparent" />
 
                   {/* NUMBER GLASS */}
 
@@ -219,9 +219,9 @@ export default function HomeProjects() {
                       whileHover={{
                         y: -4,
                       }}
-                      className="w-fit rounded-lg border border-white/25 bg-black/35 px-3 py-2 text-white backdrop-blur-xl sm:rounded-xl sm:px-5 sm:py-3"
+                      className="w-fit rounded-lg border border-white/25 bg-[#081A3A]/35 px-3 py-2 text-white backdrop-blur-xl sm:rounded-xl sm:px-5 sm:py-3"
                     >
-                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#fdb713]">
+                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#FF7A00]">
                         Dholera SIR
                       </p>
 
@@ -247,14 +247,14 @@ export default function HomeProjects() {
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
-                    className="pointer-events-none absolute -right-14 -top-14 h-40 w-40 rounded-full bg-[#fdb713]/10 blur-2xl"
+                    className="pointer-events-none absolute -right-14 -top-14 h-40 w-40 rounded-full bg-[#FF7A00]/10 blur-2xl"
                   />
 
-                  <p className="relative z-10 text-[8px] font-black uppercase tracking-[0.14em] text-[#fdb713] sm:text-[10px] sm:tracking-[0.25em]">
+                  <p className="relative z-10 text-[8px] font-black uppercase tracking-[0.14em] text-[#FF7A00] sm:text-[10px] sm:tracking-[0.25em]">
                     Featured Project
                   </p>
 
-                  <h3 className="relative z-10 mt-1 font-serif text-base font-black leading-5 text-[#12568d] sm:mt-3 sm:text-4xl sm:leading-tight">
+                  <h3 className="relative z-10 mt-1 font-serif text-base font-black leading-5 text-[#081A3A] sm:mt-3 sm:text-4xl sm:leading-tight">
                     {project.title}
                   </h3>
 
@@ -275,8 +275,8 @@ export default function HomeProjects() {
                     }}
                     className="relative z-10 mt-2 flex origin-left gap-1 sm:mt-5 sm:gap-2"
                   >
-                    <span className="h-0.5 w-8 rounded-full bg-[#fdb713] sm:h-1 sm:w-14" />
-                    <span className="h-0.5 w-4 rounded-full bg-[#12568d] sm:h-1 sm:w-7" />
+                    <span className="h-0.5 w-8 rounded-full bg-[#FF7A00] sm:h-1 sm:w-14" />
+                    <span className="h-0.5 w-4 rounded-full bg-[#081A3A] sm:h-1 sm:w-7" />
                   </motion.div>
 
                   {/* LOCATION */}
@@ -287,11 +287,11 @@ export default function HomeProjects() {
                     }}
                     className="relative z-10 mt-3 flex items-center gap-2 sm:mt-7 sm:gap-3"
                   >
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#12568d] text-[#fdb713] sm:h-10 sm:w-10 sm:rounded-xl">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#081A3A] text-[#FF7A00] sm:h-10 sm:w-10 sm:rounded-xl">
                       <FaMapMarkerAlt size={14} />
                     </span>
 
-                    <span className="line-clamp-1 text-[10px] font-bold leading-4 text-slate-600 sm:text-sm sm:leading-normal">
+                    <span className="line-clamp-1 text-[10px] font-bold leading-4 text-[#0A2E73] sm:text-sm sm:leading-normal">
                       {project.location}
                     </span>
                   </motion.div>
@@ -304,11 +304,11 @@ export default function HomeProjects() {
                     }}
                     className="relative z-10 mt-4 hidden items-center gap-3 sm:flex"
                   >
-                    <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fff2c9] text-[#12568d] sm:h-10 sm:w-10 sm:rounded-xl">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FFFFFF] text-[#081A3A] sm:h-10 sm:w-10 sm:rounded-xl">
                       <FaRoad size={14} />
                     </span>
 
-                    <span className="text-sm font-bold text-slate-600">
+                    <span className="text-sm font-bold text-[#0A2E73]">
                       {project.highlight}
                     </span>
                   </motion.div>
@@ -318,7 +318,7 @@ export default function HomeProjects() {
                   <div className="relative z-10 mt-3 sm:mt-7">
                     <Link
                       href={project.href}
-                      className="group/button inline-flex items-center gap-1.5 rounded-md bg-[#12568d] px-3 py-2 text-[9px] font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#fdb713] hover:text-[#12568d] sm:gap-3 sm:rounded-xl sm:px-6 sm:py-4 sm:text-xs"
+                      className="group/button inline-flex items-center gap-1.5 rounded-md bg-[#081A3A] px-3 py-2 text-[9px] font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF7A00] hover:text-[#081A3A] sm:gap-3 sm:rounded-xl sm:px-6 sm:py-4 sm:text-xs"
                     >
                       Explore
 
@@ -376,7 +376,7 @@ export default function HomeProjects() {
         >
           <Link
             href="/properties"
-            className="group inline-flex items-center gap-2 rounded-lg border border-[#12568d]/15 bg-white/70 px-5 py-3 text-xs font-black uppercase tracking-wide text-[#12568d] shadow-lg backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-[#12568d] hover:text-white sm:gap-3 sm:rounded-xl sm:px-8 sm:py-4 sm:text-sm"
+            className="group inline-flex items-center gap-2 rounded-lg border border-[#081A3A]/15 bg-white/70 px-5 py-3 text-xs font-black uppercase tracking-wide text-[#081A3A] shadow-lg backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-[#081A3A] hover:text-white sm:gap-3 sm:rounded-xl sm:px-8 sm:py-4 sm:text-sm"
           >
             View All Properties
 

@@ -74,13 +74,13 @@ function TestimonialCard({
       transition={{
         duration: 0.3,
       }}
-      className="group relative flex min-h-72.5 w-[320px] shrink-0 flex-col overflow-hidden border border-slate-200 bg-white p-6 shadow-sm transition-shadow duration-500 hover:border-[#fdb713] hover:shadow-[0_24px_65px_rgba(18,86,141,0.18)] sm:w-[380px] sm:p-7 lg:w-[400px]"
+      className="group relative flex min-h-72.5 w-[320px] shrink-0 flex-col overflow-hidden border border-[#081A3A]/15 bg-white p-6 shadow-sm transition-shadow duration-500 hover:border-[#FF7A00] hover:shadow-[0_24px_65px_rgba(8,26,58,0.18)] sm:w-[380px] sm:p-7 lg:w-[400px]"
     >
-      {/* Yellow top border */}
-      <span className="absolute left-0 top-0 h-1 w-full bg-[#fdb713]" />
+      {/* Accent top border */}
+      <span className="absolute left-0 top-0 h-1 w-full bg-[#FF7A00]" />
 
-      {/* Blue hover background */}
-      <div className="pointer-events-none absolute inset-0 origin-bottom scale-y-0 bg-[#12568d] transition-transform duration-500 group-hover:scale-y-100" />
+      {/* Charcoal hover background */}
+      <div className="pointer-events-none absolute inset-0 origin-bottom scale-y-0 bg-[#081A3A] transition-transform duration-500 group-hover:scale-y-100" />
 
       {/* Moving shine */}
       <div className="pointer-events-none absolute inset-y-0 -left-40 z-2 w-28 -skew-x-12 bg-linear-to-r from-transparent via-white/20 to-transparent transition-all duration-1000 group-hover:left-[120%]" />
@@ -100,7 +100,7 @@ function TestimonialCard({
           >
             <FaQuoteLeft
               size={28}
-              className="text-[#fdb713] transition-transform duration-300 group-hover:scale-110"
+              className="text-[#FF7A00] transition-transform duration-300 group-hover:scale-110"
             />
           </motion.div>
 
@@ -109,26 +109,26 @@ function TestimonialCard({
               <FaStar
                 key={index}
                 size={12}
-                className="text-[#fdb713]"
+                className="text-[#FF7A00]"
               />
             ))}
           </div>
         </div>
 
         {/* Message */}
-        <p className="mt-6 text-sm leading-7 text-slate-600 transition-colors duration-500 group-hover:text-white/90 sm:text-[15px]">
+        <p className="mt-6 text-sm leading-7 text-[#0A2E73] transition-colors duration-500 group-hover:text-white/90 sm:text-[15px]">
           “{testimonial.message}”
         </p>
 
         {/* User details */}
         <div className="mt-auto pt-8">
-          <span className="mb-5 block h-0.75 w-10 bg-[#fdb713] transition-all duration-500 group-hover:w-20 group-hover:bg-white" />
+          <span className="mb-5 block h-0.75 w-10 bg-[#FF7A00] transition-all duration-500 group-hover:w-20 group-hover:bg-white" />
 
-          <h3 className="text-base font-extrabold text-slate-900 transition-colors duration-500 group-hover:text-white">
+          <h3 className="text-base font-extrabold text-[#081A3A] transition-colors duration-500 group-hover:text-white">
             {testimonial.name}
           </h3>
 
-          <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 transition-colors duration-500 group-hover:text-[#fdb713]">
+          <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#0A2E73] transition-colors duration-500 group-hover:text-[#FF7A00]">
             {testimonial.location}
           </p>
         </div>
@@ -139,7 +139,7 @@ function TestimonialCard({
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-[#f4f8fc] py-16 sm:py-20 lg:py-24">
+    <section id="testimonials" data-section-number="06" className="relative overflow-hidden bg-[#FFFFFF] py-16 sm:py-20 lg:py-24">
       {/* Soft background decoration */}
       <motion.div
         aria-hidden="true"
@@ -152,7 +152,7 @@ export default function Testimonials() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#12568d]/5 blur-3xl"
+        className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#081A3A]/5 blur-3xl"
       />
 
       <motion.div
@@ -166,7 +166,7 @@ export default function Testimonials() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#fdb713]/10 blur-3xl"
+        className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#FF7A00]/10 blur-3xl"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -190,17 +190,17 @@ export default function Testimonials() {
           }}
           className="max-w-2xl"
         >
-          <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#12568d] sm:text-sm">
+          <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#081A3A] sm:text-sm">
             Testimonials
           </p>
 
-          <h2 className="mt-4 text-3xl font-black leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 text-3xl font-black leading-tight text-[#081A3A] sm:text-4xl lg:text-5xl">
             What people say
           </h2>
 
           <div className="mt-5 flex items-center gap-2">
-            <span className="h-0.75 w-16 bg-[#fdb713]" />
-            <span className="h-0.75 w-8 bg-[#12568d]" />
+            <span className="h-0.75 w-16 bg-[#FF7A00]" />
+            <span className="h-0.75 w-8 bg-[#081A3A]" />
           </div>
         </motion.div>
       </div>
@@ -208,10 +208,10 @@ export default function Testimonials() {
       {/* Continuous slider */}
       <div className="relative mt-12 overflow-hidden">
         {/* Left fade */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-10 bg-linear-to-r from-[#f4f8fc] to-transparent sm:w-24" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-10 bg-linear-to-r from-[#FFFFFF] to-transparent sm:w-24" />
 
         {/* Right fade */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-10 bg-linear-to-l from-[#f4f8fc] to-transparent sm:w-24" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-10 bg-linear-to-l from-[#FFFFFF] to-transparent sm:w-24" />
 
         <motion.div
           animate={{

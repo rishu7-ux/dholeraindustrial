@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #12568d;
-  --secondary: #fdb713;
+  --primary: #081A3A;
+  --secondary: #FF7A00;
 }
 
 body {
@@ -446,16 +446,16 @@ textarea {
     gap: 0.75rem;
     padding: 0.875rem;
     overflow: hidden;
-    border: 1px solid rgb(18 86 141 / 12%);
+    border: 1px solid rgb(8 26 58 / 12%);
     border-radius: 1rem;
-    background: linear-gradient(145deg, #ffffff 0%, #f3f8fc 100%);
-    box-shadow: 0 10px 30px rgb(18 86 141 / 8%);
+    background: linear-gradient(145deg, #ffffff 0%, #FFFFFF 100%);
+    box-shadow: 0 10px 30px rgb(8 26 58 / 8%);
   }
 
   main.property-detail-page .property-contact-grid > a {
-    background: linear-gradient(145deg, #12568d 0%, #0b3e68 100%);
+    background: linear-gradient(145deg, #081A3A 0%, #0A2E73 100%);
     border-color: transparent;
-    box-shadow: 0 12px 30px rgb(18 86 141 / 18%);
+    box-shadow: 0 12px 30px rgb(8 26 58 / 18%);
   }
 
   main.property-detail-page .property-contact-grid .h-14.w-14 {
@@ -466,7 +466,7 @@ textarea {
 
   main.property-detail-page .property-contact-grid > a .h-14.w-14 {
     background: rgb(255 255 255 / 14%);
-    color: #fdb713;
+    color: #FF7A00;
   }
 
   main.property-detail-page .property-contact-grid p {
@@ -499,10 +499,10 @@ textarea {
     min-height: 6.25rem;
     padding: 0.75rem 0.5rem;
     text-align: center;
-    border: 1px solid rgb(18 86 141 / 10%);
+    border: 1px solid rgb(8 26 58 / 10%);
     border-radius: 1rem;
-    background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
-    box-shadow: 0 8px 24px rgb(18 86 141 / 7%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+    box-shadow: 0 8px 24px rgb(8 26 58 / 7%);
   }
 
   main.property-detail-page .property-facts-grid p {
@@ -511,7 +511,7 @@ textarea {
 
   main.property-detail-page .property-facts-grid p:first-child {
     min-height: 1.5rem;
-    color: #64748b;
+    color: #0A2E73;
     font-size: 0.45rem;
     letter-spacing: 0.08em;
     line-height: 0.75rem;
@@ -519,14 +519,14 @@ textarea {
 
   main.property-detail-page .property-facts-grid p:nth-child(2) {
     margin-top: 0.25rem;
-    color: #12568d;
+    color: #081A3A;
     font-size: 0.6875rem;
     line-height: 1rem;
   }
 
   main.property-detail-page .property-facts-grid p:last-child {
     margin-top: 0.25rem;
-    color: #f59e0b;
+    color: #C94F00;
     font-size: 0.5625rem;
     line-height: 0.875rem;
   }
@@ -634,8 +634,3388 @@ textarea {
   }
 }
 
+.premium-home .premium-mobile-menu {
+  border-color: rgba(255, 255, 255, .14) !important;
+  background: rgba(8, 26, 58, .98) !important;
+}
+
+.premium-home .premium-mobile-menu a {
+  border-color: rgba(255, 255, 255, .14) !important;
+  color: rgba(255, 255, 255, .82) !important;
+  border-radius: 0 !important;
+}
+
+.premium-home .premium-mobile-menu a:hover,
+.premium-home .premium-mobile-menu a.bg-white\/10 {
+  background: rgba(255, 122, 0, .14) !important;
+  color: var(--accent) !important;
+}
+
+.premium-home .premium-mobile-call {
+  background: var(--accent) !important;
+  color: var(--ink) !important;
+  border-radius: 0 !important;
+}
+
+.premium-home .premium-menu-toggle {
+  border-radius: 0 !important;
+  background: var(--ink) !important;
+  color: var(--accent) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Premium editorial homepage layer
+   -------------------------------------------------------------------------- */
+.premium-site {
+  --ink: #081A3A;
+  --paper: #ffffff;
+  --paper-muted: #FFFFFF;
+  --accent: #FF7A00;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.premium-home section {
+  scroll-margin-top: 80px;
+}
+
+.premium-home header {
+  border-color: rgba(8, 26, 58, .14) !important;
+  background: rgba(255, 255, 255, .94) !important;
+  box-shadow: 0 1px 0 rgba(8, 26, 58, .08) !important;
+  backdrop-filter: blur(18px);
+}
+
+.premium-home header a {
+  color: var(--ink) !important;
+}
+
+.premium-home header a:hover,
+.premium-home header a.text-\[\#FF7A00\] {
+  color: var(--accent) !important;
+}
+
+.premium-home header button {
+  color: var(--ink);
+}
+
+.premium-home .premium-hero {
+  background: #101820 !important;
+}
+
+.premium-home #properties,
+.premium-home #services,
+.premium-home #gallery,
+.premium-home #blog {
+  background: var(--paper) !important;
+}
+
+.premium-home #about-industrial,
+.premium-home #testimonials {
+  background: var(--paper-muted) !important;
+}
+
+.premium-home #stats {
+  background: var(--ink) !important;
+}
+
+.premium-home #stats .text-\[\#081A3A\] {
+  color: var(--accent) !important;
+}
+
+.premium-home #stats .text-\[\#0A2E73\] {
+  color: rgba(255, 255, 255, .56) !important;
+}
+
+.premium-home #stats .bg-\[\#ffffff\] {
+  background: transparent !important;
+}
+
+.premium-home #stats .bg-\[\#081A3A\]\/10 {
+  background: rgba(255, 122, 0, .16) !important;
+  color: var(--accent) !important;
+}
+
+.premium-home #properties > div,
+.premium-home #services > div,
+.premium-home #about-industrial > div,
+.premium-home #gallery > div,
+.premium-home #blog > div {
+  max-width: 1320px;
+}
+
+.premium-home #properties > div > div:first-child,
+.premium-home #services > div > div:first-child,
+.premium-home #gallery > div > div:first-child,
+.premium-home #blog > div > div:first-child {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+.premium-home #properties h2,
+.premium-home #services h2,
+.premium-home #about-industrial h2,
+.premium-home #gallery h2,
+.premium-home #blog h2,
+.premium-home #testimonials h2 {
+  color: var(--ink) !important;
+  letter-spacing: -.045em;
+}
+
+.premium-home #properties > div > div:first-child p:first-child,
+.premium-home #services > div > div:first-child p:first-child,
+.premium-home #gallery > div > div:first-child p:first-child,
+.premium-home #blog > div > div:first-child p:first-child {
+  color: var(--accent) !important;
+  letter-spacing: .28em;
+}
+
+.premium-home #properties > div > div:first-child > div,
+.premium-home #services > div > div:first-child > div,
+.premium-home #gallery > div > div:first-child > div {
+  margin-left: 0 !important;
+}
+
+.premium-home #properties > div > div:last-child {
+  gap: 2rem;
+}
+
+.premium-home #properties article {
+  border: 1px solid rgba(8, 26, 58, .15) !important;
+  border-radius: 0 !important;
+  background: var(--ink) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.premium-home #properties article:hover {
+  border-color: var(--accent) !important;
+  box-shadow: 0 24px 55px rgba(8, 26, 58, .16) !important;
+}
+
+.premium-home #properties article > div:first-of-type {
+  grid-template-columns: minmax(250px, 40%) 1fr;
+}
+
+.premium-home #properties article h3 {
+  letter-spacing: -.035em;
+}
+
+.premium-home #properties article .bg-\[\#081A3A\] {
+  background: var(--accent) !important;
+  color: var(--ink) !important;
+}
+
+.premium-home #properties article .text-\[\#FF7A00\] {
+  color: var(--accent) !important;
+}
+
+.premium-home #properties article .bg-white\/15,
+.premium-home #properties article .bg-white\/10 {
+  background: rgba(255, 255, 255, .08) !important;
+}
+
+.premium-home #about-industrial {
+  padding-top: clamp(5rem, 11vw, 10rem) !important;
+  padding-bottom: clamp(5rem, 11vw, 10rem) !important;
+}
+
+.premium-home #about-industrial h2,
+.premium-home #about-industrial p,
+.premium-home #about-industrial span {
+  color: var(--ink);
+}
+
+.premium-home #about-industrial img {
+  filter: saturate(.78) contrast(1.05);
+}
+
+.premium-home #about-industrial .rounded-2xl,
+.premium-home #about-industrial .rounded-xl {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-home #services {
+  padding-top: clamp(5rem, 11vw, 10rem) !important;
+  padding-bottom: clamp(5rem, 11vw, 10rem) !important;
+}
+
+.premium-home #services > div > div:last-child {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0 !important;
+  border-top: 1px solid rgba(8, 26, 58, .16);
+  border-left: 1px solid rgba(8, 26, 58, .16);
+}
+
+.premium-home #services article {
+  min-height: 260px !important;
+  border: 0 !important;
+  border-right: 1px solid rgba(8, 26, 58, .16) !important;
+  border-bottom: 1px solid rgba(8, 26, 58, .16) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.premium-home #services article:hover {
+  background: var(--paper-muted) !important;
+  color: var(--ink);
+}
+
+.premium-home #services article > span:first-child {
+  background: var(--accent) !important;
+}
+
+.premium-home #services article .text-\[\#081A3A\] {
+  color: var(--ink) !important;
+}
+
+.premium-home #services article:hover .text-\[\#081A3A\],
+.premium-home #services article:hover .text-\[\#0A2E73\] {
+  color: var(--ink) !important;
+}
+
+.premium-home #services article .bg-\[\#081A3A\]\/10 {
+  background: rgba(255, 122, 0, .15) !important;
+  color: var(--accent) !important;
+}
+
+.premium-home #services article:hover .bg-\[\#081A3A\]\/10 {
+  background: var(--accent) !important;
+  color: var(--ink) !important;
+}
+
+.premium-home #services article .text-\[\#081A3A\]\/8 {
+  color: rgba(8, 26, 58, .08) !important;
+}
+
+.premium-home #land-categories,
+.premium-home section:not(#properties):not(#about-industrial):not(#services):not(#gallery):not(#blog):not(#testimonials):not(#stats):not(.premium-hero) {
+  background: var(--paper) !important;
+}
+
+.premium-home #land-categories > div > div:last-child {
+  gap: 1px !important;
+  background: rgba(8, 26, 58, .16);
+}
+
+.premium-home #land-categories article,
+.premium-home #land-categories article > div {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-home #land-categories article {
+  border: 0 !important;
+}
+
+.premium-home #testimonials {
+  padding-top: clamp(5rem, 10vw, 9rem) !important;
+  padding-bottom: clamp(5rem, 10vw, 9rem) !important;
+}
+
+.premium-home #testimonials article {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: var(--paper) !important;
+}
+
+.premium-home #testimonials article:hover {
+  background: var(--ink) !important;
+}
+
+.premium-home #gallery {
+  padding-top: clamp(5rem, 11vw, 10rem) !important;
+  padding-bottom: clamp(5rem, 11vw, 10rem) !important;
+}
+
+.premium-home #gallery .rounded-\[28px\],
+.premium-home #gallery .rounded-2xl {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-home #blog {
+  padding-top: clamp(5rem, 10vw, 9rem) !important;
+  padding-bottom: clamp(5rem, 10vw, 9rem) !important;
+}
+
+.premium-home #blog article {
+  border-radius: 0 !important;
+  border-color: rgba(8, 26, 58, .14) !important;
+  box-shadow: none !important;
+}
+
+.premium-home #blog article:hover {
+  border-color: var(--accent) !important;
+}
+
+.premium-home #blog article .bg-\[\#FF7A00\] {
+  background: var(--accent) !important;
+}
+
+.premium-home footer {
+  background: var(--ink) !important;
+}
+
+.premium-home .premium-hero-cta {
+  border-radius: 0;
+}
+
+@media (max-width: 1023px) {
+  .premium-home #services > div > div:last-child {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .premium-home #properties article > div:first-of-type {
+    grid-template-columns: minmax(200px, 36%) 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-home #services > div > div:last-child {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .premium-home #services article {
+    min-height: 215px !important;
+  }
+
+  .premium-home #properties article > div:first-of-type {
+    display: block;
+  }
+
+  .premium-home #properties article > div:first-of-type > div:first-child {
+    min-height: 235px;
+  }
+
+  .premium-home .premium-hero-cta {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premium-home *,
+  .premium-home *::before,
+  .premium-home *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Deeper project/editorial treatment */
+.premium-home section[data-section-number]::before {
+  content: attr(data-section-number);
+  position: absolute;
+  right: clamp(1.25rem, 5vw, 4rem);
+  top: clamp(1.75rem, 4vw, 3.5rem);
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: .28em;
+}
+
+.premium-home #properties,
+.premium-home #services,
+.premium-home #land-categories,
+.premium-home #stats,
+.premium-home #testimonials,
+.premium-home #gallery,
+.premium-home #blog {
+  padding-top: clamp(6rem, 10vw, 10rem) !important;
+  padding-bottom: clamp(6rem, 10vw, 10rem) !important;
+}
+
+.premium-home #properties > div > div:first-child,
+.premium-home #services > div > div:first-child,
+.premium-home #land-categories > div > div:first-child,
+.premium-home #gallery > div > div:first-child,
+.premium-home #blog > div > div:first-child {
+  max-width: 52rem;
+}
+
+.premium-home #properties > div > div:first-child h2,
+.premium-home #services > div > div:first-child h2,
+.premium-home #land-categories > div > div:first-child h2,
+.premium-home #gallery > div > div:first-child h2,
+.premium-home #blog > div > div:first-child h2 {
+  font-size: clamp(2.6rem, 6vw, 5.75rem) !important;
+  line-height: .91 !important;
+}
+
+.premium-home #properties .premium-project-card {
+  min-height: 0;
+  border-color: rgba(255, 255, 255, .14) !important;
+  background: rgba(8, 26, 58, .9) !important;
+  backdrop-filter: blur(18px);
+}
+
+.premium-home #properties .premium-project-card > .relative.z-10 {
+  grid-template-columns: minmax(280px, 42%) 1fr;
+}
+
+.premium-home #properties .premium-project-card > .relative.z-10 > div:first-child {
+  min-height: 360px;
+}
+
+.premium-home #properties .premium-project-card > .relative.z-10 > div:nth-child(2) {
+  padding: clamp(1.5rem, 3vw, 3rem) !important;
+}
+
+.premium-home #properties .premium-project-card h3 {
+  max-width: 32rem;
+  font-size: clamp(1.35rem, 2.3vw, 2.35rem) !important;
+  line-height: .98 !important;
+}
+
+.premium-home #properties .premium-project-card .bg-\[\#081A3A\] {
+  background: var(--accent) !important;
+}
+
+.premium-home #properties .premium-project-card .text-\[\#FF7A00\] {
+  color: var(--accent) !important;
+}
+
+.premium-home #properties .premium-project-card .bg-\[\#081A3A\]\/10 {
+  background: rgba(255, 122, 0, .14) !important;
+}
+
+.premium-home #about-industrial .premium-story-grid {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.premium-home #about-industrial .premium-story-grid > div:first-child {
+  margin-top: 0;
+}
+
+.premium-home #about-industrial .premium-story-grid > div:last-child {
+  padding-top: 0;
+}
+
+.premium-home #about-industrial .premium-story-grid h2 {
+  font-size: clamp(2.5rem, 5vw, 5.5rem) !important;
+  line-height: .92 !important;
+}
+
+@media (min-width: 1024px) {
+  .premium-home #about-industrial .premium-story-grid {
+    grid-template-columns: minmax(0, 1.12fr) minmax(290px, .88fr);
+    gap: clamp(2rem, 7vw, 8rem);
+  }
+
+  .premium-home #about-industrial .premium-story-grid > div:first-child {
+    margin-top: clamp(1rem, 7vw, 6rem);
+  }
+
+  .premium-home #about-industrial .premium-story-grid > div:last-child {
+    padding-top: clamp(1rem, 4vw, 4rem);
+  }
+}
+
+.premium-home #services .premium-services-wrap > div:first-child {
+  margin-right: 0;
+}
+
+.premium-home #services .premium-services-wrap > div:last-child {
+  margin-top: clamp(3rem, 6vw, 6rem);
+}
+
+.premium-home #services article h3 {
+  font-size: clamp(1.05rem, 1.7vw, 1.5rem) !important;
+  letter-spacing: -.035em;
+}
+
+.premium-home #land-categories article {
+  background: var(--ink) !important;
+}
+
+.premium-home #land-categories article > div:last-of-type {
+  background: var(--ink) !important;
+  border-color: var(--accent) !important;
+}
+
+.premium-home #land-categories article h3,
+.premium-home #land-categories article p,
+.premium-home #land-categories article a {
+  color: white !important;
+}
+
+.premium-home #land-categories article h3 {
+  font-size: clamp(1.25rem, 2vw, 1.8rem) !important;
+  letter-spacing: -.035em;
+}
+
+.premium-home #land-categories article p {
+  color: rgba(255, 255, 255, .66) !important;
+}
+
+.premium-home #land-categories article .bg-\[\#FF7A00\] {
+  background: var(--accent) !important;
+}
+
+.premium-home #stats {
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  border-bottom: 1px solid rgba(255, 255, 255, .14);
+}
+
+.premium-home #stats article {
+  border-left-color: rgba(255, 255, 255, .18) !important;
+}
+
+.premium-home #stats article p:first-of-type {
+  font-size: clamp(2rem, 4vw, 4rem) !important;
+  letter-spacing: -.06em;
+}
+
+.premium-home #testimonials > div > div:first-child {
+  max-width: 52rem;
+}
+
+.premium-home #testimonials > div > div:first-child h2 {
+  font-size: clamp(2.6rem, 5vw, 5rem) !important;
+  line-height: .92 !important;
+}
+
+.premium-home #testimonials article {
+  background: rgba(255, 255, 255, .88) !important;
+}
+
+.premium-home #gallery .group img,
+.premium-home #blog img {
+  filter: saturate(.82) contrast(1.04);
+}
+
+.premium-home #services > .pointer-events-none,
+.premium-home #land-categories > .pointer-events-none,
+.premium-home #gallery > .pointer-events-none,
+.premium-home #testimonials > .pointer-events-none {
+  opacity: .14 !important;
+}
+
+.premium-home #gallery .group:hover img,
+.premium-home #blog article:hover img {
+  filter: saturate(1) contrast(1.05);
+}
+
+@media (max-width: 1023px) {
+  .premium-home #properties .premium-project-card > .relative.z-10 {
+    grid-template-columns: minmax(220px, 38%) 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-home section[data-section-number]::before {
+    top: 1.5rem;
+    right: 1.25rem;
+  }
+
+  .premium-home #properties .premium-project-card > .relative.z-10 {
+    display: block;
+  }
+
+  .premium-home #properties .premium-project-card > .relative.z-10 > div:first-child {
+    min-height: 245px;
+  }
+
+  .premium-home #services .premium-services-wrap > div:last-child {
+    margin-top: 3rem;
+  }
+}
+
+/* Dark editorial connectivity treatment shared by every property detail page. */
+.premium-connectivity-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #081A3A !important;
+  color: var(--paper) !important;
+}
+
+.premium-connectivity-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: .4;
+  background:
+    linear-gradient(112deg, transparent 0 41%, rgba(255, 122, 0, .14) 41.1% 41.25%, transparent 41.35% 100%),
+    linear-gradient(21deg, transparent 0 68%, rgba(255, 255, 255, .08) 68.1% 68.22%, transparent 68.32% 100%),
+    repeating-linear-gradient(90deg, transparent 0 6rem, rgba(255, 255, 255, .035) 6rem 6.05rem),
+    repeating-linear-gradient(0deg, transparent 0 6rem, rgba(255, 255, 255, .035) 6rem 6.05rem);
+  mask-image: linear-gradient(90deg, black, transparent 90%);
+}
+
+.premium-connectivity-section::after {
+  content: "";
+  position: absolute;
+  right: -12rem;
+  top: -12rem;
+  z-index: -1;
+  width: 34rem;
+  height: 34rem;
+  border: 1px solid rgba(255, 122, 0, .3);
+  border-radius: 999px;
+  box-shadow: 0 0 0 3rem rgba(255, 122, 0, .05), 0 0 0 7rem rgba(255, 122, 0, .035);
+  animation: premium-orbit 18s linear infinite;
+}
+
+.premium-connectivity-section > div {
+  position: relative;
+  z-index: 1;
+  grid-template-columns: minmax(0, .82fr) minmax(360px, 1.18fr);
+  gap: clamp(2.5rem, 7vw, 8rem);
+}
+
+.premium-connectivity-section > div > :first-child {
+  padding-top: clamp(.5rem, 4vw, 4rem);
+}
+
+.premium-connectivity-section h2 {
+  max-width: 34rem;
+  color: var(--paper) !important;
+  font-size: clamp(2.5rem, 5.5vw, 5.75rem) !important;
+  line-height: .92 !important;
+  letter-spacing: -.065em;
+  text-transform: uppercase;
+}
+
+.premium-connectivity-section h3 {
+  color: var(--paper) !important;
+  font-size: clamp(1.15rem, 2vw, 1.7rem) !important;
+  letter-spacing: -.03em;
+}
+
+.premium-connectivity-section p {
+  color: rgba(255, 255, 255, .68) !important;
+}
+
+.premium-connectivity-section > div > :first-child > p:first-child {
+  color: var(--accent) !important;
+}
+
+.premium-connectivity-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 122, 0, .4) !important;
+  border-radius: 1.35rem !important;
+  background: linear-gradient(145deg, rgba(8, 26, 58, .94), rgba(8, 26, 58, .92)) !important;
+  box-shadow: 0 28px 90px rgba(8, 26, 58, .28), inset 0 1px 0 rgba(255, 255, 255, .08);
+  backdrop-filter: blur(22px);
+}
+
+.premium-connectivity-panel::before {
+  content: "ROUTE / ACCESS";
+  position: absolute;
+  right: 1.5rem;
+  top: 1.45rem;
+  color: rgba(255, 255, 255, .35);
+  font-size: .58rem;
+  font-weight: 800;
+  letter-spacing: .26em;
+}
+
+.premium-connectivity-panel::after {
+  content: "";
+  position: absolute;
+  left: 2.2rem;
+  top: 4.8rem;
+  bottom: 2rem;
+  width: 1px;
+  background: linear-gradient(var(--accent), rgba(255, 122, 0, .05));
+  transform-origin: top;
+  animation: premium-route-line 2.2s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.premium-connectivity-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.premium-connectivity-panel > h3 {
+  padding-right: 8rem;
+}
+
+.premium-connectivity-item {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(255, 255, 255, .14) !important;
+  border-radius: .55rem !important;
+  background: rgba(255, 255, 255, .055) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(14px);
+  transition: transform .45s cubic-bezier(.22, 1, .36, 1), border-color .45s ease, background .45s ease;
+}
+
+.premium-connectivity-item::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .45s cubic-bezier(.22, 1, .36, 1);
+}
+
+.premium-connectivity-item:hover {
+  transform: translateX(.45rem);
+  border-color: rgba(255, 122, 0, .7) !important;
+  background: rgba(255, 122, 0, .12) !important;
+}
+
+.premium-connectivity-item:hover::after {
+  transform: scaleX(1);
+}
+
+.premium-connectivity-item > span {
+  position: relative;
+  border-radius: .35rem !important;
+  background: var(--accent) !important;
+  color: var(--ink) !important;
+  box-shadow: 0 0 0 .35rem rgba(255, 122, 0, .12);
+}
+
+.premium-connectivity-item p {
+  color: rgba(255, 255, 255, .66) !important;
+}
+
+.premium-connectivity-item p.font-black {
+  color: var(--paper) !important;
+}
+
+@keyframes premium-route-line {
+  from { transform: scaleY(0); opacity: 0; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+
+@keyframes premium-orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1023px) {
+  .premium-connectivity-section > div {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .premium-connectivity-section > div > :first-child {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-connectivity-panel {
+    border-radius: .9rem !important;
+  }
+
+  .premium-connectivity-panel::before {
+    right: 1rem;
+    top: 1.15rem;
+    font-size: .5rem;
+  }
+
+  .premium-connectivity-panel::after {
+    left: 1.65rem;
+    top: 4.5rem;
+  }
+
+  .premium-connectivity-panel > h3 {
+    padding-right: 5rem;
+  }
+
+  .premium-connectivity-item:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premium-connectivity-section::after,
+  .premium-connectivity-panel::after {
+    animation: none;
+  }
+
+  .premium-connectivity-item {
+    transition: none;
+  }
+}
+
+/* Keep detail-page heroes in the same dark, cinematic language. */
+.premium-site .property-detail-page > section:first-child {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(255, 122, 0, .16), transparent 32%),
+    linear-gradient(120deg, #081A3A 0%, #0A2E73 55%, #081A3A 100%) !important;
+  color: var(--paper);
+}
+
+.premium-site .property-detail-page > section:first-child::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: .75;
+}
+
+.premium-site .property-detail-page > section:first-child > div {
+  position: relative;
+  z-index: 1;
+}
+
+.premium-site .property-detail-page > section:first-child h1,
+.premium-site .property-detail-page > section:first-child h2,
+.premium-site .property-detail-page > section:first-child p.font-black,
+.premium-site .property-detail-page > section:first-child p.text-\[\#0A2E73\] {
+  color: var(--paper) !important;
+}
+
+.premium-site .property-detail-page > section:first-child p.text-\[\#0A2E73\] {
+  color: rgba(255, 255, 255, .7) !important;
+}
+
+.premium-site .property-detail-page > section:first-child .property-contact-grid > *,
+.premium-site .property-detail-page > section:first-child .property-facts-grid > * {
+  border-color: rgba(255, 255, 255, .14) !important;
+  background: rgba(255, 255, 255, .07) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 18px 45px rgba(8, 26, 58, .16) !important;
+  backdrop-filter: blur(15px);
+}
+
+.premium-site .property-detail-page > section:first-child .property-contact-grid > a {
+  background: rgba(255, 122, 0, .15) !important;
+  border-color: rgba(255, 122, 0, .48) !important;
+}
+
+.premium-site .property-detail-page > section:first-child .property-contact-grid p,
+.premium-site .property-detail-page > section:first-child .property-facts-grid p {
+  color: rgba(255, 255, 255, .65) !important;
+}
+
+.premium-site .property-detail-page > section:first-child .property-contact-grid p:last-child,
+.premium-site .property-detail-page > section:first-child .property-facts-grid p:nth-child(2) {
+  color: var(--paper) !important;
+}
+
+.premium-site .property-detail-page > section:first-child .property-facts-grid p:last-child {
+  color: var(--accent) !important;
+}
+
+.premium-site .property-detail-page > section:first-child a[href^="tel:"]:not(.property-contact-grid a) {
+  color: var(--paper);
+}
+
+.premium-site .property-detail-page > section:first-child [class*="bg-white"] {
+  background: rgba(255, 255, 255, .08) !important;
+}
+
+@media (max-width: 639px) {
+  .premium-site .property-detail-page > section:first-child {
+    background:
+      radial-gradient(circle at 80% 12%, rgba(255, 122, 0, .18), transparent 40%),
+      #081A3A !important;
+  }
+}
+
+/* Shared inner-page art direction: warm paper, charcoal canvas and glass cards. */
+.premium-site main.compact-page:not(.property-detail-page) {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.premium-site [data-premium-navbar] {
+  border-color: rgba(8, 26, 58, .14) !important;
+  background: rgba(255, 255, 255, .9) !important;
+  box-shadow: 0 1px 0 rgba(8, 26, 58, .08) !important;
+  backdrop-filter: blur(20px);
+}
+
+.premium-site [data-premium-navbar] a {
+  color: var(--ink) !important;
+}
+
+.premium-site [data-premium-navbar] a:hover,
+.premium-site [data-premium-navbar] a.text-\[\#FF7A00\] {
+  color: var(--accent) !important;
+}
+
+.premium-site main.about-page > section:first-child,
+.premium-site main.contact-page > section:first-child,
+.premium-site main.director-page > section:first-child {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(25rem, 48vw, 42rem);
+  height: auto !important;
+  background:
+    radial-gradient(circle at 76% 18%, rgba(255, 122, 0, .2), transparent 30%),
+    linear-gradient(118deg, #081A3A 0%, #0A2E73 57%, #081A3A 100%) !important;
+}
+
+.premium-site main.about-page > section:first-child::before,
+.premium-site main.contact-page > section:first-child::before,
+.premium-site main.director-page > section:first-child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .45;
+  background:
+    linear-gradient(125deg, transparent 0 48%, rgba(255, 122, 0, .2) 48.1% 48.25%, transparent 48.35%),
+    repeating-linear-gradient(90deg, transparent 0 7rem, rgba(255, 255, 255, .04) 7rem 7.05rem);
+  mask-image: linear-gradient(90deg, black, transparent 92%);
+}
+
+.premium-site main.about-page > section:first-child::after,
+.premium-site main.contact-page > section:first-child::after,
+.premium-site main.director-page > section:first-child::after {
+  content: "";
+  position: absolute;
+  right: clamp(1.5rem, 7vw, 8rem);
+  bottom: 2rem;
+  width: clamp(6rem, 16vw, 14rem);
+  height: 1px;
+  background: var(--accent);
+  box-shadow: -4rem 0 0 rgba(255, 122, 0, .35);
+}
+
+.premium-site main.about-page > section:first-child h1,
+.premium-site main.contact-page > section:first-child h1,
+.premium-site main.director-page > section:first-child h1 {
+  font-size: clamp(2.75rem, 7vw, 7rem) !important;
+  line-height: .92 !important;
+  letter-spacing: -.06em;
+}
+
+.premium-site main.about-page > section:not(:first-child),
+.premium-site main.contact-page > section:not(:first-child),
+.premium-site main.director-page > section:not(:first-child),
+.premium-site main.properties-page > section:not(:first-child),
+.premium-site main.blog-page > section:not(:first-child),
+.premium-site main.blog-detail-page > section:not(:first-child) {
+  border-top: 1px solid rgba(8, 26, 58, .1);
+}
+
+.premium-site main.about-page [class*="bg-white"][class*="shadow-"],
+.premium-site main.contact-page [class*="bg-white"][class*="shadow-"],
+.premium-site main.director-page [class*="bg-white"][class*="shadow-"],
+.premium-site main.properties-page [class*="bg-white"][class*="shadow-"],
+.premium-site main.blog-detail-page [class*="bg-white"][class*="shadow-"] {
+  border-color: rgba(255, 122, 0, .22) !important;
+  background: rgba(255, 255, 255, .62) !important;
+  box-shadow: 0 24px 70px rgba(8, 26, 58, .1), inset 0 1px 0 rgba(255, 255, 255, .75) !important;
+  backdrop-filter: blur(18px);
+}
+
+.premium-site main.about-page [class*="bg-white"][class*="shadow-"]:hover,
+.premium-site main.contact-page [class*="bg-white"][class*="shadow-"]:hover,
+.premium-site main.director-page [class*="bg-white"][class*="shadow-"]:hover,
+.premium-site main.properties-page [class*="bg-white"][class*="shadow-"]:hover {
+  border-color: rgba(255, 122, 0, .65) !important;
+  transform: translateY(-4px);
+}
+
+.premium-site main.about-page > section:nth-child(2) > div,
+.premium-site main.contact-page > section:nth-child(3) > div,
+.premium-site main.director-page > section:not(:first-child) > div {
+  max-width: 84rem;
+}
+
+.premium-site main.about-page > section:nth-child(2) h2,
+.premium-site main.contact-page > section:nth-child(3) h2,
+.premium-site main.director-page > section:not(:first-child) h2 {
+  font-size: clamp(2.4rem, 5.4vw, 5.5rem) !important;
+  line-height: .94 !important;
+  letter-spacing: -.06em;
+}
+
+.premium-site main.contact-page > section:nth-child(2) {
+  background: var(--paper-muted) !important;
+}
+
+.premium-site main.contact-page > section:nth-child(2) > div {
+  gap: 1px;
+  background: rgba(8, 26, 58, .16);
+}
+
+.premium-site main.contact-page > section:nth-child(2) > div > div {
+  border-radius: 0 !important;
+  background: rgba(255, 255, 255, .84) !important;
+  backdrop-filter: blur(16px);
+}
+
+.premium-site main.contact-page > section:nth-child(3) {
+  background: var(--paper) !important;
+}
+
+.premium-site main.contact-page form input,
+.premium-site main.contact-page form select,
+.premium-site main.contact-page form textarea {
+  border-color: rgba(8, 26, 58, .16) !important;
+  background: rgba(255, 255, 255, .68) !important;
+}
+
+.premium-site main.contact-page form input:focus,
+.premium-site main.contact-page form select:focus,
+.premium-site main.contact-page form textarea:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 4px rgba(255, 122, 0, .16) !important;
+}
+
+.premium-site main.director-page > section:not(:first-child) {
+  background: var(--paper) !important;
+}
+
+.premium-site main.director-page > section:not(:first-child):nth-of-type(2n + 1) {
+  background: var(--paper-muted) !important;
+}
+
+.premium-site main.director-page > section:not(:first-child) img {
+  filter: saturate(.78) contrast(1.08);
+}
+
+.premium-site main.director-page > section:not(:first-child) .group:hover img {
+  filter: saturate(1) contrast(1.05);
+}
+
+.premium-site main.blog-detail-page article {
+  border-radius: 1rem !important;
+  border-color: rgba(255, 122, 0, .28) !important;
+  background: rgba(255, 255, 255, .64) !important;
+  box-shadow: 0 28px 80px rgba(8, 26, 58, .13) !important;
+  backdrop-filter: blur(18px);
+}
+
+@media (max-width: 639px) {
+  .premium-site main.about-page > section:first-child,
+  .premium-site main.contact-page > section:first-child,
+  .premium-site main.director-page > section:first-child {
+    min-height: 24rem;
+  }
+
+  .premium-site main.about-page > section:first-child::after,
+  .premium-site main.contact-page > section:first-child::after,
+  .premium-site main.director-page > section:first-child::after {
+    right: 1.5rem;
+    bottom: 1.25rem;
+  }
+}
+
+/* Image-first project grid, matching Meraas-style launch presentation. */
+@media (min-width: 640px) {
+  .premium-home #properties > div > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px !important;
+    background: rgba(8, 26, 58, .18);
+  }
+
+  .premium-home #properties > div > div:last-child > * {
+    margin-block-start: 0 !important;
+  }
+
+  .premium-home #properties .premium-project-card > .relative.z-10 {
+    display: flex !important;
+    min-height: 100%;
+    flex-direction: column;
+  }
+
+  .premium-home #properties .premium-project-card > .relative.z-10 > div:first-child {
+    min-height: clamp(18rem, 30vw, 27rem);
+  }
+
+  .premium-home #properties .premium-project-card > .relative.z-10 > div:nth-child(2) {
+    min-height: 22rem;
+    padding: clamp(1.25rem, 2.8vw, 2.25rem) !important;
+  }
+
+  .premium-home #properties .premium-project-card .sm\:absolute.sm\:right-0 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 11rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .premium-home #properties > div > div:last-child {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-home #properties > div > div:last-child {
+    display: grid;
+    gap: 1rem !important;
+  }
+
+  .premium-home #properties .premium-project-card > .relative.z-10 > div:nth-child(2) {
+    min-height: 17rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Shared About Us colour language
+   --------------------------------------------------------------------------
+   The About Us hero uses the residential reference's orange canvas and warm
+   paper surfaces. Carry that same treatment through the site so each section
+   feels part of one visual system while cards and content remain readable.
+   -------------------------------------------------------------------------- */
+.premium-home #properties,
+.premium-home #services,
+.premium-home #about-industrial,
+.premium-home #land-categories,
+.premium-home #testimonials,
+.premium-home #gallery,
+.premium-home #blog {
+  background: var(--paper-muted) !important;
+}
+
+.premium-home #services article {
+  background: rgba(255, 255, 255, .86) !important;
+}
+
+.premium-home #services article:hover {
+  background: var(--paper) !important;
+}
+
+.premium-site main.compact-page:not(.property-detail-page) {
+  background: var(--paper-muted) !important;
+}
+
+.premium-site main.about-page > section:not(:first-child),
+.premium-site main.contact-page > section:not(:first-child),
+.premium-site main.director-page > section:not(:first-child),
+.premium-site main.properties-page > section:not(:first-child),
+.premium-site main.blog-page > section:not(:first-child),
+.premium-site main.blog-detail-page > section:not(:first-child) {
+  background: var(--paper-muted) !important;
+}
+
+.premium-site main.about-page > section:first-child,
+.premium-site main.contact-page > section:first-child,
+.premium-site main.director-page > section:first-child,
+.premium-site main.properties-page > section:first-child,
+.premium-site main.blog-page > section:first-child {
+  background: var(--accent) !important;
+}
+
+.premium-site main.about-page > section:first-child::before,
+.premium-site main.contact-page > section:first-child::before,
+.premium-site main.director-page > section:first-child::before,
+.premium-site main.properties-page > section:first-child::before,
+.premium-site main.blog-page > section:first-child::before {
+  opacity: .32;
+  background:
+    linear-gradient(125deg, transparent 0 48%, rgba(8, 26, 58, .2) 48.1% 48.25%, transparent 48.35%),
+    repeating-linear-gradient(90deg, transparent 0 7rem, rgba(255, 255, 255, .18) 7rem 7.05rem);
+}
+
+.premium-site main.about-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.contact-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.director-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.properties-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.blog-page > section:first-child .text-\[\#FF7A00\] {
+  color: var(--ink) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Orange section canvases
+   --------------------------------------------------------------------------
+   Keep the site on the Dholera Residential orange/paper colour language. The
+   navy remains available for type, controls and small contrast details, but
+   it no longer paints full section backgrounds across the frontend.
+   -------------------------------------------------------------------------- */
+.premium-home > section:not(.premium-hero),
+.premium-site main section {
+  background-color: var(--paper-muted) !important;
+}
+
+/* Dark section utilities used by legacy pages are now warm paper surfaces. */
+.premium-site main section[class*="bg-[#081A3A]"],
+.premium-site main section[class*="bg-[#0A2E73]"],
+.premium-site main section[class*="from-[#0A2E73]"],
+.premium-site main section.premium-connectivity-section {
+  background: var(--paper-muted) !important;
+  color: var(--ink) !important;
+}
+
+.premium-site main section[class*="bg-[#081A3A]"] [class*="text-white"],
+.premium-site main section[class*="bg-[#0A2E73]"] [class*="text-white"],
+.premium-site main section[class*="from-[#0A2E73]"] [class*="text-white"],
+.premium-site main section.premium-connectivity-section [class*="text-white"] {
+  color: var(--ink) !important;
+}
+
+/* Keep the page title bands orange rather than reverting to navy. */
+.premium-site main.about-page > section:first-child,
+.premium-site main.contact-page > section:first-child,
+.premium-site main.director-page > section:first-child,
+.premium-site main.properties-page > section:first-child,
+.premium-site main.blog-page > section:first-child,
+.premium-site main.blog-detail-page > section:first-child {
+  background: var(--accent) !important;
+}
+
+/* The homepage stats strip and category cards were the remaining large navy
+   surfaces in the editorial redesign. */
+.premium-home #stats {
+  background: var(--paper-muted) !important;
+  color: var(--ink) !important;
+  border-color: rgba(8, 26, 58, .16) !important;
+}
+
+.premium-home #stats .text-\[\#081A3A\] {
+  color: var(--ink) !important;
+}
+
+.premium-home #stats .text-\[\#0A2E73\] {
+  color: var(--ink) !important;
+  opacity: .72;
+}
+
+.premium-home #stats .bg-\[\#081A3A\] {
+  background: var(--accent) !important;
+  color: var(--ink) !important;
+}
+
+.premium-home #land-categories article,
+.premium-home #land-categories article > div:last-of-type {
+  background: var(--paper) !important;
+}
+
+.premium-home #land-categories article h3,
+.premium-home #land-categories article p,
+.premium-home #land-categories article a {
+  color: var(--ink) !important;
+}
+
+.premium-home #testimonials article:hover {
+  background: var(--accent) !important;
+}
+
+.premium-home #testimonials article > div.pointer-events-none {
+  background: var(--accent) !important;
+}
+
+.premium-home #testimonials article [class*="group-hover:text-white"] {
+  color: var(--ink) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Reference-inspired editorial finish
+   -------------------------------------------------------------------------- */
+.premium-site {
+  --graphite: #191B1D;
+  --concrete: #E9E5DC;
+  --concrete-soft: #F4F2EC;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background: var(--concrete-soft);
+}
+
+.premium-site h1,
+.premium-site h2,
+.premium-site h3,
+.premium-site h4,
+.premium-site h5 {
+  font-family: "Arial Narrow", "Roboto Condensed", Inter, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .015em;
+}
+
+.premium-site .font-serif {
+  font-family: "Arial Narrow", "Roboto Condensed", Inter, sans-serif !important;
+}
+
+.premium-home .premium-hero::before {
+  content: "";
+  position: absolute;
+  inset: 2rem;
+  z-index: 8;
+  border-top: 2px solid rgba(255, 122, 0, .78);
+  border-left: 2px solid rgba(255, 122, 0, .78);
+  pointer-events: none;
+  max-width: 2.2rem;
+  max-height: 2.2rem;
+}
+
+.premium-home .premium-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  pointer-events: none;
+  opacity: .22;
+  background-image:
+    repeating-linear-gradient(90deg, transparent 0 20%, rgba(255, 122, 0, .22) 20% 20.08%, transparent 20.16% 40%),
+    repeating-linear-gradient(0deg, transparent 0 33%, rgba(255, 122, 0, .18) 33% 33.08%, transparent 33.16% 66%);
+  mix-blend-mode: screen;
+}
+
+.premium-home #stats {
+  background: var(--accent) !important;
+  color: var(--paper) !important;
+  border-top-color: rgba(255, 255, 255, .28) !important;
+  border-bottom-color: rgba(255, 255, 255, .28) !important;
+}
+
+.premium-home #stats .text-\[\#081A3A\],
+.premium-home #stats .text-\[\#0A2E73\] {
+  color: var(--paper) !important;
+  opacity: 1;
+}
+
+.premium-home #stats .bg-\[\#081A3A\]\/10 {
+  background: rgba(255, 255, 255, .16) !important;
+  color: var(--paper) !important;
+}
+
+.premium-home #properties .premium-project-card {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  border-color: rgba(8, 26, 58, .16) !important;
+  box-shadow: 0 18px 46px rgba(8, 26, 58, .1) !important;
+}
+
+.premium-home #properties .premium-project-card > .relative.z-10 > div:last-child {
+  color: var(--ink) !important;
+}
+
+.premium-home #properties .premium-project-card > .relative.z-10 > div:last-child [class*="text-white"] {
+  color: var(--ink) !important;
+}
+
+.premium-home #properties .premium-project-card:hover {
+  border-color: var(--accent) !important;
+  box-shadow: 0 28px 70px rgba(8, 26, 58, .15) !important;
+}
+
+.premium-home #properties .premium-project-card > .relative.z-10 > div:first-child::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-right: 1px solid rgba(255, 122, 0, .28);
+}
+
+.premium-site header[data-premium-navbar] {
+  background: rgba(255, 255, 255, .94) !important;
+  color: var(--ink) !important;
+  border-color: rgba(8, 26, 58, .14) !important;
+  box-shadow: 0 1px 0 rgba(8, 26, 58, .08) !important;
+  backdrop-filter: blur(18px);
+}
+
+/* The reference keeps the main navigation white at every scroll position;
+   graphite is reserved for the announcement strip above it. */
+.premium-site header[data-premium-navbar] nav a,
+.premium-site header[data-premium-navbar] .premium-header-enquire,
+.premium-site header[data-premium-navbar] a[href^="tel:"] {
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.premium-site header[data-premium-navbar] nav a {
+  font-family: "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase !important;
+}
+
+.premium-site header[data-premium-navbar] .premium-header-enquire,
+.premium-site header[data-premium-navbar] a[href^="tel:"] {
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.premium-site header[data-premium-navbar][class*="bg-[#191B1D]"] {
+  background: rgba(25, 27, 29, .92) !important;
+  color: var(--paper) !important;
+  border-color: rgba(255, 255, 255, .14) !important;
+  box-shadow: 0 10px 35px rgba(25, 27, 29, .28) !important;
+}
+
+.premium-site .premium-logo-mark {
+  position: relative;
+  display: block;
+  width: 3.25rem;
+  height: 3.25rem;
+  overflow: visible;
+  flex: 0 0 auto;
+  background: transparent;
+}
+
+@media (min-width: 640px) {
+  .premium-site .premium-logo-mark {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .premium-site .premium-logo-mark {
+    width: 5.75rem;
+    height: 5.75rem;
+  }
+}
+
+.premium-site .premium-header-enquire {
+  border-radius: 0 !important;
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.premium-site .premium-header-enquire:hover {
+  background: #ffffff !important;
+  color: #191B1D !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(25, 27, 29, .16),
+    0 12px 28px rgba(25, 27, 29, .12) !important;
+}
+
+.premium-site header[data-premium-navbar] a[class*="text-[#5B6672]"] {
+  color: #5B6672 !important;
+}
+
+.premium-site header[data-premium-navbar] a[class*="text-[#191B1D]"] {
+  color: #191B1D !important;
+}
+
+.premium-site header[data-premium-navbar][class*="bg-[#191B1D]"] [class*="text-white"] {
+  color: var(--paper) !important;
+}
+
+.premium-site header[data-premium-navbar] .premium-mobile-menu[class*="bg-white"] {
+  background: rgba(255, 255, 255, .98) !important;
+  border-color: rgba(25, 27, 29, .14) !important;
+  backdrop-filter: blur(18px);
+}
+
+.premium-site header[data-premium-navbar] .premium-mobile-menu[class*="bg-[#191B1D]"] {
+  background: rgba(25, 27, 29, .98) !important;
+  border-color: rgba(255, 255, 255, .14) !important;
+  color: var(--paper) !important;
+  backdrop-filter: blur(18px);
+}
+
+.premium-site header[data-premium-navbar] .premium-mobile-menu a[class*="text-[#5B6672]"] {
+  color: #5B6672 !important;
+  border-color: rgba(25, 27, 29, .14) !important;
+}
+
+.premium-site header[data-premium-navbar] .premium-mobile-menu[class*="bg-[#191B1D]"] a[class*="text-white"] {
+  color: var(--paper) !important;
+  border-color: rgba(255, 255, 255, .14) !important;
+}
+
+/* Keep the announcement strip graphite even though an earlier homepage
+   child rule gives header children a warm paper canvas. */
+.premium-site .premium-topbar {
+  background: #0a2e73 !important;
+  color: var(--paper) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .08) !important;
+}
+
+/* Compact reference-style announcement strip. */
+.premium-site .topbar {
+  background: #0a2e73 !important;
+  color: rgba(255, 255, 255, .7) !important;
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}
+
+.premium-site .topbar .wrap {
+  height: 38px;
+}
+
+.premium-site .topbar .tel {
+  color: #ffffff !important;
+}
+
+.premium-site .topbar .social {
+  gap: 16px;
+}
+
+.premium-site .topbar .social a {
+  color: rgba(255, 255, 255, .7);
+}
+
+.premium-site .topbar .social a:hover {
+  color: #FF7A00 !important;
+}
+
+.premium-site footer {
+  background: var(--graphite) !important;
+}
+
+.premium-site footer > div:last-child {
+  background: var(--graphite) !important;
+  border-color: rgba(255, 255, 255, .14) !important;
+}
+
+@media (max-width: 639px) {
+  .premium-home .premium-hero::before {
+    inset: 1.25rem;
+    max-width: 1.75rem;
+    max-height: 1.75rem;
+  }
+}
+
+/* Global reference typography: keep the same technical monospace voice from
+   the TopBar throughout the frontend text system. */
+.premium-site,
+.premium-site :where(h1, h2, h3, h4, h5, h6, p, a, button, span, li, label, input, textarea, select, option, small, time, code, pre) {
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+
+/* Hero typography follows the supplied editorial reference: a condensed,
+   high-impact display face over a readable supporting copy system. */
+.premium-site .premium-hero-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", var(--font-geist-sans), sans-serif !important;
+  font-size: clamp(4rem, 8vw, 8.25rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.035em !important;
+  line-height: .88 !important;
+  text-transform: uppercase !important;
+}
+
+.premium-site .premium-hero-description {
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+.premium-site .premium-hero-eyebrow,
+.premium-site .premium-hero-button,
+.premium-site .premium-hero-trust,
+.premium-site .premium-hero-scroll {
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+
+.premium-site .premium-hero-button {
+  border-radius: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   Homepage editorial statistics strip
+   --------------------------------------------------------------------------
+   The counters use the existing project values, but present them as a
+   full-bleed reference-style orange band: five equal columns, large
+   condensed numerals and hairline separators. This stays intentionally
+   quiet so the strip reads as one architectural element rather than a set
+   of floating cards.
+   -------------------------------------------------------------------------- */
+.premium-site #stats.premium-stats {
+  width: 100%;
+  max-width: none !important;
+  background: #ff7a00 !important;
+  background-color: #ff7a00 !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.premium-site #stats.premium-stats .premium-stat {
+  border-color: rgba(255, 255, 255, .38) !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-site #stats.premium-stats .premium-stat-number {
+  color: #ffffff !important;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", sans-serif !important;
+  font-size: clamp(2.4rem, 3.4vw, 3.55rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -.025em !important;
+  line-height: .9 !important;
+  text-transform: none !important;
+}
+
+.premium-site #stats.premium-stats .premium-stat-label {
+  color: rgba(255, 255, 255, .96) !important;
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  font-weight: 500 !important;
+  letter-spacing: .18em !important;
+  line-height: 1.35 !important;
+}
+
+@media (max-width: 1023px) {
+  .premium-site #stats.premium-stats .premium-stat:nth-child(odd) {
+    border-left: 0 !important;
+  }
+
+  .premium-site #stats.premium-stats .premium-stat:last-child {
+    border-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .premium-site #stats.premium-stats .premium-stat {
+    border-bottom: 0 !important;
+  }
+
+  .premium-site #stats.premium-stats .premium-stat:first-child {
+    border-left: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premium-site #stats.premium-stats .premium-stat {
+    transition: none !important;
+  }
+}
+
+/* Compact graphite marquee shown beneath the homepage statistics band. */
+.premium-site .premium-marquee {
+  width: 100%;
+  height: 62px;
+  overflow: hidden;
+  background: #0a2e73 !important;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  color: rgba(255, 255, 255, .74);
+  white-space: nowrap;
+}
+
+/* These selectors intentionally match the older homepage section rule's
+   specificity so it cannot add large editorial padding or repaint the ticker
+   with the page paper colour. */
+.premium-home > section#stats.premium-stats {
+  background: #ff7a00 !important;
+  background-color: #ff7a00 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.premium-home > section.premium-marquee {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+}
+
+/* Override the legacy section-canvas selector, which contains several
+   :not(#id) clauses and therefore has unusually high specificity. */
+.premium-home section.premium-marquee:not(#properties):not(#about-industrial):not(#services):not(#gallery):not(#blog):not(#testimonials):not(#stats):not(.premium-hero) {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+}
+
+.premium-site .premium-marquee-track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  will-change: transform;
+  animation: premium-marquee-scroll 34s linear infinite;
+}
+
+.premium-site .premium-marquee:hover .premium-marquee-track {
+  animation-play-state: paused;
+}
+
+.premium-site .premium-marquee-set {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.premium-site .premium-marquee-item {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  gap: clamp(1.25rem, 2.6vw, 3.5rem);
+  padding: 0 clamp(1.1rem, 2.6vw, 3.5rem);
+  color: rgba(255, 255, 255, .74) !important;
+  font-family: "Arial Narrow", "Roboto Condensed", var(--font-geist-sans), sans-serif !important;
+  font-size: clamp(.9rem, 1.25vw, 1.3rem) !important;
+  font-stretch: condensed;
+  font-weight: 600 !important;
+  letter-spacing: .035em !important;
+  line-height: 1.05 !important;
+  text-transform: uppercase !important;
+}
+
+.premium-site .premium-marquee-item.is-highlight {
+  color: #ff7a00 !important;
+}
+
+.premium-site .premium-marquee-separator {
+  display: inline-block;
+  width: clamp(2.5rem, 4.2vw, 5.25rem);
+  height: .26rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #ff7a00 !important;
+}
+
+@keyframes premium-marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premium-site .premium-marquee-track {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-site .premium-marquee {
+    height: 52px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Property listings: image-first editorial cards
+   -------------------------------------------------------------------------- */
+.premium-home #properties {
+  padding-top: clamp(4rem, 7vw, 7rem) !important;
+  padding-bottom: clamp(4rem, 7vw, 7rem) !important;
+}
+
+.premium-home #properties > div {
+  width: 100%;
+  max-width: 1680px !important;
+  padding-right: clamp(1.25rem, 3.5vw, 4.5rem);
+  padding-left: clamp(1.25rem, 3.5vw, 4.5rem);
+}
+
+.premium-home #properties .premium-listings-heading {
+  max-width: none !important;
+  margin-left: 0 !important;
+  text-align: left !important;
+}
+
+.premium-home #properties .premium-listings-grid {
+  gap: clamp(1rem, 1.6vw, 2rem) !important;
+}
+
+.premium-home #properties .premium-listing-card {
+  min-height: 0;
+  border-radius: 0 !important;
+  background: rgba(25, 27, 29, .9) !important;
+  border-color: rgba(255, 255, 255, .16) !important;
+  box-shadow: 0 18px 42px rgba(25, 27, 29, .16) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* --------------------------------------------------------------------------
+   Introduction pillars: dark editorial grid with orange hover state
+   -------------------------------------------------------------------------- */
+.premium-home section.premium-pillars:not(#properties):not(#about-industrial):not(#services):not(#gallery):not(#blog):not(#testimonials):not(#stats):not(.premium-hero) {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+  color: #ffffff !important;
+}
+
+.premium-site .premium-pillars .premium-pillar {
+  background: #0a2e73 !important;
+}
+
+.premium-site .premium-pillars-title,
+.premium-site .premium-pillar-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", sans-serif !important;
+  letter-spacing: -.025em !important;
+}
+
+.premium-site .premium-pillars-eyebrow,
+.premium-site .premium-pillar-number {
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+
+.premium-site .premium-pillars-lede,
+.premium-site .premium-pillar-description {
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+}
+
+.premium-site .premium-pillar:hover {
+  background: #ff7a00 !important;
+  border-color: #ff7a00 !important;
+}
+
+.premium-site .premium-pillar:hover .premium-pillar-number,
+.premium-site .premium-pillar:hover .premium-pillar-title,
+.premium-site .premium-pillar:hover .premium-pillar-description {
+  color: #191b1d !important;
+}
+
+.premium-site .premium-pillar:hover .premium-pillar-rule {
+  background: #191b1d !important;
+}
+
+.premium-home #properties .premium-listing-card:hover {
+  border-color: rgba(255, 122, 0, .75) !important;
+  box-shadow: 0 26px 58px rgba(25, 27, 29, .24) !important;
+}
+
+.premium-home #properties .premium-listing-body {
+  background: rgba(25, 27, 29, .78) !important;
+  border-color: rgba(255, 255, 255, .14) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.premium-site .premium-listings-title,
+.premium-site .premium-listing-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", sans-serif !important;
+  letter-spacing: -.025em !important;
+}
+
+.premium-site .premium-listing-eyebrow,
+.premium-site .premium-listing-link,
+.premium-site .premium-listing-enquire {
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+
+/* --------------------------------------------------------------------------
+   Industrial services: reference-style editorial grid
+   -------------------------------------------------------------------------- */
+.premium-home #services {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+  color: #ffffff !important;
+  padding-top: clamp(4rem, 7vw, 7rem) !important;
+  padding-bottom: clamp(4rem, 7vw, 7rem) !important;
+}
+
+.premium-home #services > div {
+  width: 100%;
+  max-width: 1680px !important;
+  padding-right: clamp(1.25rem, 3.5vw, 4.5rem);
+  padding-left: clamp(1.25rem, 3.5vw, 4.5rem);
+}
+
+.premium-home #services .premium-services-heading {
+  max-width: none !important;
+  margin-left: 0 !important;
+  text-align: left !important;
+}
+
+.premium-home #services .premium-services-title {
+  color: #ffffff !important;
+}
+
+.premium-home #services .premium-services-lede {
+  color: rgba(255, 255, 255, .62) !important;
+}
+
+.premium-home #services .premium-services-grid {
+  gap: clamp(1rem, 1.6vw, 2rem) !important;
+  border-color: rgba(255, 255, 255, .18) !important;
+}
+
+.premium-home #services .premium-service-card {
+  border-radius: 0 !important;
+  border-color: rgba(255, 255, 255, .18) !important;
+  background: rgba(255, 255, 255, .045) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.premium-home #services .premium-service-card:hover {
+  border-color: #ff7a00 !important;
+  background: #ff7a00 !important;
+  box-shadow: 0 20px 42px rgba(25, 27, 29, .16) !important;
+}
+
+.premium-home #services .premium-service-title {
+  color: #ffffff !important;
+}
+
+.premium-home #services .premium-service-description {
+  color: rgba(255, 255, 255, .62) !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-number,
+.premium-home #services .premium-service-card:hover .premium-service-title,
+.premium-home #services .premium-service-card:hover .premium-service-description,
+.premium-home #services .premium-service-card:hover .premium-service-link {
+  color: #191b1d !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-icon {
+  border-color: #191b1d !important;
+  background: rgba(25, 27, 29, .08) !important;
+  color: #191b1d !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-rule {
+  background: #191b1d !important;
+}
+
+.premium-site .premium-services-title,
+.premium-site .premium-service-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", sans-serif !important;
+  letter-spacing: -.025em !important;
+}
+
+.premium-home #services .premium-services-title {
+  max-width: 48rem;
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem) !important;
+  font-weight: 600 !important;
+  line-height: .98 !important;
+}
+
+.premium-site .premium-services-lede,
+.premium-site .premium-service-description {
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+}
+
+.premium-site .premium-services-heading > div > p,
+.premium-site .premium-service-number,
+.premium-site .premium-service-link {
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+
+@media (max-width: 639px) {
+  .premium-home #properties > div {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .premium-home #properties .premium-listing-card {
+    min-height: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Land categories: warm editorial cards
+   --------------------------------------------------------------------------
+   Keep the existing category data and destinations, but present the section
+   as a quiet, image-first project catalogue instead of rounded cards.
+   -------------------------------------------------------------------------- */
+.premium-home #land-categories.premium-land-categories {
+  background: #f4f2ec !important;
+  background-color: #f4f2ec !important;
+  color: #191b1d !important;
+  padding-top: clamp(4.5rem, 8vw, 8rem) !important;
+  padding-bottom: clamp(4.5rem, 8vw, 8rem) !important;
+}
+
+.premium-home #land-categories.premium-land-categories > div {
+  width: 100%;
+  max-width: 1680px !important;
+  padding-right: clamp(1.25rem, 5vw, 5rem);
+  padding-left: clamp(1.25rem, 5vw, 5rem);
+}
+
+.premium-home #land-categories .premium-category-heading {
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.premium-home #land-categories .premium-category-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -.035em !important;
+  line-height: .9 !important;
+  color: #191b1d !important;
+}
+
+.premium-home #land-categories .premium-category-eyebrow,
+.premium-home #land-categories .premium-category-link {
+  font-family: var(--font-geist-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+}
+
+.premium-home #land-categories .premium-category-lede {
+  color: #5b6672 !important;
+}
+
+.premium-home #land-categories .premium-category-grid {
+  gap: clamp(1rem, 1.8vw, 2rem) !important;
+  margin-top: clamp(2.75rem, 5vw, 5rem) !important;
+}
+
+.premium-home #land-categories .premium-category-card {
+  min-height: 0 !important;
+  border: 1px solid rgba(25, 27, 29, .14) !important;
+  border-radius: 0 !important;
+  background: #ffffff !important;
+  box-shadow: 0 14px 35px rgba(25, 27, 29, .06) !important;
+}
+
+.premium-home #land-categories .premium-category-card:hover {
+  border-color: #ff5e1a !important;
+  box-shadow: 0 22px 48px rgba(25, 27, 29, .14) !important;
+}
+
+.premium-home #land-categories .premium-category-media {
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.premium-home #land-categories .premium-category-body {
+  background: #ffffff !important;
+  border: 0 !important;
+}
+
+.premium-home #land-categories .premium-category-card-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -.025em !important;
+  color: #191b1d !important;
+}
+
+.premium-home #land-categories .premium-category-description {
+  color: #5b6672 !important;
+}
+
+.premium-home #land-categories .premium-category-link {
+  color: #ff5e1a !important;
+  border-color: #ff5e1a !important;
+}
+
+.premium-home #land-categories .premium-category-link:hover {
+  color: #191b1d !important;
+  border-color: #191b1d !important;
+}
+
+@media (max-width: 639px) {
+  .premium-home #land-categories.premium-land-categories > div {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .premium-home #land-categories .premium-category-grid {
+    margin-top: 2.5rem !important;
+  }
+
+  .premium-home #land-categories .premium-category-card {
+    min-height: 0 !important;
+  }
+}
+
+/* Keep the property catalogue on the same Samridhi navy canvas. */
+.premium-home #properties {
+  background: #081a3a !important;
+  background-color: #081a3a !important;
+  color: #ffffff !important;
+}
+
+.premium-home #properties .premium-listings-title {
+  color: #ffffff !important;
+}
+
+.premium-home #properties .premium-listings-heading > div > div span:nth-child(2) {
+  background-color: rgba(255, 255, 255, .65) !important;
+}
+
+.premium-home #properties .premium-listings-heading > p {
+  color: rgba(255, 255, 255, .66) !important;
+}
+
+.premium-home #properties .premium-listing-card {
+  background: rgba(8, 26, 58, .92) !important;
+  border-color: rgba(255, 255, 255, .18) !important;
+  box-shadow: 0 18px 42px rgba(4, 13, 31, .28) !important;
+}
+
+.premium-home #properties .premium-listing-card:hover {
+  border-color: #ff7a00 !important;
+  box-shadow: 0 26px 58px rgba(4, 13, 31, .42) !important;
+}
+
+.premium-home #properties .premium-listing-body {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+  background-image: none !important;
+  border-color: rgba(255, 255, 255, .14) !important;
+}
+
+/* Keep every property-card icon in the shared orange accent. */
+.premium-home #properties .premium-listing-body svg {
+  color: #FF7A00 !important;
+  stroke: #FF7A00;
+  fill: currentColor;
+}
+
+.premium-home #properties .premium-listing-link {
+  color: rgba(255, 255, 255, .86) !important;
+}
+
+.premium-home #properties .premium-listing-link:hover {
+  color: #ffffff !important;
+}
+
+.premium-home #properties .premium-listing-enquire:hover {
+  border-color: rgba(255, 255, 255, .72) !important;
+  background: #ffffff !important;
+  color: #081a3a !important;
+}
+
+/* White catalogue canvas with blue information panels. */
+.premium-home #properties {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #191b1d !important;
+}
+
+.premium-home #properties .premium-listings-title {
+  color: #081a3a !important;
+}
+
+.premium-home #properties .premium-listings-heading > p {
+  color: #5b6672 !important;
+}
+
+.premium-home #properties .premium-listing-card {
+  background: #0a2e73 !important;
+}
+
+.premium-home #properties .premium-listing-body {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+}
+
+/* Match category information panels to the Property Listings treatment. */
+.premium-home #land-categories.premium-land-categories {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+  color: #ffffff !important;
+}
+
+.premium-home #land-categories .premium-category-title {
+  color: #ffffff !important;
+}
+
+.premium-home #land-categories .premium-category-lede {
+  color: rgba(255, 255, 255, .72) !important;
+}
+
+.premium-home #land-categories .premium-category-card {
+  background: #0a2e73 !important;
+  border-color: rgba(8, 26, 58, .18) !important;
+}
+
+.premium-home #land-categories .premium-category-body {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #ffffff !important;
+}
+
+/* The legacy card rule targets `article > div:last-of-type` with higher
+   specificity; keep this explicit selector above it so the detail panel
+   cannot be repainted white. */
+.premium-home #land-categories.premium-land-categories article > div.premium-category-body {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+  color: #ffffff !important;
+}
+
+.premium-home #land-categories .premium-category-card-title {
+  color: #ffffff !important;
+}
+
+.premium-home #land-categories .premium-category-body .premium-category-card-title,
+.premium-home #land-categories .premium-category-body .premium-category-description,
+.premium-home #land-categories .premium-category-body .premium-category-link {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.premium-home #land-categories .premium-category-description {
+  color: rgba(255, 255, 255, .72) !important;
+}
+
+.premium-home #land-categories .premium-category-link {
+  color: #ffffff !important;
+  border-color: #ff7a00 !important;
+}
+
+.premium-home #land-categories .premium-category-link:hover {
+  color: #ff7a00 !important;
+  border-color: #ff7a00 !important;
+}
+
+/* Final specificity guard for every category card, including Logistic Hub. */
+.premium-home #land-categories.premium-land-categories .premium-category-grid > article > div.premium-category-body {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+  color: #ffffff !important;
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-grid > article > div.premium-category-body h3,
+.premium-home #land-categories.premium-land-categories .premium-category-grid > article > div.premium-category-body p,
+.premium-home #land-categories.premium-land-categories .premium-category-grid > article > div.premium-category-body a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Keep the category heading readable even if a reduced-motion/browser
+   observer leaves a Framer Motion reveal in its initial state. */
+.premium-home #land-categories.premium-land-categories .premium-category-heading,
+.premium-home #land-categories.premium-land-categories .premium-category-heading > div,
+.premium-home #land-categories.premium-land-categories .premium-category-heading p,
+.premium-home #land-categories.premium-land-categories .premium-category-heading h2 {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Keep the catalogue canvas light so the navy heading remains legible. The
+   legacy :not(...) section rule is intentionally very specific, so mirror it
+   here for this section only. */
+.premium-home section#land-categories.premium-land-categories:not(#properties):not(#about-industrial):not(#services):not(#gallery):not(#blog):not(#testimonials):not(#stats):not(.premium-hero) {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #081a3a !important;
+}
+
+.premium-home section#land-categories.premium-land-categories:not(#properties):not(#about-industrial):not(#services):not(#gallery):not(#blog):not(#testimonials):not(#stats):not(.premium-hero) .premium-category-title {
+  color: #081a3a !important;
+}
+
+.premium-home section#land-categories.premium-land-categories:not(#properties):not(#about-industrial):not(#services):not(#gallery):not(#blog):not(#testimonials):not(#stats):not(.premium-hero) .premium-category-lede {
+  color: #0a2e73 !important;
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-grid > article {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Use the shared project blue for the footer after removing the homepage
+   Built For Growth block. */
+.premium-site footer {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+}
+
+.premium-site footer > div:last-child {
+  background: #0a2e73 !important;
+  background-color: #0a2e73 !important;
+}
+
+/* Intentional mobile hero composition: give the stacked content enough room
+   instead of allowing the absolute, desktop-sized layout to be clipped. */
+@media (max-width: 639px) {
+  .premium-home .premium-hero {
+    min-height: 720px !important;
+    overflow: hidden;
+  }
+
+  .premium-home .premium-hero-content {
+    padding-right: 1rem !important;
+    padding-bottom: 4rem !important;
+    padding-left: 1rem !important;
+  }
+
+  .premium-home .premium-hero-content > div {
+    max-width: none !important;
+    margin-left: 0 !important;
+  }
+
+  .premium-site .premium-hero-eyebrow {
+    margin-bottom: 1rem !important;
+    gap: .65rem !important;
+    font-size: .58rem !important;
+    letter-spacing: .16em !important;
+    line-height: 1.45 !important;
+  }
+
+  .premium-site .premium-hero-title {
+    font-size: clamp(3rem, 14vw, 4rem) !important;
+    line-height: .9 !important;
+  }
+
+  .premium-home .premium-hero-description {
+    max-width: none !important;
+    margin-top: 1.15rem !important;
+    font-size: .875rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .premium-home .premium-hero-button {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: .85rem 1rem !important;
+    font-size: .65rem !important;
+  }
+
+  .premium-home .premium-hero-trust {
+    margin-top: 1.5rem !important;
+    gap: .65rem !important;
+    padding-top: 1rem !important;
+  }
+
+  .premium-home .premium-hero-trust span {
+    gap: .65rem !important;
+    font-size: .55rem !important;
+    letter-spacing: .08em !important;
+    line-height: 1.4 !important;
+  }
+
+  .premium-home .premium-hero-scroll {
+    right: 1rem !important;
+    bottom: 1rem !important;
+    font-size: .5rem !important;
+  }
+
+  .premium-home #stats.premium-stats > div > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .premium-home #stats.premium-stats .premium-stat {
+    min-height: 70px !important;
+    min-width: 0 !important;
+    padding: .5rem .35rem !important;
+  }
+
+  .premium-home #stats.premium-stats .premium-stat-number {
+    font-size: 2.1rem !important;
+  }
+
+  .premium-home #stats.premium-stats .premium-stat-label {
+    margin-top: .35rem !important;
+    font-size: .5rem !important;
+    letter-spacing: .12em !important;
+  }
+}
+
+/* Gallery: image-first editorial layout inspired by the supplied reference.
+   Existing gallery data, lightbox behaviour and image URLs remain unchanged;
+   this layer only controls composition, colour and responsive sizing. */
+.premium-home #gallery.premium-gallery {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #081a3a !important;
+  padding-top: clamp(1.25rem, 2vw, 2.25rem) !important;
+  padding-bottom: clamp(2.5rem, 5vw, 5rem) !important;
+}
+
+.premium-home #gallery.premium-gallery::before {
+  display: none !important;
+}
+
+.premium-home #gallery.premium-gallery > div {
+  width: 100%;
+  max-width: none !important;
+  padding-left: clamp(1rem, 2.6vw, 3.25rem);
+  padding-right: clamp(1rem, 2.6vw, 3.25rem);
+}
+
+.premium-home #gallery .premium-gallery-layout {
+  align-items: start;
+  grid-template-columns: 1.03fr .97fr !important;
+  gap: clamp(3rem, 4.7vw, 6rem) !important;
+}
+
+.premium-home #gallery .premium-gallery-featured {
+  isolation: isolate;
+  margin-top: clamp(6rem, 8vw, 10rem);
+}
+
+.premium-home #gallery .premium-gallery-featured-button,
+.premium-home #gallery .premium-gallery-featured-media {
+  border-radius: clamp(1.25rem, 2.2vw, 2rem) !important;
+}
+
+.premium-home #gallery .premium-gallery-featured-button {
+  box-shadow: 0 28px 70px rgba(8, 26, 58, .18) !important;
+}
+
+.premium-home #gallery .premium-gallery-featured-media {
+  height: clamp(32rem, 48vw, 52rem) !important;
+}
+
+.premium-home #gallery .premium-gallery-copy {
+  min-width: 0;
+}
+
+.premium-home #gallery .premium-gallery-title {
+  max-width: 42rem;
+  color: #0A2E73 !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: clamp(2.65rem, 4.6vw, 5.15rem) !important;
+  font-weight: 700 !important;
+  line-height: .98 !important;
+  letter-spacing: -.045em !important;
+  text-transform: none !important;
+}
+
+.premium-home #gallery .premium-gallery-copy > p:last-of-type {
+  max-width: 48rem;
+  color: #4c6078 !important;
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+  font-size: clamp(.95rem, 1.25vw, 1.25rem) !important;
+  line-height: 1.8 !important;
+  letter-spacing: 0 !important;
+}
+
+.premium-home #gallery .premium-gallery-thumb {
+  height: clamp(10.75rem, 13.5vw, 17.5rem) !important;
+  border-radius: clamp(1.25rem, 2vw, 2rem) !important;
+  box-shadow: 0 16px 38px rgba(8, 26, 58, .14) !important;
+}
+
+.premium-home #gallery .premium-gallery-thumb:hover {
+  box-shadow: 0 24px 54px rgba(8, 26, 58, .24) !important;
+}
+
+@media (max-width: 1023px) {
+  .premium-home #gallery .premium-gallery-featured {
+    margin-top: 0;
+  }
+
+  .premium-home #gallery .premium-gallery-featured-media {
+    height: clamp(28rem, 70vw, 42rem) !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-home #gallery.premium-gallery {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .premium-home #gallery .premium-gallery-featured-media {
+    height: 24rem !important;
+  }
+
+  .premium-home #gallery .premium-gallery-title {
+    font-size: clamp(2.3rem, 11vw, 3.5rem) !important;
+  }
+
+  .premium-home #gallery .premium-gallery-thumb {
+    height: 10rem !important;
+  }
+}
+
+/* Restore the supplied Gallery component's original rounded image treatment
+   after the shared editorial layer, while retaining the Dholera palette. */
+.premium-home #gallery h2 {
+  color: #0A2E73 !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  text-transform: none !important;
+}
+
+.premium-home #gallery .rounded-\[28px\] {
+  border-radius: 28px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-home #gallery .rounded-\[22px\] {
+  border-radius: 22px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-home #gallery .rounded-2xl {
+  border-radius: 1rem !important;
+  border: 0 !important;
+  box-shadow: 0 24px 60px rgba(8, 26, 58, .24) !important;
+}
+
+/* CMS blog: four-up editorial cards on desktop, with a touch-friendly
+   horizontal rail on smaller screens. Payload data and media URLs stay
+   untouched; these rules only shape the presentation. */
+.premium-site #blog.premium-blog-editorial {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #0A2E73 !important;
+  padding-top: clamp(4rem, 7vw, 7rem) !important;
+  padding-bottom: clamp(4rem, 7vw, 7rem) !important;
+}
+
+.premium-site #blog .premium-blog-editorial-wrap {
+  max-width: 1880px !important;
+  padding-left: clamp(1.25rem, 3vw, 3.5rem);
+  padding-right: clamp(1.25rem, 3vw, 3.5rem);
+}
+
+.premium-site #blog .premium-blog-heading {
+  border-bottom: 1px solid rgba(10, 46, 115, .16);
+  padding-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.premium-site #blog .premium-blog-title {
+  color: #0A2E73 !important;
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+  font-size: clamp(2.6rem, 6vw, 5.5rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.065em !important;
+  line-height: .92 !important;
+  text-transform: none !important;
+}
+
+.premium-site #blog .premium-blog-lede {
+  color: rgba(10, 46, 115, .72) !important;
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+.premium-site #blog .premium-blog-rail {
+  display: flex;
+  gap: clamp(1rem, 1.5vw, 1.5rem);
+  overflow-x: auto;
+  padding: .5rem .1rem 1.25rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #FF7A00 rgba(10, 46, 115, .1);
+}
+
+.premium-site #blog .premium-blog-rail::-webkit-scrollbar {
+  height: 5px;
+}
+
+.premium-site #blog .premium-blog-rail::-webkit-scrollbar-track {
+  background: rgba(10, 46, 115, .08);
+}
+
+.premium-site #blog .premium-blog-rail::-webkit-scrollbar-thumb {
+  background: #FF7A00;
+}
+
+.premium-site #blog .premium-blog-card {
+  flex: 0 0 min(82vw, 23rem);
+  min-width: 0;
+  height: 100%;
+  border-radius: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.premium-site #blog .premium-blog-card:hover {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.premium-site #blog .premium-blog-card > a:first-child {
+  display: block;
+  aspect-ratio: 1.35 / 1;
+  border-radius: 0;
+}
+
+.premium-site #blog .premium-blog-card-body {
+  background: #ffffff !important;
+  color: #0A2E73 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.premium-site #blog .premium-blog-card-title {
+  color: #0A2E73 !important;
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: -.035em !important;
+  text-transform: none !important;
+}
+
+.premium-site #blog .premium-blog-card:hover .premium-blog-card-title {
+  color: #FF7A00 !important;
+}
+
+.premium-site #blog .premium-blog-card-excerpt {
+  color: rgba(10, 46, 115, .65) !important;
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+@media (min-width: 1024px) {
+  .premium-site #blog .premium-blog-card {
+    flex-basis: calc((100% - 4.5rem) / 4);
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-site #blog.premium-blog-editorial {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .premium-site #blog .premium-blog-editorial-wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .premium-site #blog .premium-blog-title {
+    font-size: clamp(2.35rem, 12vw, 3.75rem) !important;
+  }
+
+  .premium-site #blog .premium-blog-lede {
+    text-align: left !important;
+  }
+}
+
+/* Gallery layout correction: these selectors target the current component
+   markup directly so the supplied full-width composition is applied even
+   after the shared homepage max-width rules. */
+.premium-home #gallery:not(.premium-gallery) {
+  background: #ffffff !important;
+  padding-top: clamp(1.25rem, 2vw, 2.25rem) !important;
+  padding-bottom: clamp(2.5rem, 5vw, 5rem) !important;
+}
+
+.premium-home #gallery:not(.premium-gallery) > div {
+  width: 100%;
+  max-width: none !important;
+  padding-left: clamp(1rem, 2.6vw, 3.25rem);
+  padding-right: clamp(1rem, 2.6vw, 3.25rem);
+}
+
+@media (min-width: 1024px) {
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid {
+    align-items: start;
+    gap: clamp(3rem, 4.9vw, 7rem) !important;
+    grid-template-columns: 1.03fr .97fr !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid > div:first-child {
+    margin-top: clamp(6rem, 8vw, 10rem) !important;
+  }
+
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid > div:first-child > button > div {
+    height: clamp(32rem, 48vw, 52rem) !important;
+  }
+
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid > div:nth-child(2) {
+    min-width: 0;
+  }
+
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid > div:nth-child(2) > div.grid > button {
+    height: clamp(10.75rem, 13.5vw, 17.5rem) !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid > div:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-home #gallery:not(.premium-gallery) {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid > div:first-child > button > div {
+    height: auto !important;
+    aspect-ratio: 4 / 3;
+  }
+
+  .premium-home #gallery:not(.premium-gallery) > div > div.grid > div:nth-child(2) > div.grid > button {
+    height: auto !important;
+    min-height: 8.75rem;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Consistent edge-less card language across the homepage. Internal rules and
+   controls retain their borders; only the decorative outer card chrome is
+   removed. */
+.premium-home #properties .premium-listing-card,
+.premium-home #services .premium-service-card,
+.premium-home #land-categories .premium-category-card,
+.premium-home #testimonials article {
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-home #properties .premium-listing-card:hover,
+.premium-home #services .premium-service-card:hover,
+.premium-home #land-categories .premium-category-card:hover,
+.premium-home #testimonials article:hover {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.premium-home #services .premium-services-grid {
+  border: 0 !important;
+}
+
+/* Gallery cards use the same clean, image-first treatment as the rest of the
+   homepage. The buttons remain fully interactive; this only removes the
+   browser/card frame so the photos and captions carry the visual weight. */
+.premium-home #gallery.premium-gallery-section .premium-gallery-featured-card,
+.premium-home #gallery.premium-gallery-section .premium-gallery-thumb {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-featured-card:hover,
+.premium-home #gallery.premium-gallery-section .premium-gallery-thumb:hover {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-featured-media,
+.premium-home #gallery.premium-gallery-section .premium-gallery-thumb {
+  border-radius: 0 !important;
+}
+
+/* The corner marks belong to the previous framed treatment; hide them so the
+   gallery cards read as clean, full-bleed images with no visible edge. */
+.premium-home #gallery.premium-gallery-section .premium-gallery-featured > div[aria-hidden="true"] {
+  display: none !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-layout {
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 1.5rem !important;
+}
+
+@media (min-width: 1024px) {
+  .premium-home #gallery.premium-gallery-section .premium-gallery-layout {
+    grid-template-columns: 1.03fr .97fr !important;
+    gap: clamp(2rem, 4.5vw, 6rem) !important;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured {
+    margin-top: clamp(4rem, 7vw, 8rem) !important;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured-media {
+    height: clamp(32rem, 48vw, 52rem) !important;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-thumb {
+    height: clamp(10.75rem, 13.5vw, 17.5rem) !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured-media {
+    height: auto !important;
+    aspect-ratio: 4 / 3;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured-caption {
+    right: .75rem;
+    bottom: .75rem;
+    left: .75rem;
+    padding: .75rem 1rem;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured-caption h3 {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-grid {
+    gap: .75rem;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-thumb {
+    height: auto !important;
+    min-height: 8.75rem;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Touch screens do not have a persistent hover state. Keep the gallery's
+   interactive cues visible and use a short pressed state instead. */
+@media (hover: none) and (pointer: coarse) {
+  .premium-home #gallery.premium-gallery-section .premium-gallery-expand {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-expand-featured {
+    top: .75rem;
+    right: .75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-thumb .premium-gallery-expand {
+    top: .5rem;
+    right: .5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-hover-line {
+    width: 100% !important;
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured-card:active,
+  .premium-home #gallery.premium-gallery-section .premium-gallery-thumb:active {
+    filter: brightness(.9);
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-featured-card:active img,
+  .premium-home #gallery.premium-gallery-section .premium-gallery-thumb:active img {
+    transform: scale(1.025);
+  }
+
+  .premium-home #gallery.premium-gallery-section .premium-gallery-copy > button:active {
+    background: #FF7A00 !important;
+    color: #0A2E73 !important;
+  }
+}
+
+/* Gallery canvas: the image-first layout now sits on the Dholera navy while
+   copy and controls retain enough contrast against the darker surface. */
+.premium-home #gallery.premium-gallery-section {
+  background: #0A2E73 !important;
+  background-color: #0A2E73 !important;
+  color: #FFFFFF !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-copy h2,
+.premium-home #gallery.premium-gallery-section .premium-gallery-mobile-intro h2 {
+  color: #FFFFFF !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-copy > p.text-\[\#0A2E73\],
+.premium-home #gallery.premium-gallery-section .premium-gallery-mobile-intro > p.text-\[\#0A2E73\] {
+  color: rgba(255, 255, 255, .78) !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-copy > div span:last-child,
+.premium-home #gallery.premium-gallery-section .premium-gallery-mobile-intro > div span:last-child {
+  background: rgba(255, 255, 255, .72) !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-copy > button {
+  background: #FFFFFF !important;
+  color: #0A2E73 !important;
+}
+
+.premium-home #gallery.premium-gallery-section .premium-gallery-copy > button:hover {
+  background: #FF7A00 !important;
+  color: #0A2E73 !important;
+}
+
+/* Navy glass canvas for Industrial Plot Services. The service cards remain
+   edge-less, while the section gets a layered translucent surface and a very
+   restrained architectural grid for depth. */
+.premium-home #services {
+  background:
+    linear-gradient(130deg, rgba(10, 46, 115, .96), rgba(8, 26, 58, .9)),
+    radial-gradient(circle at 84% 8%, rgba(255, 122, 0, .16), transparent 34%),
+    #0A2E73 !important;
+  background-color: #0A2E73 !important;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.premium-home #services::before {
+  display: none !important;
+}
+
+.premium-home #services .premium-service-card {
+  background: rgba(255, 255, 255, .075) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08) !important;
+}
+
+.premium-home #services .premium-service-card:hover {
+  background: #FF7A00 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 20px 42px rgba(8, 26, 58, .2) !important;
+}
+
+/* Final page-title correction.
+   The legacy title-band rules above used to paint every inner-page hero orange.
+   Keep the orange as an accent, but use the site's navy canvas so the
+   Contact, Director, About, Properties and Blog headers stay readable and do
+   not become oversized orange blocks. */
+.premium-site main.about-page > section:first-child,
+.premium-site main.contact-page > section:first-child,
+.premium-site main.director-page > section:first-child,
+.premium-site main.properties-page > section:first-child,
+.premium-site main.blog-page > section:first-child,
+.premium-site main.blog-detail-page > section:first-child {
+  background: #0A2E73 !important;
+  background-color: #0A2E73 !important;
+  color: #FFFFFF !important;
+}
+
+.premium-site main.about-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.contact-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.director-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.properties-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.blog-page > section:first-child .text-\[\#FF7A00\],
+.premium-site main.blog-detail-page > section:first-child .text-\[\#FF7A00\] {
+  color: #FF7A00 !important;
+}
+
+.premium-site main.about-page > section:first-child [class*="text-white"],
+.premium-site main.contact-page > section:first-child [class*="text-white"],
+.premium-site main.director-page > section:first-child [class*="text-white"],
+.premium-site main.properties-page > section:first-child [class*="text-white"],
+.premium-site main.blog-page > section:first-child [class*="text-white"],
+.premium-site main.blog-detail-page > section:first-child [class*="text-white"] {
+  color: #FFFFFF !important;
+}
+
+/* Keep the two compact contact headers short while retaining a stable hero
+   canvas for the absolutely-positioned Director header content. */
+.premium-site main.about-page > section:first-child {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+.premium-site main.contact-page > section:first-child {
+  min-height: clamp(14rem, 20vw, 18rem) !important;
+  height: clamp(14rem, 20vw, 18rem) !important;
+}
+
+.premium-site main.director-page > section:first-child {
+  min-height: clamp(20rem, 31vw, 26rem) !important;
+  height: clamp(20rem, 31vw, 26rem) !important;
+}
+
+/* Requested page icon palette: About, Properties and Contact use orange for
+   every React Icon SVG, including icons whose utility color is overridden by
+   this late global stylesheet. */
+.premium-site main.about-page svg,
+.premium-site main.contact-page svg,
+.premium-site main.properties-page svg {
+  color: #FF7A00 !important;
+  stroke: #FF7A00;
+  fill: currentColor;
+}
+
+/* Retain the existing navy icon treatment on the remaining inner pages. */
+.premium-site main.director-page svg,
+.premium-site main.blog-page svg,
+.premium-site main.blog-detail-page svg,
+.premium-site main.property-detail-page svg {
+  color: #0A2E73 !important;
+  stroke: #0A2E73;
+  fill: currentColor;
+}
+
+/* About-story image label and feature icons need explicit contrast because an
+   older section-wide paragraph/span rule otherwise recolors them. */
+.premium-home #about-industrial .premium-about-image-kicker {
+  color: #FF7A00 !important;
+}
+
+.premium-home #about-industrial .premium-about-image-caption {
+  color: #FFFFFF !important;
+}
+
+.premium-home #about-industrial .premium-about-feature-icon,
+.premium-home #about-industrial .premium-about-feature-icon svg {
+  color: #FF7A00 !important;
+  stroke: #FF7A00;
+  fill: currentColor;
+}
+
+.premium-home #about-industrial .premium-about-feature-icon {
+  background: rgba(255, 122, 0, .12) !important;
+}
+
+/* Land Categories glass treatment. This final selector intentionally mirrors
+   the legacy specificity guard above so the section cannot be repainted white
+   by older catalogue rules. */
+.premium-home section#land-categories.premium-land-categories:not(#properties):not(#about-industrial):not(#services):not(#gallery):not(#blog):not(#testimonials):not(#stats):not(.premium-hero) {
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  color: #081A3A !important;
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-title {
+  color: #081A3A !important;
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-lede {
+  color: #0A2E73 !important;
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-card {
+  position: relative;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: rgba(255, 255, 255, .075) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  isolation: isolate;
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(112deg, transparent 25%, rgba(255, 255, 255, .18) 48%, transparent 70%);
+  transform: translateX(-115%);
+  transition: transform .85s cubic-bezier(.22, 1, .36, 1);
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-card:hover::after {
+  transform: translateX(115%);
+}
+
+.premium-home #land-categories.premium-land-categories .premium-category-body {
+  background: rgba(10, 46, 115, .62) !important;
+  background-color: rgba(10, 46, 115, .62) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* About Dholera Industrial canvas. Remove the old white wash so the section
+   uses the requested navy surface while every existing story detail remains
+   readable. */
+.premium-home #about-industrial {
+  background: #0A2E73 !important;
+  background-color: #0A2E73 !important;
+  color: #FFFFFF !important;
+}
+
+.premium-home #about-industrial > div:first-child > div:last-child {
+  background: transparent !important;
+}
+
+.premium-home #about-industrial .premium-story-grid h2 {
+  color: #FFFFFF !important;
+}
+
+.premium-home #about-industrial .premium-story-grid > div:last-child > p:first-child {
+  color: #FF7A00 !important;
+}
+
+.premium-home #about-industrial .premium-story-grid > div:last-child > p:not(:first-child),
+.premium-home #about-industrial .premium-story-grid > div:last-child .text-\[\#0A2E73\] {
+  color: rgba(255, 255, 255, .78) !important;
+}
+
+.premium-home #about-industrial .premium-story-grid > div:last-child > div span.text-\[\#0A2E73\],
+.premium-home #about-industrial .premium-story-grid > div:last-child > div span.text-\[\#081A3A\] {
+  color: #FFFFFF !important;
+}
+
+.premium-home #about-industrial .premium-story-grid > div:last-child > div > span.h-0\.75:last-child {
+  background: rgba(255, 255, 255, .7) !important;
+}
+
+@media (max-width: 639px) {
+  .premium-home #about-industrial {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .premium-home #about-industrial .premium-story-grid {
+    width: 100%;
+    max-width: none !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 2rem !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .premium-home #about-industrial .premium-about-visual {
+    width: 100%;
+    margin-top: 0 !important;
+  }
+
+  .premium-home #about-industrial .premium-about-accent {
+    display: none;
+  }
+
+  .premium-home #about-industrial .premium-about-image-shell {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .premium-home #about-industrial .premium-about-image-media {
+    border-radius: 0 !important;
+  }
+
+  .premium-home #about-industrial .premium-about-image {
+    width: 100%;
+    height: clamp(15rem, 72vw, 20rem) !important;
+  }
+
+  .premium-home #about-industrial .premium-about-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .premium-home #about-industrial .premium-about-content h2 {
+    font-size: clamp(2.1rem, 10vw, 2.85rem) !important;
+    line-height: .98 !important;
+  }
+
+  .premium-home #about-industrial .premium-about-summary {
+    font-size: .9375rem;
+    line-height: 1.65;
+  }
+
+  .premium-home #about-industrial .premium-about-features {
+    gap: .85rem .75rem;
+  }
+
+  .premium-home #about-industrial .premium-about-action,
+  .premium-home #about-industrial .premium-about-action > div,
+  .premium-home #about-industrial .premium-about-action a {
+    width: 100%;
+  }
+}
+
+/* Let the CMS blog use the full viewport width. The blog component keeps its
+   own responsive gutters and card rail; this only removes the older
+   homepage-wide 1320px max-width constraint from the section wrapper. */
+.premium-home #blog.premium-blog-editorial {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.premium-home #blog.premium-blog-editorial > .premium-blog-editorial-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.premium-home #blog.premium-blog-editorial .premium-blog-rail {
+  width: 100% !important;
+}
+
+/* Services use the same hover language as testimonials: the navy surface
+   lifts from the bottom, typography inverts to white, and orange remains the
+   interaction accent. */
+.premium-home #services .premium-service-card {
+  isolation: isolate;
+  transition: border-color .35s ease, box-shadow .35s ease;
+}
+
+.premium-home #services .premium-service-card:hover {
+  background: transparent !important;
+  border-color: #FF7A00 !important;
+  box-shadow: 0 24px 65px rgba(8, 26, 58, .28) !important;
+}
+
+.premium-home #services .premium-service-hover-surface {
+  z-index: 0;
+  background: #081A3A !important;
+}
+
+.premium-home #services .premium-service-shine {
+  z-index: 1;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-number,
+.premium-home #services .premium-service-card:hover .premium-service-title,
+.premium-home #services .premium-service-card:hover .premium-service-description {
+  color: #FFFFFF !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-number,
+.premium-home #services .premium-service-card:hover .premium-service-link {
+  color: #FF7A00 !important;
+}
+
+/* The CMS blog is shared by the homepage and /blog. Keep both instances in a
+   single side-by-side track so cards never fall into a vertical stack. */
+.premium-site #blog.premium-blog-editorial .premium-blog-rail {
+  display: block !important;
+  overflow: hidden !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  scroll-snap-type: none !important;
+}
+
+.premium-site #blog.premium-blog-editorial .premium-blog-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  gap: clamp(1rem, 1.5vw, 1.5rem);
+  animation: premium-blog-marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.premium-site #blog.premium-blog-editorial .premium-blog-card {
+  flex: 0 0 clamp(17rem, 20vw, 21rem) !important;
+  width: clamp(17rem, 20vw, 21rem) !important;
+}
+
+@media (max-width: 639px) {
+  .premium-site #blog.premium-blog-editorial .premium-blog-track {
+    gap: 1rem;
+    animation-duration: 28s;
+  }
+
+  .premium-site #blog.premium-blog-editorial .premium-blog-card {
+    flex-basis: min(82vw, 20rem) !important;
+    width: min(82vw, 20rem) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premium-site #blog.premium-blog-editorial .premium-blog-track {
+    animation: none;
+  }
+}
+
+/* CMS blog marquee: keep the section full-width while the published cards
+   travel continuously in a compact, image-led rail. */
+.premium-home #blog.premium-blog-editorial .premium-blog-rail {
+  display: block !important;
+  overflow: hidden !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  scroll-snap-type: none !important;
+}
+
+.premium-home #blog.premium-blog-editorial .premium-blog-track {
+  display: flex;
+  width: max-content;
+  gap: clamp(1rem, 1.5vw, 1.5rem);
+  animation: premium-blog-marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.premium-home #blog.premium-blog-editorial .premium-blog-card {
+  flex: 0 0 clamp(17rem, 20vw, 21rem) !important;
+  width: clamp(17rem, 20vw, 21rem) !important;
+}
+
+@keyframes premium-blog-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 639px) {
+  .premium-home #blog.premium-blog-editorial .premium-blog-track {
+    gap: 1rem;
+    animation-duration: 28s;
+  }
+
+  .premium-home #blog.premium-blog-editorial .premium-blog-card {
+    flex-basis: min(82vw, 20rem) !important;
+    width: min(82vw, 20rem) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premium-home #blog.premium-blog-editorial .premium-blog-track {
+    animation: none;
+  }
+}
+
+/* Keep the full-bleed stats strip inside the viewport at every breakpoint.
+   Explicit minmax columns prevent long values (such as 124,246) from forcing
+   the grid wider and clipping the first/last statistic. */
+.premium-home #stats.premium-stats > div,
+.premium-home #stats.premium-stats > div > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+.premium-home #stats.premium-stats > div > div {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+}
+
+.premium-home #stats.premium-stats .premium-stat {
+  width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden;
+}
+
+.premium-home #stats.premium-stats .premium-stat-number {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.premium-home #stats.premium-stats .premium-stat-label {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .premium-home #stats.premium-stats > div > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .premium-home #stats.premium-stats > div > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Final Services hover palette: orange is the only hover surface. */
+.premium-home #services .premium-service-hover-surface {
+  background: #FF7A00 !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-number,
+.premium-home #services .premium-service-card:hover .premium-service-title,
+.premium-home #services .premium-service-card:hover .premium-service-description,
+.premium-home #services .premium-service-card:hover .premium-service-link {
+  color: #191B1D !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-icon {
+  border-color: #191B1D !important;
+  background: transparent !important;
+  color: #191B1D !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-rule {
+  background: #191B1D !important;
+}
+
+/* Keep the Services headline editorial but less heavy and less wide. */
+.premium-home #services .premium-services-title {
+  max-width: 40rem !important;
+  font-family: "Arial Narrow", "Roboto Condensed", var(--font-geist-sans), Inter, sans-serif !important;
+  font-size: clamp(2rem, 3.55vw, 3.65rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: -.045em !important;
+  line-height: 1 !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-icon {
+  border-color: #FF7A00 !important;
+  background: rgba(255, 122, 0, .12) !important;
+  color: #FF7A00 !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-rule {
+  background: #FF7A00 !important;
+}
+
+.premium-home #services .premium-service-card:hover .premium-service-link {
+  color: #FF7A00 !important;
 }

@@ -7,6 +7,7 @@ import IndustrialAbout from "@/components/IndustrialAbout";
 import IndustrialServices from "@/components/IndustrialServices";
 import LandCategories from "@/components/LandCategories"; 
 import StatsCounter from "@/components/StatsCounter";
+import MarqueeBand from "@/components/MarqueeBand";
 import Testimonials from "@/components/Testimonials";
 import GallerySection from "@/components/GallerySection";
 import CmsBlogSection from "@/components/CmsBlogSection";
@@ -19,17 +20,18 @@ import PropertyListings from "@/components/PropertyListings";
 
 export default function Home() {
   return (
-    <>
+    <div className="premium-home">
     
       <TopBar />
       <Navbar />
       <Hero />
+      <StatsCounter />
+      <MarqueeBand />
       <SocialBar />
       <PropertyListings/>
       <IndustrialAbout />
-      <IndustrialServices />
       <LandCategories />
-      <StatsCounter />
+      <IndustrialServices />
        <Testimonials />
        <GallerySection />
        <CmsBlogSection />
@@ -40,6 +42,6 @@ export default function Home() {
 
 
 
-    </>
+    </div>
   );
 }

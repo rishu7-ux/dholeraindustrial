@@ -46,11 +46,11 @@ export default function DirectorMessagePage() {
 
         {/* ================= HERO ================= */}
 
-        <section className="relative h-125 overflow-hidden bg-linear-to-br from-[#0b3f68] via-[#12568d] to-[#1973ad]">
+        <section className="relative h-125 overflow-hidden bg-linear-to-br from-[#0A2E73] via-[#081A3A] to-[#0A2E73]">
 
-          <div className="pointer-events-none absolute -left-24 top-8 h-72 w-72 rounded-full bg-[#fdb713]/20 blur-3xl" />
+          <div className="pointer-events-none absolute -left-24 top-8 h-72 w-72 rounded-full bg-[#FF7A00]/20 blur-3xl" />
           <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
-          <div className="absolute inset-0 bg-linear-to-r from-[#12568d]/35 via-transparent to-black/10" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#081A3A]/35 via-transparent to-[#081A3A]/10" />
 
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
 
@@ -58,7 +58,7 @@ export default function DirectorMessagePage() {
               initial="hidden"
               animate="show"
               variants={fromLeft}
-              className="mb-4 uppercase tracking-[5px] text-[#fdb713] font-semibold"
+              className="mb-4 uppercase tracking-[5px] text-[#FF7A00] font-semibold"
             >
               OMANA PROJECTS
             </motion.p>
@@ -77,7 +77,7 @@ export default function DirectorMessagePage() {
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ duration: 0.8, ease: easeOut, delay: 0.5 }}
-              className="mt-6 h-1 w-28 origin-left rounded-full bg-[#fdb713]"
+              className="mt-6 h-1 w-28 origin-left rounded-full bg-[#FF7A00]"
             />
 
             <motion.p
@@ -85,10 +85,10 @@ export default function DirectorMessagePage() {
               animate="show"
               variants={fromLeft}
               transition={{ delay: 0.4 }}
-              className="mt-8 text-lg text-gray-200"
+              className="mt-8 text-lg text-white/75"
             >
               Home
-              <span className="mx-2 text-[#fdb713]">/</span>
+              <span className="mx-2 text-[#FF7A00]">/</span>
               Director Message
             </motion.p>
 
@@ -114,21 +114,21 @@ export default function DirectorMessagePage() {
               >
 
                 <div className="mb-6 flex items-center gap-3">
-                  <div className="h-3 w-3 rounded-full bg-[#fdb713]"></div>
-                  <div className="h-0.5 w-16 bg-[#fdb713]"></div>
+                  <div className="h-3 w-3 rounded-full bg-[#FF7A00]"></div>
+                  <div className="h-0.5 w-16 bg-[#FF7A00]"></div>
                 </div>
 
-                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#fdb713]">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#FF7A00]">
                   MESSAGE
                 </p>
 
-                <h2 className="text-5xl font-bold text-[#12568d]">
+                <h2 className="text-5xl font-bold text-[#081A3A]">
                   Director Message
                 </h2>
 
-                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#fdb713] to-[#ffd45a]"></div>
+                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#FF7A00] to-[#FF7A00]"></div>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Manoj Jain is a seasoned professional with more than
                   twenty-four years of experience in financial planning,
                   taxation and legal advisory. Holding qualifications in
@@ -136,18 +136,18 @@ export default function DirectorMessagePage() {
                   expertise in finance, compliance and investment strategy.
                 </p>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Throughout his career he has advised businesses and
                   individuals in taxation, financial planning and legal
                   compliance while maintaining transparency and
                   professionalism.
                 </p>
 
-                <h3 className="mb-5 text-3xl font-bold text-[#12568d]">
+                <h3 className="mb-5 text-3xl font-bold text-[#081A3A]">
                   Specialization
                 </h3>
 
-                <p className="text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Financial Planning, Taxation Laws, Investment Advisory,
                   Legal Consultation, Business Compliance, Corporate
                   Strategy and Long-term Financial Solutions.
@@ -167,9 +167,9 @@ export default function DirectorMessagePage() {
 
                 <div className="relative">
 
-                  <div className="absolute -right-10 top-8 h-130 w-65 rounded-[40px] bg-linear-to-br from-[#fff7d6] to-[#eaf3fa] rotate-6"></div>
+                  <div className="absolute -right-10 top-8 h-130 w-65 rounded-[40px] bg-linear-to-br from-[#FFFFFF] to-[#FFFFFF] rotate-6"></div>
 
-                  <div className="group relative z-10 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_15px_50px_rgba(0,0,0,0.08)] transition duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(0,0,0,0.18)]">
+                  <div className="group relative z-10 overflow-hidden border border-[#081A3A]/15 bg-white shadow-[0_15px_50px_rgba(8,26,58,0.08)] transition duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(8,26,58,0.18)]">
 
                     <Image
                       src="/gallery/manoj jain.png"
@@ -181,13 +181,13 @@ export default function DirectorMessagePage() {
 
                   </div>
 
-                  <div className="mt-8 border-l-4 border-[#fdb713] pl-5">
+                  <div className="mt-8 border-l-4 border-[#FF7A00] pl-5">
 
-                    <h3 className="text-4xl font-bold text-[#12568d]">
+                    <h3 className="text-4xl font-bold text-[#081A3A]">
                       Manoj Jain
                     </h3>
 
-                    <p className="mt-2 uppercase tracking-[3px] text-[#fdb713]">
+                    <p className="mt-2 uppercase tracking-[3px] text-[#FF7A00]">
                       Director
                     </p>
 
@@ -207,7 +207,7 @@ export default function DirectorMessagePage() {
 
         {/* ================= SAROON KUMAR ================= */}
 
-        <section className="group bg-[#fffdf6] py-24">
+        <section className="group bg-[#ffffff] py-24">
 
           <div className="mx-auto max-w-7xl px-6">
 
@@ -223,21 +223,21 @@ export default function DirectorMessagePage() {
               >
 
                 <div className="mb-6 flex items-center gap-3">
-                  <div className="h-3 w-3 rounded-full bg-[#fdb713]"></div>
-                  <div className="h-0.5 w-16 bg-[#fdb713]"></div>
+                  <div className="h-3 w-3 rounded-full bg-[#FF7A00]"></div>
+                  <div className="h-0.5 w-16 bg-[#FF7A00]"></div>
                 </div>
 
-                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#fdb713]">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#FF7A00]">
                   MESSAGE
                 </p>
 
-                <h2 className="text-5xl font-bold text-[#12568d]">
+                <h2 className="text-5xl font-bold text-[#081A3A]">
                   Managing Director Message
                 </h2>
 
-                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#fdb713] to-[#ffd45a]"></div>
+                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#FF7A00] to-[#FF7A00]"></div>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Since February 2014, Saroon Kumar has been leading Omana
                   Estates, Omana Consulting and Sarvasattvavalambana Pvt.
                   Ltd. Based in Noida, Uttar Pradesh, he has established
@@ -246,24 +246,24 @@ export default function DirectorMessagePage() {
                   township developments.
                 </p>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Under his leadership, the company has successfully
                   expanded across India and international markets,
                   delivering projects in Dubai, Australia, Bangkok,
                   Mumbai, Gujarat, Pune, Delhi NCR, Bangalore and Kochi.
                 </p>
 
-                <h3 className="mb-5 text-3xl font-bold text-[#12568d]">
+                <h3 className="mb-5 text-3xl font-bold text-[#081A3A]">
                   Specialization
                 </h3>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Real Estate Development, Township Planning,
                   Project Execution, Sales Strategy,
                   Business Development and Investment Planning.
                 </p>
 
-                <p className="text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   His expertise also includes international real estate
                   ventures, sustainable developments, market research,
                   financial planning, fundraising and building
@@ -285,9 +285,9 @@ export default function DirectorMessagePage() {
 
                 <div className="relative">
 
-                  <div className="absolute -right-10 top-8 h-130 w-65 rounded-[40px] bg-linear-to-br from-[#fff7d6] to-[#eaf3fa] rotate-6"></div>
+                  <div className="absolute -right-10 top-8 h-130 w-65 rounded-[40px] bg-linear-to-br from-[#FFFFFF] to-[#FFFFFF] rotate-6"></div>
 
-                  <div className="group relative z-10 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_15px_50px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(0,0,0,0.18)]">
+                  <div className="group relative z-10 overflow-hidden border border-[#081A3A]/15 bg-white shadow-[0_15px_50px_rgba(8,26,58,0.08)] transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(8,26,58,0.18)]">
 
                     <Image
                       src="/gallery/saroon kumar.png"
@@ -299,13 +299,13 @@ export default function DirectorMessagePage() {
 
                   </div>
 
-                  <div className="mt-8 border-l-4 border-[#fdb713] pl-5">
+                  <div className="mt-8 border-l-4 border-[#FF7A00] pl-5">
 
-                    <h3 className="text-4xl font-bold text-[#12568d]">
+                    <h3 className="text-4xl font-bold text-[#081A3A]">
                       Saroon Kumar
                     </h3>
 
-                    <p className="mt-2 uppercase tracking-[3px] text-[#fdb713]">
+                    <p className="mt-2 uppercase tracking-[3px] text-[#FF7A00]">
                       Managing Director
                     </p>
 
@@ -341,21 +341,21 @@ export default function DirectorMessagePage() {
               >
 
                 <div className="mb-6 flex items-center gap-3">
-                  <div className="h-3 w-3 rounded-full bg-[#fdb713]"></div>
-                  <div className="h-0.5 w-16 bg-[#fdb713]"></div>
+                  <div className="h-3 w-3 rounded-full bg-[#FF7A00]"></div>
+                  <div className="h-0.5 w-16 bg-[#FF7A00]"></div>
                 </div>
 
-                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#fdb713]">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#FF7A00]">
                   MESSAGE
                 </p>
 
-                <h2 className="text-5xl font-bold text-[#12568d]">
+                <h2 className="text-5xl font-bold text-[#081A3A]">
                   Director Message
                 </h2>
 
-                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#fdb713] to-[#ffd45a]"></div>
+                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#FF7A00] to-[#FF7A00]"></div>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   With more than sixteen years of experience in the real estate
                   industry, Nitin Sharma is a dynamic business leader recognised
                   for combining technical expertise with strategic planning.
@@ -363,7 +363,7 @@ export default function DirectorMessagePage() {
                   innovation, customer satisfaction and business growth.
                 </p>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Throughout his professional journey he has successfully led
                   Business Development and Customer Relationship Management
                   functions for reputed real estate organisations, helping
@@ -371,17 +371,17 @@ export default function DirectorMessagePage() {
                   competitive markets.
                 </p>
 
-                <h3 className="mb-5 text-3xl font-bold text-[#12568d]">
+                <h3 className="mb-5 text-3xl font-bold text-[#081A3A]">
                   Specialization
                 </h3>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Business Development, CRM Management, Revenue Growth,
                   Strategic Planning, Customer Experience,
                   Market Expansion and Sales Leadership.
                 </p>
 
-                <p className="text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   His execution-driven approach, combined with strong leadership
                   and analytical thinking, continues to help Omana Projects
                   deliver premium customer experiences while ensuring sustainable
@@ -402,9 +402,9 @@ export default function DirectorMessagePage() {
 
                 <div className="relative">
 
-                  <div className="absolute -right-10 top-8 h-130 w-[260px] rounded-[40px] bg-linear-to-br from-[#fff7d6] to-[#eaf3fa] rotate-6"></div>
+                  <div className="absolute -right-10 top-8 h-130 w-[260px] rounded-[40px] bg-linear-to-br from-[#FFFFFF] to-[#FFFFFF] rotate-6"></div>
 
-                  <div className="group relative z-10 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_15px_50px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(0,0,0,0.18)]">
+                  <div className="group relative z-10 overflow-hidden border border-[#081A3A]/15 bg-white shadow-[0_15px_50px_rgba(8,26,58,0.08)] transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(8,26,58,0.18)]">
 
                     <Image
                       src="/gallery/NItinSharma.jpg"
@@ -416,13 +416,13 @@ export default function DirectorMessagePage() {
 
                   </div>
 
-                  <div className="mt-8 border-l-4 border-[#fdb713] pl-5">
+                  <div className="mt-8 border-l-4 border-[#FF7A00] pl-5">
 
-                    <h3 className="text-4xl font-bold text-[#12568d]">
+                    <h3 className="text-4xl font-bold text-[#081A3A]">
                       Nitin Sharma
                     </h3>
 
-                    <p className="mt-2 uppercase tracking-[3px] text-[#fdb713]">
+                    <p className="mt-2 uppercase tracking-[3px] text-[#FF7A00]">
                       Director
                     </p>
 
@@ -442,7 +442,7 @@ export default function DirectorMessagePage() {
 
         {/* ================= GAURAV VIR SINGH ================= */}
 
-        <section className="group bg-[#fffdf6] py-24">
+        <section className="group bg-[#ffffff] py-24">
 
           <div className="mx-auto max-w-7xl px-6">
 
@@ -458,45 +458,45 @@ export default function DirectorMessagePage() {
               >
 
                 <div className="mb-6 flex items-center gap-3">
-                  <div className="h-3 w-3 rounded-full bg-[#fdb713]"></div>
-                  <div className="h-0.5 w-16 bg-[#fdb713]"></div>
+                  <div className="h-3 w-3 rounded-full bg-[#FF7A00]"></div>
+                  <div className="h-0.5 w-16 bg-[#FF7A00]"></div>
                 </div>
 
-                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#fdb713]">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#FF7A00]">
                   MESSAGE
                 </p>
 
-                <h2 className="text-5xl font-bold text-[#12568d]">
+                <h2 className="text-5xl font-bold text-[#081A3A]">
                   Director Message
                 </h2>
 
-                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#fdb713] to-[#ffd45a]"></div>
+                <div className="mt-5 mb-8 h-1 w-24 rounded-full bg-linear-to-r from-[#FF7A00] to-[#FF7A00]"></div>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   With over sixteen years of experience in the real estate industry,
                   Gaurav Vir Singh serves as the Sales Head, bringing extensive
                   market knowledge, strategic leadership and a customer-first
                   approach to every project.
                 </p>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Throughout his professional journey, he has worked with some of
                   the most respected organisations in the real estate sector,
                   successfully leading sales teams, channel partner networks,
                   customer acquisition programmes and business expansion initiatives.
                 </p>
 
-                <h3 className="mb-5 text-3xl font-bold text-[#12568d]">
+                <h3 className="mb-5 text-3xl font-bold text-[#081A3A]">
                   Specialization
                 </h3>
 
-                <p className="mb-6 text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="mb-6 text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   Sales Leadership, Business Development, Customer Relationship
                   Management, Channel Partner Development, Revenue Growth,
                   Project Marketing and Strategic Planning.
                 </p>
 
-                <p className="text-[17px] leading-9 tracking-wide text-gray-600">
+                <p className="text-[17px] leading-9 tracking-wide text-[#0A2E73]">
                   His strong leadership, execution-focused mindset and commitment
                   to customer satisfaction continue to play an important role in
                   expanding Omana Projects while delivering long-term value,
@@ -517,9 +517,9 @@ export default function DirectorMessagePage() {
 
                 <div className="relative">
 
-                  <div className="absolute -right-10 top-8 h-130 w-65 rounded-[40px] bg-linear-to-br from-[#fff7d6] via-[#eaf3fa] to-white rotate-6"></div>
+                  <div className="absolute -right-10 top-8 h-130 w-65 rounded-[40px] bg-linear-to-br from-[#FFFFFF] via-[#FFFFFF] to-white rotate-6"></div>
 
-                  <div className="group relative z-10 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_15px_50px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(0,0,0,0.18)]">
+                  <div className="group relative z-10 overflow-hidden border border-[#081A3A]/15 bg-white shadow-[0_15px_50px_rgba(8,26,58,0.08)] transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_35px_70px_rgba(8,26,58,0.18)]">
 
                     <Image
                       src="/gallery/GauravVirSingh.jpg"
@@ -531,13 +531,13 @@ export default function DirectorMessagePage() {
 
                   </div>
 
-                  <div className="mt-8 border-l-4 border-[#fdb713] pl-5">
+                  <div className="mt-8 border-l-4 border-[#FF7A00] pl-5">
 
-                    <h3 className="text-4xl font-bold text-[#12568d]">
+                    <h3 className="text-4xl font-bold text-[#081A3A]">
                       Gaurav Vir Singh
                     </h3>
 
-                    <p className="mt-2 uppercase tracking-[3px] text-[#fdb713]">
+                    <p className="mt-2 uppercase tracking-[3px] text-[#FF7A00]">
                       Director
                     </p>
 
@@ -557,10 +557,10 @@ export default function DirectorMessagePage() {
 
         {/* ================= Bottom CTA ================= */}
 
-        <section className="relative overflow-hidden bg-[#12568d] py-24">
+        <section className="relative overflow-hidden bg-[#081A3A] py-14 sm:py-16 lg:py-20">
 
-          <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#fdb713]/10 blur-3xl" />
-          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#12568d]/10 blur-3xl" />
+          <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#FF7A00]/10 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#081A3A]/10 blur-3xl" />
 
           <motion.div
             initial="hidden"
@@ -570,7 +570,7 @@ export default function DirectorMessagePage() {
             className="relative mx-auto max-w-6xl px-6 text-center"
           >
 
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#fdb713]">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[4px] text-[#FF7A00]">
               OMANA PROJECTS
             </p>
 
@@ -578,7 +578,7 @@ export default function DirectorMessagePage() {
               Let&apos;s Build Your Future Together
             </h2>
 
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/70">
               Our leadership team is committed to delivering transparency,
               trust and premium real estate opportunities. Whether you&apos;re
               looking to invest or own your dream property, we&apos;re here to
@@ -589,14 +589,14 @@ export default function DirectorMessagePage() {
 
               <Link
                 href="/contact"
-                className="rounded-full bg-[#fdb713] px-10 py-4 text-lg font-semibold text-white transition hover:bg-[#e7a900]"
+                className="bg-[#FF7A00] px-10 py-4 text-lg font-semibold text-white transition hover:bg-[#C94F00]"
               >
                 Contact Us
               </Link>
 
               <Link
                 href="/about"
-                className="rounded-full border border-white px-10 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-[#12568d]"
+                className="border border-white px-10 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-[#081A3A]"
               >
                 Learn More
               </Link>

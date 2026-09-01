@@ -30,12 +30,12 @@ export default function PropertiesPage() {
       <Navbar />
       <SocialBar />
 
-      <main className="compact-page overflow-hidden">
+      <main className="properties-page compact-page overflow-hidden">
         {/* =====================================================
             HERO
         ===================================================== */}
 
-        <section className="relative overflow-hidden bg-[#12568d] py-20 text-white sm:py-24 lg:py-28">
+        <section className="relative overflow-hidden bg-[#081A3A] py-12 text-white sm:py-14 lg:py-16">
           {/* Glow 1 */}
           <motion.div
             animate={{
@@ -47,7 +47,7 @@ export default function PropertiesPage() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="pointer-events-none absolute -left-32 top-0 h-80 w-80 rounded-full bg-[#fdb713]/15 blur-3xl"
+            className="pointer-events-none absolute -left-32 top-0 h-80 w-80 rounded-full bg-[#FF7A00]/15 blur-3xl"
           />
 
           {/* Glow 2 */}
@@ -82,15 +82,15 @@ export default function PropertiesPage() {
             >
               <Link
                 href="/"
-                className="flex items-center gap-2 transition-colors hover:text-[#fdb713]"
+                className="flex items-center gap-2 transition-colors hover:text-[#FF7A00]"
               >
-                <FaHome size={12} />
+                <FaHome size={12} className="text-[#FF7A00]" />
                 Home
               </Link>
 
               <span>/</span>
 
-              <span className="text-[#fdb713]">
+              <span className="text-[#FF7A00]">
                 Properties
               </span>
             </motion.div>
@@ -109,7 +109,7 @@ export default function PropertiesPage() {
                 delay: 0.1,
                 duration: 0.7,
               }}
-              className="text-xs font-black uppercase tracking-[0.35em] text-[#fdb713]"
+              className="text-xs font-black uppercase tracking-[0.35em] text-[#FF7A00]"
             >
               Explore Our Projects
             </motion.p>
@@ -149,7 +149,7 @@ export default function PropertiesPage() {
               }}
               className="mx-auto mt-6 flex w-fit gap-2"
             >
-              <span className="h-1 w-16 bg-[#fdb713]" />
+              <span className="h-1 w-16 bg-[#FF7A00]" />
               <span className="h-1 w-8 bg-white" />
             </motion.div>
 
@@ -191,13 +191,13 @@ export default function PropertiesPage() {
             >
               <Link
                 href="#projects"
-                className="group inline-flex items-center gap-3 rounded-xl bg-[#fdb713] px-7 py-4 text-sm font-black uppercase tracking-wide text-[#12568d] transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl"
+                className="group inline-flex items-center gap-3 rounded-xl bg-[#081A3A] px-7 py-4 text-sm font-black uppercase tracking-wide text-white ring-1 ring-[#FF7A00] transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#081A3A] hover:shadow-xl"
               >
                 Explore Projects
 
                 <FaArrowRight
                   size={12}
-                  className="transition-transform duration-300 group-hover:translate-x-2"
+                  className="text-[#FF7A00] transition-transform duration-300 group-hover:translate-x-2"
                 />
               </Link>
             </motion.div>
@@ -219,7 +219,7 @@ export default function PropertiesPage() {
             BOTTOM CTA
         ===================================================== */}
 
-        <section className="bg-[#fff8e8] py-16 sm:py-20">
+        <section className="bg-[#FFFFFF] py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{
@@ -240,10 +240,10 @@ export default function PropertiesPage() {
                 duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative overflow-hidden rounded-[30px] bg-[#12568d] px-6 py-10 text-white shadow-[0_25px_70px_rgba(18,86,141,0.22)] sm:px-10 lg:px-14 lg:py-14"
+              className="relative overflow-hidden bg-[#0A2E73] px-6 py-10 text-white shadow-[0_25px_70px_rgba(8,26,58,0.22)] sm:px-10 lg:px-14 lg:py-14"
             >
-              {/* Yellow Line */}
-              <div className="absolute left-0 top-0 h-1 w-full bg-[#fdb713]" />
+              {/* Accent line */}
+              <div className="absolute left-0 top-0 h-1 w-full bg-[#FF7A00]" />
 
               {/* Animated Glow */}
               <motion.div
@@ -256,13 +256,13 @@ export default function PropertiesPage() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#fdb713]/15 blur-3xl"
+                className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#FF7A00]/15 blur-3xl"
               />
 
               <div className="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
                 {/* Text */}
                 <div>
-                  <p className="text-xs font-black uppercase tracking-[0.25em] text-[#fdb713]">
+                  <p className="text-xs font-black uppercase tracking-[0.25em] text-[#FF7A00]">
                     Need Help Choosing?
                   </p>
 
@@ -289,13 +289,13 @@ export default function PropertiesPage() {
                   whileTap={{
                     scale: 0.97,
                   }}
-                  className="group inl˝ine-flex items-center justify-center gap-3 rounded-xl bg-[#fdb713] px-7 py-4 text-sm font-black uppercase text-[#12568d] shadow-lg transition-all duration-300 hover:bg-white"
+                  className="group inline-flex items-center justify-center gap-3 bg-white px-7 py-4 text-sm font-black uppercase text-[#081A3A] shadow-lg transition-all duration-300 hover:bg-[#FFFFFF]/90"
                 >
                   Enquire Now
 
                   <FaArrowRight
                     size={12}
-                    className="transition-transform duration-300 group-hover:translate-x-2"
+                    className="text-[#FF7A00] transition-transform duration-300 group-hover:translate-x-2"
                   />
                 </motion.button>
               </div>
