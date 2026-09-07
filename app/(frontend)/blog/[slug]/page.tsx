@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -10,6 +11,24 @@ import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import SocialBar from "@/components/SocialBar";
 import Footer from "@/components/Footer";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const blog = await getIndustrialBlog(slug);
+  if (!blog) return {};
+
+  return {
+    title: blog.title,
+    description: blog.excerpt || undefined,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
+  };
+}
 
 export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

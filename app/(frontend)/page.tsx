@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -14,9 +15,14 @@ import CmsBlogSection from "@/components/CmsBlogSection";
 import Footer from "@/components/Footer";
 import PropertyListings from "@/components/PropertyListings";
 
-
-
-
+export const metadata: Metadata = {
+  title: "Dholera Industrial Plots | Verified Land in Dholera SIR, DMIC Corridor",
+  description:
+    "Government-verified industrial & logistics plots in Dholera SIR. 9+ years in Dholera, 640+ investors served. Explore Samridhi & Sandhida projects.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

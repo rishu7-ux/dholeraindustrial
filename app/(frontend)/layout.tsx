@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "../globals.css";
 import SideEnquiry from "@/components/SideEnquiry";
+
+const GA_MEASUREMENT_ID = "G-519305289";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +19,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dholeraindustrialplot.com"),
   title: "Dholera Industrial Plots",
   description: "Premium industrial properties in Dholera SIR",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +42,18 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} min-h-full flex flex-col antialiased`}
       >
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <div className="premium-site min-h-screen bg-[#ffffff] text-[#081A3A]">
           {children}
         </div>
