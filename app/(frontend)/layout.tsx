@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "../globals.css";
 import SideEnquiry from "@/components/SideEnquiry";
 
-const GA_MEASUREMENT_ID = "G-519305289";
+const GA_MEASUREMENT_ID = "G-1LHH0C2L0M";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
